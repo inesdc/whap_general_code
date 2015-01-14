@@ -1,0 +1,204 @@
+/* ===== RESETS =====
+   ================== */
+
+
+/* Fonts */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	color: #fff;
+}
+
+/* Buttons */
+
+.btn-default {
+	height: 30px;
+	background-color: #ef5350;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700px;
+	border: 0;
+	font-size: 11px;
+}
+
+
+
+
+/* ===== GENERAL =====
+   ================== */
+
+   body {
+   	background: url('../images/bg-image.jpg') no-repeat center;
+   	background-size: cover;
+   }
+
+   article {
+   	padding: 10px;
+	}
+
+	.container-fluid {
+	margin: 0;
+	}
+
+	.module {
+		background: #f3f3f3;
+		height: 400px;
+	}
+
+	.module_large {
+		background: #f3f3f3;
+		width: 100%;
+		margin-top:100px;
+	}
+
+	.module-aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+
+/* ===== HEADER =====
+   ================== */
+
+
+/* Nav bar */
+
+.navbar-default {
+	background-color: #2ab0b9;
+	margin-bottom: 0;
+	border: 0px;
+} 
+
+.navbar-default .navbar-nav li a {
+	color : #9CD0D0;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+
+.navbar-default .navbar-nav li a:hover {
+	background: #1E9FA8;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav .active a {
+	background: none;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav li:first-child {
+	background: url('../images/trips_icon.png') no-repeat left;
+	text-indent: 10px;
+}
+
+.navbar-default .navbar-nav li:nth-child(2) {
+	background: url('../images/trips_icon.png') no-repeat left;
+	text-indent: 10px;
+}
+
+.navbar-default .navbar-nav li:nth-child(3) {
+	background: url('../images/trips_icon.png') no-repeat left;
+	text-indent: 10px;
+}
+
+.navbar-default .navbar-nav li:nth-child(4) {
+	background: url('../images/trips_icon.png') no-repeat left;
+	text-indent: 10px;
+}
+
+
+.navbar-default .navbar-brand {
+	color : #fff;
+}
+
+
+
+/* Navbar 2 */
+
+.navbar-inverse {
+	background-color: #2c525d;
+	margin : 0;
+	
+}
+
+.navbar-inverse .navbar-nav  ul {
+	margin: 0;
+}
+
+.navbar-inverse .navbar-nav li {
+	padding: 0;
+	border-right: solid 1px #2ab0b9;
+}
+
+
+.navbar-inverse .navbar-nav li a {
+	color : gray;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.navbar-inverse .navbar-nav .active a {
+	background: none;
+	color: #fff;
+}
+
+.navbar-inverse .navbar-right li {
+	padding-right: 15px;
+	float: right;
+
+}
+
+.navbar-inverse .navbar-right .navbar-btn {
+	width: 180px;
+}
+
+
+ .btn-fixed {
+	display: block;
+	margin: 10px auto;
+	width: 95%;
+	height: 50px;
+
+}
+
+/*-----> Mobile <-----*/
+
+@media(min-width:768px) {
+	.btn-fixed  { display: none; }
+}
+
+@media(max-width:768px) {
+	.navbar-inverse ul.navbar-right  { display: none; }
+}
+
+
+/* ===== CONTENT =====
+   ================== */
+
+  .details {
+  	height: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+/*
+section:nth-child(3) {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	max-width: 340px;
+}*/

@@ -1,0 +1,39 @@
+.container {
+	max-width: 1024px;
+}
+
+
+section {
+	background-color: gray;
+}
+
+article {
+	padding: 10px;
+	height: 200px;
+}
+
+.module {
+	background-color: #fff;
+	height:100px;
+}
+
+.details {
+	background-color: #fff;
+}
+
+.module_large {
+	background-color: #fff;
+}
+
+.module-aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+
+@media(max-width:1816px) {
+	.container {
+		margin: 0;
+	}
+}
