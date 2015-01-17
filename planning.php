@@ -13,84 +13,86 @@
   </head>
   <body>
   <header>
-    <nav id="header" class="navbar navbar-default main-nav navbar-static-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">WHAP</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="primary-menu">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="width25-xs active"><a href="#"><i class="icon ico-trips"></i>Trips<span class="sr-only"> (current)</span></a></li>
-            <li class="width25-xs"><a href="#"><i class="icon ico-explore"></i>Explore</a></li>
-            <li class="width25-xs"><a href="#"><i class="icon ico-profile"></i>Profile</a></li>
-            <li class="width25-xs"><a href="#"><i class="icon ico-settings"></i>Settings</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php include ('header.php'); ?>
     <div class="relative ohidden">
       <div class="col-xs-12 col-sm-3 crear-cont">
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="width33-xs col-sm-3 active ongoing"><a href="#">On going</a></li>
-        <li class="width33-xs col-sm-3 planning"><a href="planning.html">Planning</a></li>
+        <li class="width33-xs col-sm-3 ongoing"><a href="index.php">On going</a></li>
+        <li class="width33-xs col-sm-3 active planning"><a href="#">Planning</a></li>
         <li class="width33-xs col-sm-3 upcoming"><a href="#">Upcomming</a></li>
       </ul>
     </div>
   </header>
   
 <!-- CONTENT -->
-<div id="main" class="clearfix">
+<div id="main" class="clearfix planning">
   <div id="container-size" class="container">
-    <section class="modules col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <article class="col-sm-12 col-md-12">
-        <div class="details">
-          <p>Details</p>
-        </div>
-      </article>
-      <article class="col-sm-6 col-md-4">
-        <div class="module">
+    <section class="modules trips col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <article class="col-xs-12">
+        <div class="module-trips">
           <p>1</p>
+          <div class="trips-summary">
+          </div>
+          <div class="trip-steps" style="display: none;">
+            <div class="trip-cards">
+              <div class="how-much-cards col-xs-12 col-sm-2">
+                <div></div>
+              </div>
+              <div class="where-cards col-xs-12 col-sm-2">
+                <div></div>
+              </div>
+              <div class="when-cards col-xs-12 col-sm-2">
+                <div></div>
+              </div>
+              <div class="how-cards col-xs-12 col-sm-2">
+                <div></div>
+              </div>
+              <div class="who-cards col-xs-12 col-sm-2">
+                <div></div>
+              </div>
+              <div class="what-cards col-xs-12 col-sm-2">
+                <div></div>
+              </div>
+            </div>
+            <div class="planning-contents"></div>
+              <div class="how-much-content"></div>
+              <div class="where-content"></div>
+              <div class="when-content"></div>
+              <div class="how-content"></div>
+              <div class="who-content"></div>
+              <div class="what-content"></div>
+          </div>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
-        <div class="module" data-toggle="modal" data-target="#basicModal">
+      <article class="col-xs-12">
+        <div class="module-trips" data-toggle="modal" data-target="#basicModal">
           <p>2</p>
         </div>
       </article>
-      <article class="aside">
-        <button id="aside-trigger" class="hidden-xs hidden-extralg">chat</button>
-        <div class="module">
-          <p>3</p>
-        </div>
-      </article>
-      <article class="col-sm-6 col-md-4">
-        <div class="module">
+      <article class="col-xs-12">
+        <div class="module-trips">
           <p>4</p>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
-        <div class="module">
-          <p>5</p>
-        </div>
-      </article>
-      <article class="col-sm-6 col-md-4">
-        <div class="module">
-          <p>6</p>
-        </div>
-      </article>
-      <article class="col-sm-6 col-md-4">
-        <div class="module">
-          <p>7</p>
-        </div>
-      </article>
    </section>
-
-   <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <section class="aside">
+        <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
+        <div class="module_offers">
+          <p>1</p>
+        </div>
+        <div class="module_offers">
+          <p>2</p>
+        </div>
+        <div class="module_offers">
+          <p>3</p>
+        </div>
+        <div class="module_offers">
+          <p>4</p>
+        </div>
+    </section>
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -137,6 +139,9 @@
 <!-- Javascript -->
 
 <script src="assets/js/bootstrap.min.js"></script>
+<script> 
+  $( "#header" ).load( "assets/header.html" );
+</script>
 <script src="assets/js/functions.js"></script>
 </body>
 </html>

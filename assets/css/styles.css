@@ -1,8 +1,8 @@
 /* ===== RESETS =====
    ================== */
 
-.clear {
-	clear: both;
+.content-visible {
+	display: block !IMPORTANT;
 }
 
 .relative {
@@ -91,6 +91,12 @@ a {
 body {
 	background: url('../images/bg-image.jpg') no-repeat center;
 	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.aside {
+	overflow: scroll;
 }
 
 article {
@@ -103,10 +109,6 @@ article {
 	margin-left: 0;
 }
 
-.module {
-	background: #f3f3f3;
-	height: 278px;
-}
 
 
 /* ===== HEADER =====
@@ -142,7 +144,7 @@ article {
 }
 
 
-/* Secondary Navbar */
+/* Secondary Navbar Trips*/
 
 .secondary-nav {
 	background-color: #2c525d;
@@ -198,17 +200,50 @@ article {
 }
 
 
+/*===== MODULES ======
+  ====================*/
+
+/*Ongoing*/
+
+.module-ongoing {
+	background: #f3f3f3;
+	height: 278px;
+}
+
+/*Trips*/
+
+.module-trips {
+	background: #f3f3f3;
+}
+
+.trips article:first-of-type .module-trips {
+	margin-top: 20px;
+}
+
+/*Offers*/
+
+.module_offers {
+	background: #BEBDBD;
+	width: 271px;
+	height: 263px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.module_offers:first-of-type {
+	margin-top: 20px;
+}
 
 
-
-/* ===== CONTENT =====
+/* =====ONGOING CONTENT =====
    ================== */
 
 .details {
   	height: 50px;
 }
 
-.chat_hidden {
+.aside_hidden {
 	display: block;
 	background-color: red;
 	height: 100%;
@@ -218,17 +253,39 @@ article {
 }
 
 
+/* =====PLANNING CONTENT =====
+   ================== */
+
+.trips-summary {
+	height: 100px; 
+}
+
+.trip-cards div {
+	height: 196px;
+	display: inline-block;
+}
+
+.trip-cards div div {
+	background: #BEBDBD;
+}
+
+.planning-contents div {
+	display: none;
+}
+
+
+
 /* == MEDIA QUERIES ==
    =================== */ 
 
 @media(min-width:1340px) {
 
 	
-	#chat-trigger {
+	#aside-trigger {
 		display: none;
 	}
 
-	#main.chat-visible {
+	#main.aside-visible {
 		margin-left: 0 !important;
 	}
 
@@ -259,17 +316,17 @@ article {
 		transition: all 0.5s;
 	}
 
-	#main.chat-visible {
+	#main.aside-visible {
 		margin-left: -300px;
 	}
 
-	#chat-trigger {
+	#aside-trigger {
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
 
-	.chat {
+	.aside {
 		position: fixed;
 		top: 100px;
 		width: 340px;
@@ -280,7 +337,7 @@ article {
 		transition: all 0.5s;
 	}
 
-	#main.chat-visible .chat {
+	#main.aside-visible .aside {
 		right: 0;
 	}
 
@@ -352,7 +409,7 @@ article {
 	.modules {
 		padding: 0;
 	}
-	.modules article {
+	.ongoing .modules article {
 		padding: 0;
 	}
 

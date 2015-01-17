@@ -13,38 +13,21 @@
   </head>
   <body>
   <header>
-    <nav id="header" class="navbar navbar-default main-nav navbar-static-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">WHAP</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="primary-menu">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="width25-xs active"><a href="#"><i class="icon ico-trips"></i>Trips<span class="sr-only"> (current)</span></a></li>
-            <li class="width25-xs"><a href="#"><i class="icon ico-explore"></i>Explore</a></li>
-            <li class="width25-xs"><a href="#"><i class="icon ico-profile"></i>Profile</a></li>
-            <li class="width25-xs"><a href="#"><i class="icon ico-settings"></i>Settings</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php include ('header.php'); ?>
     <div class="relative ohidden">
       <div class="col-xs-12 col-sm-3 crear-cont">
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
       </div>
       <ul class="secondary-nav list-unstyled">
         <li class="width33-xs col-sm-3 active ongoing"><a href="#">On going</a></li>
-        <li class="width33-xs col-sm-3 planning"><a href="planning.html">Planning</a></li>
+        <li class="width33-xs col-sm-3 planning"><a href="planning.php">Planning</a></li>
         <li class="width33-xs col-sm-3 upcoming"><a href="#">Upcomming</a></li>
       </ul>
     </div>
   </header>
   
 <!-- CONTENT -->
-<div id="main" class="clearfix">
+<div id="main" class="clearfix ongoing">
   <div id="container-size" class="container">
     <section class="modules col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <article class="col-sm-12 col-md-12">
@@ -53,38 +36,38 @@
         </div>
       </article>
       <article class="col-sm-6 col-md-4">
-        <div class="module">
+        <div class="module-ongoing">
           <p>1</p>
         </div>
       </article>
       <article class="col-sm-6 col-md-4">
-        <div class="module" data-toggle="modal" data-target="#basicModal">
+        <div class="module-ongoing" data-toggle="modal" data-target="#basicModal">
           <p>2</p>
         </div>
       </article>
       <article class="aside">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">chat</button>
-        <div class="module">
+        <div class="module-ongoing">
           <p>3</p>
         </div>
       </article>
       <article class="col-sm-6 col-md-4">
-        <div class="module">
+        <div class="module-ongoing">
           <p>4</p>
         </div>
       </article>
       <article class="col-sm-6 col-md-4">
-        <div class="module">
+        <div class="module-ongoing">
           <p>5</p>
         </div>
       </article>
       <article class="col-sm-6 col-md-4">
-        <div class="module">
+        <div class="module-ongoing">
           <p>6</p>
         </div>
       </article>
       <article class="col-sm-6 col-md-4">
-        <div class="module">
+        <div class="module-ongoing">
           <p>7</p>
         </div>
       </article>

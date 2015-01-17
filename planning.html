@@ -36,8 +36,8 @@
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="width33-xs col-sm-3 active ongoing"><a href="#">On going</a></li>
-        <li class="width33-xs col-sm-3 planning"><a href="planning.html">Planning</a></li>
+        <li class="width33-xs col-sm-3 ongoing"><a href="index.php">On going</a></li>
+        <li class="width33-xs col-sm-3 active planning"><a href="#">Planning</a></li>
         <li class="width33-xs col-sm-3 upcoming"><a href="#">Upcomming</a></li>
       </ul>
     </div>
@@ -52,38 +52,38 @@
           <p>Details</p>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
+      <article class="col-xs-12">
         <div class="module">
           <p>1</p>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
+      <article class="col-xs-12">
         <div class="module" data-toggle="modal" data-target="#basicModal">
           <p>2</p>
         </div>
       </article>
-      <article class="aside">
-        <button id="aside-trigger" class="hidden-xs hidden-extralg">chat</button>
+      <article class="chat">
+        <button id="chat-trigger" class="hidden-xs hidden-extralg">Chat</button>
         <div class="module">
           <p>3</p>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
+      <article class="col-xs-12">
         <div class="module">
           <p>4</p>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
+      <article class="col-xs-12">
         <div class="module">
           <p>5</p>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
+      <article class="col-xs-12">
         <div class="module">
           <p>6</p>
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
+      <article class="col-xs-12">
         <div class="module">
           <p>7</p>
         </div>
@@ -137,6 +137,9 @@
 <!-- Javascript -->
 
 <script src="assets/js/bootstrap.min.js"></script>
+<script> 
+  $( "#header" ).load( "assets/header.html" );
+</script>
 <script src="assets/js/functions.js"></script>
 </body>
 </html>
