@@ -37,7 +37,7 @@
       </article>
       <article class="col-sm-6 col-md-4">
         <div class="module-ongoing">
-          <p>1</p>
+          <p>Details</p>
         </div>
       </article>
       <article class="col-sm-6 col-md-4">

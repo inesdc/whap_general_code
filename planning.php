@@ -38,7 +38,7 @@
           <div class="trip-steps" style="display: none;">
             <div class="trip-cards">
               <div class="how-much-cards col-xs-12 col-sm-2">
-                <div></div>
+                <div>hola</div>
               </div>
               <div class="where-cards col-xs-12 col-sm-2">
                 <div></div>
