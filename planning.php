@@ -29,49 +29,56 @@
 <!-- CONTENT -->
 <div id="main" class="clearfix planning">
   <div id="container-size" class="container">
-    <section class="modules trips col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <article class="col-xs-12">
+    <section class="modules trips">
+      <article class="trip">
         <div class="module-trips">
-          <p>1</p>
           <div class="trips-summary">
           </div>
-          <div class="trip-steps" style="display: none;">
-            <div class="trip-cards">
-              <div class="how-much-cards col-xs-12 col-sm-2">
-                <div>hola</div>
+            <div class="trip-steps hide">
+              <div class="trip-cards row">
+
+                <div class="deciding col-xs-12 col-md-8 pad0R-md ">
+                    <h3>Deciding</h3>
+                    <div class="how-much-cards col-xs-12 col-sm-3">
+                      <div class="trip-card">hola</div>
+                    </div>
+                    <div class="where-cards col-xs-12 col-sm-3">
+                      <div class="trip-card"></div>
+                    </div>
+                    <div class="when-cards col-xs-12 col-sm-3">
+                      <div class="trip-card"></div>
+                    </div>
+                    <div class="how-cards col-xs-12 col-sm-3">
+                      <div class="trip-card"></div>
+                    </div>
+                </div>
+
+                <div class="decided remove_padding coll-xs-12 col-md-4 pad0L-md">
+                  <h3>Decided</h3>
+                  <div class="who-cards col-xs-12 col-sm-6">
+                    <div class="trip-card"></div>
+                  </div>
+                  <div class="what-cards col-xs-12 col-sm-6">
+                    <div class="trip-card"></div>
+                  </div>
+                </div>
               </div>
-              <div class="where-cards col-xs-12 col-sm-2">
-                <div></div>
-              </div>
-              <div class="when-cards col-xs-12 col-sm-2">
-                <div></div>
-              </div>
-              <div class="how-cards col-xs-12 col-sm-2">
-                <div></div>
-              </div>
-              <div class="who-cards col-xs-12 col-sm-2">
-                <div></div>
-              </div>
-              <div class="what-cards col-xs-12 col-sm-2">
-                <div></div>
-              </div>
+              <div class="planning-contents"></div>
+                <div class="how-much-content"></div>
+                <div class="where-content"></div>
+                <div class="when-content"></div>
+                <div class="how-content"></div>
+                <div class="who-content"></div>
+                <div class="what-content"></div>
             </div>
-            <div class="planning-contents"></div>
-              <div class="how-much-content"></div>
-              <div class="where-content"></div>
-              <div class="when-content"></div>
-              <div class="how-content"></div>
-              <div class="who-content"></div>
-              <div class="what-content"></div>
-          </div>
         </div>
       </article>
-      <article class="col-xs-12">
+      <article class="">
         <div class="module-trips" data-toggle="modal" data-target="#basicModal">
           <p>2</p>
         </div>
       </article>
-      <article class="col-xs-12">
+      <article class="">
         <div class="module-trips">
           <p>4</p>
         </div>

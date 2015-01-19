@@ -49,7 +49,7 @@ $(document).ready(function(){
   //Panning trips display content_trip
 
   $('.trips-summary').click(function(){
-    $('.trip-steps').toggleClass('content-visible');
+    $('.trip-steps').toggleClass('hide');
   });
   
 });
