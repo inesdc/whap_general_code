@@ -8,6 +8,7 @@
     <title>WHAP</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/itineraryStylesheet.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   </head>
@@ -31,8 +32,6 @@
         </div>
       </div>
     </nav>
-    <div class="relative ohidden">
-      <div class="col-xs-12 col-sm-3 crear-cont">
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
       </div>
       <ul class="secondary-nav list-unstyled">
@@ -53,10 +52,64 @@
         </div>
       </article>
       <article class="col-sm-6 col-md-4">
-        <div class="module">
-          <p>1</p>
+
+<!-- ITINERARY -->
+        <div id="itinerary" class="module card">
+
+
+        <nav>
+            <div class="top">
+                <span class="center"></span>
+                <img id="paperAirplane" src="images/paperAirplane.png">
+                <h2 class="modualHeader">Itinerary</h2>                
+            </div>
+        </nav>
+
+        
+        <section>
+            <div class="content">
+                <div class='heads'>
+    		        <ul class="profilePictures">
+                        <li class="head"><img class="avatar" src="images/guy1.png"></li>
+                        <li class="head"><img class="avatar" src="images/guy2.png"></li>
+                        <li id="front" class="head"><img class="avatar" src="images/guy3.png"></li>
+                        <li class="head"><img class="avatar" src="images/guy4.png"></li>
+                        <li id="front" class="head"><img class="avatar" src="images/guy5.png"></li>
+                        <span class="streach"></span>
+                    </ul>
+                </div>
+
+                       <div class="itinerary">
+                <ul class="itinerarys">
+                    <li class="cita"><strong>10:30</stong> Pick up Mario and Ana</li>
+                </ul>
+            <div class="location">
+                <img class="locationIcon" src="images/location.png">
+                <h2 class="barcelona"><strong>Montenegro</strong></h2>
+            </div>
+            <div class="buttons">
+                <ul class="optionButtons">
+                    <li class="what">ON TIME</li>
+                    <li class="what">DELAY</li>
+                    <li class="what">ADVANCE</li>
+                    <li class="what">DELETE</li>    
+                </ul>
+            </div>
+        </div>
+            </section>
+
+        <footer>
+            <div class="expand">
+                 <span class="center"></span>
+                 <img id="arrow" src="images/arrow.png">
+            </div>
+        </footer>
+
+ 
         </div>
       </article>
+
+
       <article class="col-sm-6 col-md-4">
         <div class="module" data-toggle="modal" data-target="#basicModal">
           <p>2</p>
