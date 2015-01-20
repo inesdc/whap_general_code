@@ -736,6 +736,52 @@ position:relative;
     background-repeat:no-repeat;
 }
 
+/* -- END OF FEEDS CARD -- */
+
+/*-- BUDGET CARD -- */
+
+.remaining{
+    text-align:center;
+    height: 50px;
+    width:100%;
+    background-color:#f3f3f3;
+    position:absolute;
+    top: 0px;
+}
+
+.remaining h2{
+    font-family: "Montserrat";
+    font-size: 1.1em;
+    color: #2ab0b9;
+    vertical-align:middle;
+}
+
+.remaining strong{
+    font-size: 1.2em;
+    margin: 0 0.5% 0 0.5%;
+    font-weight:bold;
+}
+
+table{
+    position:absolute;
+    bottom: 0px;
+    margin: 0 5% 0 5%;
+    height:75%;
+    width: 90%;
+    font-family: "Montserrat";
+
+}
+
+.cost{
+    color: #2ab0b9;
+    border-right: 2px solid #f3f3f3;
+}
+
+.item{
+    color:#b7b7b7;
+    padding-left: 10%;
+}
+
 
 
 /* ===PLANNING CONTENT ===
