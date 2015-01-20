@@ -10,6 +10,8 @@ $(document).ready(function(){
       $('#main').addClass('aside-visible');
       $('.secondary-nav').css("padding-left", new_container_margin);
       $('.secondary-nav').css("padding-right", new_container_margin);
+    } else {
+      $('.add_steps_drag').removeClass("aside");
     };
 
   $(window).resize(function(){
@@ -18,8 +20,10 @@ $(document).ready(function(){
       $('#main').addClass('aside-visible');
       $('.container').css("margin-left", new_container_margin);
       $('.secondary-nav').css("padding-left", new_container_margin)
+      $('.add_steps_drag').addClass("aside");
     } else {
     	$('#main').removeClass('aside-visible');
+      $('.add_steps_drag').removeClass("aside");
     };
   });
 
@@ -36,7 +40,7 @@ $(document).ready(function(){
 	});
 
   //Body height
-
+/*
   var body_height = ($(window).height());
   $('body').css("height", body_height);
 
@@ -44,7 +48,7 @@ $(document).ready(function(){
     var body_height = ($(window).height());
     $('body').css("height", body_height);
   });
-
+*/
 
   //Panning trips display content_trip
 
@@ -54,14 +58,47 @@ $(document).ready(function(){
   });
 
   //Display cards related content
-
   var showContent = function(){
-  var target = $(this).data('target');
-  $(target).toggleClass('hide');
+    var target = $(this).data('target');
+    $(target).toggleClass('hide');
   }; 
 
-  $('div').click(showContent);
+  var toggleHeight = function(){
+    var newHeight = $(this).parent().parent().parent().data('children-new-height');
+    if ( $('.trip-card').height() != newHeight ) {
+      $('.trip-card').css('height', newHeight+'px');  
+    } else {
+      $('.trip-card').css('height', tripCardHeight);
+    }
+    
+    /*
+    if( $('.trip-card').height == '50' ){
+      $('trip-card').css('height', 'auto');
+    };*/
+  };
+
+  $('.trip-card').click(showContent);
+
+  var tripCardHeight = $('.trip-card').height();
+  $('.trip-card').click(toggleHeight);
   
+
+
+  //Aside create draggable width/height
+
+  var width = $('.droppable').width();
+  var height = $('.droppable').height(); 
+
+  $('.module-steps').css("width", width);
+  $('.module-steps').css("height", height);
+
+  $(window).resize(function() {
+    var width = $('.droppable').width();
+    var height = $('.droppable').height(); 
+
+    $('.module-steps').css("width", width);
+    $('.module-steps').css("height", height);
+  });
   
 });
 

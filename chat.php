@@ -1,4 +1,4 @@
-﻿<div class="panel row">
+﻿<div class="panel">
     <div class="panel-heading">
         <p>Comments</p>
     </div>
@@ -36,7 +36,7 @@
     </div>
     <div class="panel-footer">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Enter Message"/>
+            <input type="text" class="form-control" placeholder="Enter Message">
             <span class="input-group-btn">
                 <button class="btn btn-info" type="button">SEND</button>
             </span>

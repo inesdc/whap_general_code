@@ -2,11 +2,11 @@
   <div class="trips-summary">
   </div>
   <div class="trip-steps hide">
-    <div class="trip-cards clearfix">
+    <div class="trip-cards clearfix" data-children-new-height="50">
       <div class="deciding col-xs-12 col-md-8 pad0R-md ">
         <h3>Deciding</h3>
-        <div data-target="#how-much" class="how-much-cards col-xs-12 col-sm-3">
-          <div class="trip-card">hola
+        <div class="how-much-cards col-xs-12 col-sm-3">
+          <div data-target="#how-much" class="trip-card">
           </div>
         </div>
         <div data-target="#where" class="where-cards col-xs-12 col-sm-3">
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="planning-contents">
-      <div id="how-much" class="how-much-content">
+      <div id="how-much" class="how-much-content hide">
         <div class="step-content"></div>
         <div class="chat">
           <?php include('chat.php'); ?>

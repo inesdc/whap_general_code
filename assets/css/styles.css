@@ -81,6 +81,24 @@ a {
 	font-size: 11px;
 }
 
+.create .form-control {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.create .form-group label {
+	color: #fff;
+}
+
+.create h3 {
+	color: #fff;
+}
+
+.create .dropdown-toggle {
+	color: #fff;
+}
+
 
 /* icons */
 
@@ -118,6 +136,14 @@ a {
 	width: 22px;
 	height: 22px;
 	vertical-align: bottom;
+	margin-right: 6px;
+}
+
+.ico-plus {
+	background: url('../ico/plus.png') no-repeat left;
+	width: 32px;
+	height: 28px;
+	vertical-align: middle;
 	margin-right: 6px;
 }
 
@@ -282,9 +308,7 @@ h3 {
 /* Steps */
 
 .module-steps {
-	height: 70px;
 	background-color: gray;
-	width: 290px;
 	border-bottom: 1px solid #fff;
 }
 
@@ -321,15 +345,12 @@ h3 {
 	background-color: gray;
 }
 
-.trip-cards{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
 .trip-card {
 	height: 196px;
 	display: block;
 	background: #BEBDBD;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .trip-cards .deciding,
@@ -377,6 +398,11 @@ section.aside.add_steps_drag {
 	color: #fff;
 }
 
+.add_steps_drag {
+	background-color: #416772;
+	color: #fff;
+}
+
 section.aside.add_steps_drag div.module-steps{
 	margin: 0 auto;
 
@@ -387,8 +413,15 @@ section.aside.add_steps_drag div.module-steps{
 }
 
 .add_steps_drop .droppable div {
+	text-align: center;
 	height: 50px;
 	border: 2px dashed #fff;
+}
+
+.add_steps_drop .droppable div span {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* == MEDIA QUERIES ==
@@ -405,6 +438,22 @@ section.aside.add_steps_drag div.module-steps{
 		margin-left: 0 !important;
 	}
 
+}
+
+@media(max-width: 1340px) {
+	.add_steps_drag {
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+	}
+
+	.module-steps {
+		display: inline-block;
+	}
+
+	#main.create {
+		margin-bottom: 300px;
+	}
 }
 
 @media(min-width: 992px) {
@@ -496,7 +545,7 @@ section.aside.add_steps_drag div.module-steps{
 		bottom: 0;
 		background-color: rgb(42, 176, 185);
 		clear: both;
-		margin-left: -15px;
+		margin-left: -5px;
 	}
 
 	.primary-menu ul {
