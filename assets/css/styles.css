@@ -252,7 +252,6 @@ h3 {
 
 .module-ongoing {
 	background: #f3f3f3;
-	height: 278px;
 }
 
 /*Trips*/
@@ -280,6 +279,15 @@ h3 {
 	margin-top: 20px;
 }
 
+/* Steps */
+
+.module-steps {
+	height: 70px;
+	background-color: gray;
+	width: 290px;
+	border-bottom: 1px solid #fff;
+}
+
 
 /* =====ONGOING CONTENT =====
    ================== */
@@ -297,22 +305,31 @@ h3 {
 	float: right;
 }
 
+.ongoing .modules article {
+	padding: 10px;
+}
 
 /* ===PLANNING CONTENT ===
    ================== */
+
+.trip {
+	margin-bottom: 20px;
+}
 
 .trips-summary {
 	height: 100px; 
 	background-color: gray;
 }
 
-.trip-steps {
-	padding-bottom: 20px;
+.trip-cards{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .trip-card {
 	height: 196px;
 	display: block;
+	background: #BEBDBD;
 }
 
 .trip-cards .deciding,
@@ -320,19 +337,10 @@ h3 {
 	text-align: center;
 }
 
-.trip-cards .deciding div div {
-	margin-top: 20px;
-	background: #BEBDBD;
-}
-
 .trip-cards .decided div div {
-	margin-top: 20px;
 	background: gray;
 }
 
-.planning-contents div {
-	display: none;
-}
 
 .module-trips h3 {
 	background-color: #fff;
@@ -341,6 +349,44 @@ h3 {
 	padding-bottom: 20px;
 }
 
+.deciding h3 {
+	margin-left: -5px;
+}
+
+.decided h3 {
+	margin-right: -5px;
+}
+
+.step-content {
+	background-color: gray;
+	height:50px;
+}
+
+
+/* == CREATE CONTENTS==
+   =================== */ 
+
+body.create {
+	background: url('../images/bg-create-image.jpg') no-repeat center;
+	background-size: cover;
+}
+
+section.aside.add_steps_drag {
+	text-align: center;
+	background-color: #416772;
+	color: #fff;
+}
+
+section.aside.add_steps_drag div.module-steps{
+	margin: 0 auto;
+
+}
+
+.add_steps_drop .droppable div {
+	height: 50px;
+	border: 2px dotted #fff;
+
+}
 
 /* == MEDIA QUERIES ==
    =================== */ 

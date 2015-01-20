@@ -16,12 +16,12 @@
     <?php include ('header.php'); ?>
     <div class="relative ohidden">
       <div class="col-xs-12 col-sm-3 crear-cont">
-        <button type="button" class="btn btn-default btn-block">crear viaje</button>
+        <button type="button" class="btn btn-default btn-block"><a href="crear.php">crear viaje</a></button>
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="width33-xs col-sm-3 active ongoing"><a href="#">On going</a></li>
+        <li class="width33-xs col-sm-3 active ongoing"><a href="#">Ongoing</a></li>
         <li class="width33-xs col-sm-3 planning"><a href="planning.php">Planning</a></li>
-        <li class="width33-xs col-sm-3 upcoming"><a href="#">Upcomming</a></li>
+        <li class="width33-xs col-sm-3 upcoming"><a href="upcoming.php">Upcoming</a></li>
       </ul>
     </div>
   </header>

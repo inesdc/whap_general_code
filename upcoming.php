@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/icons/favicon.ico">
@@ -12,15 +13,15 @@
   </head>
   <body>
   <header>
-    <?php include('header.php'); ?>
+    <?php include ('header.php'); ?>
     <div class="relative ohidden">
       <div class="col-xs-12 col-sm-3 crear-cont">
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
       </div>
       <ul class="secondary-nav list-unstyled">
         <li class="width33-xs col-sm-3 ongoing"><a href="index.php">Ongoing</a></li>
-        <li class="width33-xs col-sm-3 active planning"><a href="#">Planning</a></li>
-        <li class="width33-xs col-sm-3 upcoming"><a href="upcoming.php">Upcoming</a></li>
+        <li class="width33-xs col-sm-3 planning"><a href="planning.php">Planning</a></li>
+        <li class="width33-xs col-sm-3 active upcoming"><a href="#">Upcoming</a></li>
       </ul>
     </div>
   </header>
@@ -30,30 +31,21 @@
   <div id="container-size" class="container">
     <section class="modules trips">
       <article class="trip">
-        <?php include('trip.php'); ?>
+        <?php include ('trip_upcoming.php'); ?>
       </article>
       <article class="trip">
-        <?php include('trip.php'); ?>
+        <?php include ('trip_upcoming.php'); ?>
       </article>
       <article class="trip">
         <div class="module-trips">
-          <?php include('trip.php'); ?>
+          <?php include ('trip_upcoming.php'); ?>
         </div>
       </article>
-    </section>
+   </section>
     <section class="aside">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
-        <div class="module_offers">
-          <p>1</p>
-        </div>
-        <div class="module_offers">
-          <p>2</p>
-        </div>
-        <div class="module_offers">
-          <p>3</p>
-        </div>
-        <div class="module_offers">
-          <p>4</p>
+        <div class="chat">
+          <?php include ('chat.php'); ?>
         </div>
     </section>
     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
@@ -103,6 +95,9 @@
 <!-- Javascript -->
 
 <script src="assets/js/bootstrap.min.js"></script>
+<script> 
+  $( "#header" ).load( "assets/header.html" );
+</script>
 <script src="assets/js/functions.js"></script>
 </body>
 </html>

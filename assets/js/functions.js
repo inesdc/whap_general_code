@@ -49,11 +49,21 @@ $(document).ready(function(){
   //Panning trips display content_trip
 
   $('.trips-summary').click(function(){
-    $('.trip-steps').toggleClass('hide');
+    $(this).next('.trip-steps').toggleClass('hide');
+  
   });
+
+  //Display cards related content
+
+  var showContent = function(){
+  var target = $(this).data('target');
+  $(target).toggleClass('hide');
+  }; 
+
+  $('div').click(showContent);
+  
   
 });
-
 
 
 
