@@ -567,35 +567,175 @@ position:relative;
 
 /* -- NEARBY CARD -- */
 
-.nearby.content{
+.nearby .content{
     position:absolute;
     top:16%;
     height:68%;
     width: 100%;
     background-color:#f3f3f3;
-    background-image: url('images/bigMap.png');
+    background-image: url('../../images/bigMap.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.nearby#moon{
+.nearby #moon{
     position:relative;
     top:68%;
     left: 72%;
 }
 
-.nearby#globe{
+.nearby #globe{
     position:relative;
     top: 30%;
     left: 18%;
 }
 
-.nearby#dot{
+.nearby #dot{
     position:relative;
     left: 10%;
     top: 73%;
 
 }
+
+/* -- END OF NEARBY CARD -- */
+
+/* -- ALBUM CARD -- */
+
+.album .content{
+    position:absolute;
+    top:16%;
+    height:68%;
+    width: 100%;
+    background-color:#f3f3f3;
+    text-align:center;
+    padding: 1px 0;
+}
+
+.album .pictures{
+  width: 100%;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+/* line 52, ../sass/screen.scss */
+.album .image {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  text-align: center;
+  margin: 0 2.5px;
+}
+
+/* line 61, ../sass/screen.scss */
+.album #pic1 {
+  background-image: url("../../images/pic1.png");
+  background-size: 100%;
+}
+
+/* line 66, ../sass/screen.scss */
+.album #pic2 {
+  background-image: url("../../images/pic2.png");
+  background-size: 100%;
+}
+
+/* line 72, ../sass/screen.scss */
+.album #pic3 {
+  background-image: url("../../images/pic3.png");
+  background-size: 100%;
+}
+
+/* line 77, ../sass/screen.scss */
+.album #pic4 {
+  background-image: url("../../images/pic4.png");
+  background-size: 100%;
+}
+
+/* line 82, ../sass/screen.scss */
+.album #pic5 {
+  background-image: url("../../images/pic5.png");
+  background-size: 100%;
+}
+
+/* line 87, ../sass/screen.scss */
+.album #pic6 {
+  background-image: url("../../images/pic1.png");
+  background-size: 100%;
+}
+
+/* -- END OF ALBUM CARD -- */
+
+
+/* -- BRING CARD --*/
+
+/* ++++++++=====FIX THIS LATER======+++++++ */
+
+/* -- END OF BRING CARD -- */
+
+
+/* -- FEEDS CARD -- */
+
+.feed .content{
+    text-align:center;
+}
+
+.feed .location{
+    display:inline-block;
+    height: 90%;
+    width:40%;
+    background-color:purple;
+    vertical-align:middle;
+    margin: 0 5px 0 5px;
+    text-align:center;
+    position:relative;
+}
+
+.feed .location img{
+    position:relative;
+    margin:10% auto 0 auto;
+    height: 60px;
+    width:auto;
+
+}
+
+.feed .location h2{
+    font-size: 2.5em;
+    color:white;
+    text-transform:bold;
+    width:auto;
+    position:relative;
+    margin: 2% auto 0 auto;
+    
+}
+
+.feed .location h3{
+    font-size: 1em;
+    color: white;
+    font-family: "Montserrat";
+    position:relative;
+    margin: 10% auto 0 auto;
+}
+
+.feed .location p{
+    font-size: .5em;
+    color:white;
+    font-family: "Montserrat";
+    position:relative;
+    margin: 5% auto 0 auto;
+}
+
+.feed #annecy{
+    background-image: url('../../images/bkg1.png');
+    background-repeat: no-repeat;
+    background-size:120%;
+}
+
+.feed #encinitas{
+    background-image: url('../../images/bkg2.png');
+    background-size:120%;
+    background-repeat:no-repeat;
+}
+
 
 
 /* ===PLANNING CONTENT ===
