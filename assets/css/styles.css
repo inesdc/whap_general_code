@@ -382,10 +382,13 @@ section.aside.add_steps_drag div.module-steps{
 
 }
 
+.add_steps_drop .droppable {
+	margin-bottom: 10px;
+}
+
 .add_steps_drop .droppable div {
 	height: 50px;
-	border: 2px dotted #fff;
-
+	border: 2px dashed #fff;
 }
 
 /* == MEDIA QUERIES ==

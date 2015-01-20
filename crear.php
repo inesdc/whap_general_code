@@ -51,12 +51,36 @@
       </div>
       <div class="add_steps_drop">
         <h3>Add steps</h3>
-        <div class="droppable col-sm-6 col-md-4"><div></div></div>
-        <div class="droppable col-sm-6 col-md-4"><div></div></div>
-        <div class="droppable col-sm-6 col-md-4"><div></div></div>
-        <div class="droppable col-sm-6 col-md-4"><div></div></div>
-        <div class="droppable col-sm-6 col-md-4"><div></div></div>
-        <div class="droppable col-sm-6 col-md-4"><div></div></div>
+        <div class="droppable col-sm-6 col-md-4">
+          <div>
+            <i>
+          </div>
+        </div>
+        <div class="droppable col-sm-6 col-md-4">
+          <div>
+            <i>
+          </div>
+        </div>
+        <div class="droppable col-sm-6 col-md-4">
+          <div>
+            <i>
+          </div>
+        </div>
+        <div class="droppable col-sm-6 col-md-4">
+          <div>
+            <i>
+          </div>
+        </div>
+        <div class="droppable col-sm-6 col-md-4">
+          <div>
+            <i>
+          </div>
+        </div>
+        <div class="droppable col-sm-6 col-md-4">
+          <div>
+            <i>
+          </div>
+        </div>
       </div>
       <div>
         <button type="submit" class="btn btn-default">Crear</button>
