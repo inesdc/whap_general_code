@@ -1,0 +1,225 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+.bring.card{
+  font-family: "Montserrat";
+  color: #939393;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+  height: 300px;
+  width: 350px;
+  border: 1px solid black;
+  z-index: 0;
+  position: relative;
+}
+
+/* line 23, ../sass/screen.scss */
+.top {
+  height: 15%;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid #e7e7e7;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+}
+
+/* line 33, ../sass/screen.scss */
+#bring {
+  display: inline-block;
+  width: 7%;
+  position: relative;
+  top: 20%;
+}
+
+/* line 40, ../sass/screen.scss */
+.top h2 {
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  width: 25%;
+  font-family: "Montserrat";
+  color: #2ab0b9;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 53, ../sass/screen.scss */
+h3 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #b0b0b0;
+  line-height: 35px;
+}
+
+/* line 59, ../sass/screen.scss */
+.list {
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  top: 51px;
+}
+
+/* line 67, ../sass/screen.scss */
+.input {
+  position: relative;
+  bottom: 2px;
+  display: inline-block;
+  margin: 10px;
+  height: 60px;
+}
+
+/* line 76, ../sass/screen.scss */
+input.box {
+  background-color: #2ab0b9;
+}
+
+/* line 80, ../sass/screen.scss */
+.edit {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  margin: 20px;
+}
+
+/* line 88, ../sass/screen.scss */
+td.content {
+  padding: 5px 30px 0 30px;
+}
+
+/* line 93, ../sass/screen.scss */
+img.cross {
+  height: 15px;
+  width: 15px;
+  padding-top: 7px;
+}
+
+/* line 101, ../sass/screen.scss */
+.items {
+  padding: 20px;
+}
+
+/* line 105, ../sass/screen.scss */
+.custinput {
+  width: 70%;
+  float: left;
+  clear: both;
+  display: inline-block;
+}
+
+/* line 111, ../sass/screen.scss */
+.input {
+  width: 100%;
+}
+
+/* line 115, ../sass/screen.scss */
+input {
+  height: 25px;
+  position: relative;
+  left: 5px;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+}
+
+/* line 122, ../sass/screen.scss */
+.submit {
+  float: right;
+  clear: both;
+}
+
+/* line 128, ../sass/screen.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 350px;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 139, ../sass/screen.scss */
+button {
+  background-color: #ef5350;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  height: 30px;
+  width: 60px;
+  border-style: none;
+}
