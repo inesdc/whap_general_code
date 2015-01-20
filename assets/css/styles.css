@@ -740,7 +740,7 @@ position:relative;
 
 /*-- BUDGET CARD -- */
 
-.remaining{
+.budget .remaining{
     text-align:center;
     height: 50px;
     width:100%;
@@ -749,20 +749,20 @@ position:relative;
     top: 0px;
 }
 
-.remaining h2{
+.budget .remaining h2{
     font-family: "Montserrat";
     font-size: 1.1em;
     color: #2ab0b9;
     vertical-align:middle;
 }
 
-.remaining strong{
+.budget .remaining strong{
     font-size: 1.2em;
     margin: 0 0.5% 0 0.5%;
     font-weight:bold;
 }
 
-table{
+.budget table{
     position:absolute;
     bottom: 10px;
     margin: 0 5% 0 5%;
@@ -772,12 +772,12 @@ table{
 
 }
 
-.cost{
+.budget .cost{
     color: #2ab0b9;
     border-right: 2px solid #f3f3f3;
 }
 
-.item{
+.budget .item{
     color:#b7b7b7;
     padding-left: 10%;
 }
