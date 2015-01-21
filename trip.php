@@ -42,6 +42,7 @@
         </div>
       </div>
       <div id="where" class="where-content">
+        <p>Hola</p>
       </div>
       <div id="when" class="when-content">
       </div>

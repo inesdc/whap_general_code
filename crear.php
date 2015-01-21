@@ -25,7 +25,6 @@
       </ul>
     </div>
   </header>
-  
 <!-- CONTENT -->
 <div id="main" class="clearfix create">
   <div id="container-size" class="container">

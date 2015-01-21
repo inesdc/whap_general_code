@@ -24,7 +24,6 @@
       </ul>
     </div>
   </header>
-  
 <!-- CONTENT -->
 <div id="main" class="clearfix planning">
   <div id="container-size" class="container">

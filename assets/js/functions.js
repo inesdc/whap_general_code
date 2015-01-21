@@ -70,7 +70,6 @@ $(document).ready(function(){
     } else {
       $('.trip-card').css('height', tripCardHeight);
     }
-    
     /*
     if( $('.trip-card').height == '50' ){
       $('trip-card').css('height', 'auto');

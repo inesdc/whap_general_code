@@ -1,6 +1,6 @@
 ﻿<div class="panel">
     <div class="panel-heading">
-        <p>Comments</p>
+        <p>2 Comments</p>
     </div>
     <div class="panel-body">
         <ul class="media-list">
