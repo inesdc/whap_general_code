@@ -370,140 +370,8 @@ h3 {
     vertical-align:middle;
 }
 
-/* --ITINERARY STYLE -- 
-.itinerary div.heads{
-    height:10px;
-    width:100%;
-    position:absolute;
-    right: 5%;
+/* --ITINERARY STYLE -- */ 
 
-}
-
-.itinerary li.head{
-    overflow:show;
-    height: auto;
-    width: 22%;
-    display:inline;
-    padding:0;
-    position:relative;
-    z-index:1;
-}
-
-.itinerary li.head img{
-    width:18%;
-    position:relative;
-    text-align:center;
-}
-
-.itinerary img.avatar{
-    height:auto;
-    width: 20%;
-    
-    }
-
-
-.itinerary li.cita{
-    font-family: "Montserrat";
-    font-size: 16px;
-    color: #2ab0b9;
-    text-align:center;
-    margin: 0 auto 0 auto;
-}
- 
-
-.itinerary div.location{
-    border: 1px #2ab0b9 solid;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    height:15%;
-    width: 60%;
-    margin: 5% auto 5% auto;
-    position:absolute;
-    left: 20%;
-    top: 40%;
-    font-family: "Montserrat";
-    font-size: 14px;
-    color: #2ab0b9;
-    text-align: center;
-}
-
-.itinerary img.locationIcon{
-    height:20px;
-    width: max-width;
-    clear: both;
-    position: relative;
-    margin: 1% 0 1% 5%;
-    text-align:center;
-    float:left;
-    clear:both;
-}
-
-.itinerary h2.barcelona{
-    font-family: "Montserrat";
-    font-size: 1.2em;
-    color: #2ab0b9;
-    float:right; 
-    position:relative;
-    top: -11px;
-    text-align:center;
-    right: 39px;
-}
-
-.itinerary div.schedule{
-    background-color:#e9f2f3;
-    height: 75%;
-    width:100%;
-    position:absolute;
-    bottom: 10px;
-    z-index:30;
-    text-align: center;
-}
-
-.itinerary div.schedule div.itineraryUL{
-    position:relative;
-    top: 50px;
-}
-
-.itinerary ul.itinerarys{
-    position:relative;
-    top: 50%;
-}
-
-
-.itinerary ul.optionButtons{
-     position:relative;
-    top:71px;
-     padding: 5px;
-     
-}
-
-.itinerary li.what{
-    display:inline-block;
-    font: 14px "Montserrat";
-    background-color:#2ab0b9;
-    color:white;
-    position:relative;
-    padding: 5px;
-    border: 1px #2ab0b9 solid;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    margin: 5px;
-    text-align:center;
-     right: 10px;
-     
-}
-
-.itinerary#front{
-z-index:400;
-position:relative;
-}
-
-.
-
- -- END OF ITINERARY CARD --
-*/
 
 
 .itinerary li.head{
@@ -564,6 +432,8 @@ position:relative;
     border-radius:6px;
 
 }
+
+/* -- END OF ITINERARY CARD --*/
 
 /* -- NEARBY CARD -- */
 
