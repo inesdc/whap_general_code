@@ -31,44 +31,279 @@
   <div id="container-size" class="container">
     <section class="modules col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <article class="col-sm-12 col-md-12">
-        <div class="details">
-          <p>Details</p>
+        <!-- ITINERARY -->
+        <div id="itinerary" class="module card itinerary">
+
+
+        <nav id="itinerary">
+            <div class="top">
+                <span class="center"></span>
+                <img id="paperAirplane" src="images/paperAirplane.png">
+                <h2 class="modualHeader">Itinerary</h2>                
+            </div>
+        </nav>
+
+        
+        <section id="itinerary">
+            <div class="content">
+                <div class='heads'>
+    		        <ul class="profilePictures">
+                        <li class="head"><img class="avatar" src="images/guy1.png"></li>
+                        <li class="head"><img class="avatar" src="images/guy2.png"></li>
+                        <li id="front" class="head"><img class="avatar" src="images/guy3.png"></li>
+                        <li class="head"><img class="avatar" src="images/guy4.png"></li>
+                        <li id="front" class="head"><img class="avatar" src="images/guy5.png"></li>
+                        <span class="streach"></span>
+                    </ul>
+                </div>
+                <div class="schedule">
+                <ul class="itinerarys">
+                    <li class="cita"><strong>10:30</stong> Pick up Mario and Ana</li>
+                    <span class="center"></span>
+                </ul>
+                </div>
+
+            <div class="location">
+                <div class="box">
+                <img class="locationIcon" src="images/location.png">
+                <h2 class="barcelona"><strong>Montenegro</strong></h2>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <ul class="optionButtons">
+                    <li class="what">ON TIME</li>
+                    <li class="what">DELAY</li>
+                    <li class="what">ADVANCE</li>
+                    <li class="what">DELETE</li>    
+                </ul>
+            </div>
+        </div>
+            </section>
+
+        <footer id="itinerary">
+            <div class="expand">
+                 <span class="center"></span>
+                 <img id="arrow" src="images/arrow.png">
+            </div>
+        </footer>
+
+ 
         </div>
       </article>
+
+<!-- NEARBY -->
+
       <article class="col-sm-6 col-md-4">
-        <div class="module-ongoing">
-          <p>Details</p>
+        <div id="nearby" class="module card nearby" data-toggle="modal" data-target="#basicModal">
+         <nav id="nearby">
+            <div class="top">
+                <span class="center"></span>
+                <img id="map" src="images/map.png">
+                <h2 class="modualHeader">Nearby</h2>                
+            </div>
+        </nav>
+
+        
+        <section>
+            <div class="content">
+                <img id="moon" src="images/moon.png">
+                <img id="globe" src="images/globe.png">
+                <img id="dot" src="images/dot.png">
+
+            </div>
+        </section>
+
+        <footer id="nearby">
+            <div class="expand">
+                 <span class="center"></span>
+                 <img id="arrow" src="images/arrow.png">
+            </div>
+        </footer> 
         </div>
       </article>
-      <article class="col-sm-6 col-md-4">
-        <div class="module-ongoing" data-toggle="modal" data-target="#basicModal">
-          <p>2</p>
-        </div>
-      </article>
+
+<!-- CHAT -->
+
+
       <article class="aside">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">chat</button>
-        <div class="module-ongoing">
+        <div class="module">
           <p>3</p>
         </div>
       </article>
+
+<!-- ALBUM -->
       <article class="col-sm-6 col-md-4">
-        <div class="module-ongoing">
-          <p>4</p>
+        <div id="album" class="album module card">
+          
+
+        <nav id="album">
+            <div class="top">
+                <span class="center"></span>
+                <img id="camera" src="images/camera.png">
+                <h2 class="modualHeader">Album</h2>                
+            </div>
+        </nav>
+
+
+<div id="album" class="content">
+
+<div id="album" class="pictures">
+    <div id="pic1" class="image">
+    </div>
+    <div id="pic2" class="image">
+    </div>
+    <div id="pic3" class="image">
+    </div>
+
+</div>
+
+<div id="album" class="pictures">
+
+    <div id="pic4" class="image">
+    </div>
+    <div id="pic5" class="image">
+    </div>
+    <div id="pic6" class="image">
+    </div>
+
+</div>
+</div>
+<footer id="nearby">
+            <div class="expand">
+                 <span class="center"></span>
+                 <img id="arrow" src="images/arrow.png">
+            </div>
+        </footer> 
         </div>
       </article>
+
+
+<!-- BRING -->
+
       <article class="col-sm-6 col-md-4">
-        <div class="module-ongoing">
-          <p>5</p>
+        <div id="bring" class="module card bring">
+          <nav>
+   	<div class="top">                
+                <img id="bring" src="images/bring.png">
+                <h2 class="modualHeader">Bring</h2>                
+            </div>
+        </nav>
+
+<div class="list">
+        <table class="items">
+            <thead>
+                <tr>
+                    <th class="edit" colspan="3"><span id="edit">edit</span></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+<div class="container">
+    <div class="input">
+        <input type="text" class="custinput" id="item-input" placeholder="Enter item here..." autofocus>
+        <button type="submit" class="btn">add</button>
+    </div>
+</div>
         </div>
       </article>
+
+<!-- FEEDS -->
+
       <article class="col-sm-6 col-md-4">
-        <div class="module-ongoing">
-          <p>6</p>
+        <div id="feed" class="module card feed">
+          
+        <nav id="feed">
+            <div class="top">
+                <span class="center"></span>
+                <img id="feeds" src="images/feeds.png">
+                <h2 class="modualHeader">Feeds</h2>                
+            </div>
+        </nav>
+
+        
+        <section>
+            <div class="content">
+                <div class="location" id="annecy">
+                    <img class="sun" src="images/sol.png">
+                    <h2 class="temp">18°C</h2>
+                    <h3 class="city">Annecy</h3>
+                    <p class="country">France</p>
+                </div>
+                <div class="location" id="encinitas">
+                    <img class="wind" src="images/wind.png">
+                    <h2 class="temp">29°C</h2>
+                    <h3 class="city">Encinitas, CA</h3>
+                    <p class="country">USA</p>
+                </div>
+                <span class="center"></span>    
+            </div>
+        </section>
+
+        <footer id="feed">
+            <div class="expand">
+                 <span class="center"></span>
+                 <img id="arrow" src="images/arrow.png">
+            </div>
+        </footer>
+
         </div>
       </article>
+
+<!-- BUDGET -->
+
+
       <article class="col-sm-6 col-md-4">
-        <div class="module-ongoing">
-          <p>7</p>
+        <div id="budget" class="module card budget">
+          <nav>
+            <div class="top">
+                <span class="center"></span>
+                <img id="budget" src="images/budget.png">
+                <h2 class="modualHeader">Budget</h2>                
+            </div>
+        </nav>
+
+        
+        <section>
+            <div class="content">
+		        <div class="remaining">
+	                <h2>Remaining <strong>730€</strong> of <strong>1.300€</strong></h2>
+                    <span class="center"></span>
+                </div>
+
+        
+            <table>
+                <tr>
+                    <td class="cost">-24€</td>
+                    <td class="item">Gas / 24€ each</td>
+                </tr>
+                <tr>
+                    <td class="cost">-150€</th>
+                    <td class="item">Horse Riding / 30€ each</td>
+                </tr>
+                <tr>
+                    <td class="cost">-40€</td>
+                    <td class="item">Groceries / 8€ each</td>
+                </tr>
+                <tr>
+                    <td class="cost">-20€</td>
+                    <td class="item">Pizzas / 4€ each</td>	
+                </tr>
+            </table>
+            </div>  
+        </section>
+
+        <footer>
+            <div class="expand">
+                 <span class="center"></span>
+                 <img id="arrow" src="images/arrow.png">
+            </div>
+        </footer>
         </div>
       </article>
    </section>
