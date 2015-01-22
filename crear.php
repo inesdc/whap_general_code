@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/icons/favicon.ico">
-    <title>WHAP</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <?php include ('php-calls/head.php'); ?>
   </head>
   <body class="create">
   <header>
-    <?php include ('header.php'); ?>
+    <?php include ('php-calls/header.php'); ?>
     <div class="relative ohidden">
       <div class="col-xs-12 col-sm-3 crear-cont">
         <button type="button" class="btn btn-default btn-block">cancelar</button>
@@ -110,9 +102,6 @@
 
 <!-- Javascript -->
 
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/functions.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<?php include ('php-calls/scripts.php'); ?>
 </body>
 </html>

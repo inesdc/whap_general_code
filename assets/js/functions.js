@@ -129,10 +129,7 @@ $(document).ready(function(){
   $("#droppable").droppable({
     accept: '#draggable',
     tolerance: "fit",
-    activeClass: "ui-state-highlight",
-    drop: function() {
-    alert( "dropped" );
-      }
+    activeClass: "ui-state-highlight"
   });
 
   $("#draggable").draggable({
