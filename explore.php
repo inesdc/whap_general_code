@@ -11,7 +11,7 @@
       </div>
       <ul class="secondary-nav list-unstyled">
         <li class="width33-xs col-sm-3 ideas"><a href="index.php">Ideas</a></li>
-        <li class="width33-xs col-sm-3 offers"><a href="planning.php">Offers</a></li>
+        <li class="width33-xs col-sm-3 offers active"><a href="planning.php">Offers</a></li>
       </ul>
     </div>
   </header>
@@ -19,7 +19,29 @@
 <!-- CONTENT -->
 <div id="main" class="clearfix explore">
   <div id="container-size" class="container">
-    <form class="filters">
+    <form class="filters form-inline">
+      <div class="form-group col-xs-12 col-sm-4">
+        <select id="trip-type" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+      </div>
+      <div class="form-group col-xs-12 col-sm-2">
+        <fieldset class="dates">
+            <label for="dates" style="display:none;">Dates</label>
+            <input id="dates" class="form-control" type="date" name="dates">
+        </fieldset>
+      </div>
+      <div class="form-group col-xs-12 col-sm-6">
+        <fieldset class="search">
+            <label style="display:none">Search</label>
+            <input type="search" class="form-control" placeholder="Search">
+            <input class="button" type="submit">
+        </fieldset>
+      </div>
     </form>
     <section class="results">
       <article class="offer col-xs-12 col-sm-6 col-md-4">

@@ -149,6 +149,43 @@ $(document).ready(function(){
 
 });
 
+//Offers datepicker
+$(document).ready(function () {
+    $(document).on('click', 'input[type=text]', function () {
+        this.select();
+    });
+    $(document).on('click', 'input[type=date]', function () {
+        this.select();
+    });
+});
+
+
+
+$(document).ready(function() {
+    var now = new Date();
+    var today =  ('0' + now.getDate()).slice(-2) + '/' + ('0' + (now.getMonth() + 1)).slice(-2) + '/' + now.getFullYear();
+    $('#dates').val(today);
+});
+
+$(document).ready(function() {
+    $( "#dates" ).datepicker({
+        minDate: 0,
+        maxDate: "+1Y",
+        inline: true,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+    });
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+    
+});
+
+
+    
+
+
+
+
+
 
 
 

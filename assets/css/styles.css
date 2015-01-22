@@ -448,7 +448,30 @@ section.aside.add_steps_drag div.module-steps{
 
 /* == IDEAS N OFFERS CONTENT==
    ======================== */ 
+.friends_liked {
+	float: left;
+	width: 100%;
+}
 
+.filters {
+	height: 105px;
+	background-color: #fff;
+}
+
+.results {
+	background-color: #f3f3f3;
+}
+
+.friends_liked {
+	background-color: #e5e5e5;
+}
+
+.filters {
+	padding: 20px;
+}
+.filters .form-control {
+	width: 100%
+}
 
 
 
