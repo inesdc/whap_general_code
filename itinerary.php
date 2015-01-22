@@ -1,37 +1,54 @@
-<div class="top">
-    <span class="center"></span>
-    <img id="paperAirplane" src="assets/images/paperAirplane.png">
-    <h3 class="modualHeader">Itinerary</h3>                
-</div>
-<div class="content">
-    <div class='heads'>
+<div id="itinerary" class="module itinerary">
+<nav id="itinerary">
+    <div class="top">
+        <span class="center"></span>
+        <img id="paperAirplane" src="images/paperAirplane.png">
+        <h2 class="modualHeader">Itinerary</h2>                
+    </div>
+</nav>
+
+
+<section id="itinerary">
+    <div class="content">
+        <div class='heads'>
         <ul class="profilePictures">
-            <li class="head"><img class="avatar" src="assets/images/guy1.png"></li>
-            <li class="head"><img class="avatar" src="assets/images/guy2.png"></li>
-            <li id="front" class="head"><img class="avatar" src="assets/images/guy3.png"></li>
-            <li class="head"><img class="avatar" src="assets/images/guy4.png"></li>
-            <li id="front" class="head"><img class="avatar" src="assets/images/guy5.png"></li>
-            <span class="streach"></span>
+                <li class="head"><img class="avatar" src="images/guy1.png"></li>
+                <li class="head"><img class="avatar" src="images/guy2.png"></li>
+                <li id="front" class="head"><img class="avatar" src="images/guy3.png"></li>
+                <li class="head"><img class="avatar" src="images/guy4.png"></li>
+                <li id="front" class="head"><img class="avatar" src="images/guy5.png"></li>
+                <span class="streach"></span>
+            </ul>
+        </div>
+        <div class="schedule">
+        <ul class="itinerarys">
+            <li class="cita"><strong>10:30</stong> Pick up Mario and Ana</li>
+            <span class="center"></span>
         </ul>
+        </div>
+
+    <div class="location">
+        <div class="box">
+        <img class="locationIcon" src="images/location.png">
+        <h2 class="barcelona"><strong>Montenegro</strong></h2>
+        </div>
     </div>
 
-           <div class="itinerary">
-    <ul class="itinerarys">
-        <li class="cita"><strong>10:30</stong> Pick up Mario and Ana</li>
-    </ul>
-<div class="location">
-    <img class="locationIcon" src="assets/images/location.png">
-    <h2 class="barcelona"><strong>Montenegro</strong></h2>
+    <div class="buttons">
+        <ul class="optionButtons">
+            <li class="what">ON TIME</li>
+            <li class="what">DELAY</li>
+            <li class="what">ADVANCE</li>
+            <li class="what">DELETE</li>    
+        </ul>
+    </div>
 </div>
-<div class="buttons">
-    <ul class="optionButtons">
-        <li class="what">ON TIME</li>
-        <li class="what">DELAY</li>
-        <li class="what">ADVANCE</li>
-        <li class="what">DELETE</li>    
-    </ul>
-</div>
-<div class="expand">
-     <span class="center"></span>
-     <img id="arrow" src="assets/images/arrow.png">
+    </section>
+
+<footer id="itinerary">
+    <div class="expand">
+         <span class="center"></span>
+         <img id="arrow" src="images/arrow.png">
+    </div>
+</footer>
 </div>

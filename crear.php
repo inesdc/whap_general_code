@@ -19,7 +19,7 @@
         <button type="button" class="btn btn-default btn-block">cancelar</button>
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="width33-xs col-sm-3 ongoing"><a href="#">Ongoing</a></li>
+        <li class="width33-xs col-sm-3 ongoing"><a href="index.php">Ongoing</a></li>
         <li class="width33-xs col-sm-3 planning"><a href="planning.php">Planning</a></li>
         <li class="width33-xs col-sm-3 upcoming"><a href="upcoming.php">Upcoming</a></li>
       </ul>
@@ -50,8 +50,8 @@
       </div>
       <div class="add_steps_drop">
         <h3>Add steps</h3>
-        <div class="droppable col-sm-6 col-md-4">
-          <div>
+        <div class="col-sm-6 col-md-4">
+          <div id="droppable" class="droppable">
             <span class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" href="#"><i class="icon ico-plus"></i>Add step</span>
             <ul class="dropdown-menu" role="menu">
               <li>How much</li>
@@ -63,24 +63,24 @@
             </ul>
           </div>
         </div>
-        <div class="droppable col-sm-6 col-md-4">
-          <div>
+        <div class="col-sm-6 col-md-4">
+          <div class="droppable">
           </div>
         </div>
-        <div class="droppable col-sm-6 col-md-4">
-          <div>
+        <div class="col-sm-6 col-md-4">
+          <div class="droppable">
           </div>
         </div>
-        <div class="droppable col-sm-6 col-md-4">
-          <div>
+        <div class="col-sm-6 col-md-4">
+          <div class="droppable">
           </div>
         </div>
-        <div class="droppable col-sm-6 col-md-4">
-          <div>
+        <div class="col-sm-6 col-md-4">
+          <div class="droppable">
           </div>
         </div>
-        <div class="droppable col-sm-6 col-md-4">
-          <div>
+        <div class="col-sm-6 col-md-4">
+          <div class="droppable">
           </div>
         </div>
       </div>
@@ -88,28 +88,31 @@
         <button type="submit" class="btn btn-default">Crear</button>
       </div> 
     </form>
-  </div>
-  <section class="aside add_steps_drag">
+    <section class="aside add_steps_drag">
       <h3>Steps</h3>
       <p>Drag&drop the steps you want to fulfill and create the trip. You will always be able to edit what you’ve filled and completethe rest.</p>
-      <div class="module-steps">
+      <div id="draggable" class="draggable module-steps">
       </div>
-      <div class="module-steps">
+      <div class="draggable module-steps">
       </div>
-      <div class="module-steps">
+      <div class="draggable module-steps">
       </div>
-      <div class="module-steps">
+      <div class="draggable module-steps">
       </div>
-      <div class="module-steps">
+      <div class="draggable module-steps">
       </div>
-      <div class="module-steps">
+      <div class="draggable module-steps">
       </div>
     </section>
+  </div>
+  
 </div>
 
 <!-- Javascript -->
 
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/functions.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 </body>
 </html>

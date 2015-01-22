@@ -121,8 +121,37 @@ $(document).ready(function(){
     $('.module-steps').css("width", width);
     $('.module-steps').css("height", height);
   });
-  
+
+
+  //Drag and drop
+
+
+  $("#droppable").droppable({
+    accept: '#draggable',
+    tolerance: "fit",
+    activeClass: "ui-state-highlight",
+    drop: function() {
+    alert( "dropped" );
+      }
+  });
+
+  $("#draggable").draggable({
+    snap: '#droppable',
+    revert: 'false',
+    zIndex: 9999,
+    cursor: "move",
+    delay: 200,
+    opacity: .45,
+    refreshPositions: true,
+    revertDuration: 1000,
+    drop: function(ev, ui) {
+      $(this).addClass('dropped');
+    }
+    
+  });
+
 });
+
 
 
 
