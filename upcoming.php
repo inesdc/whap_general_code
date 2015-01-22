@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/icons/favicon.ico">
-    <title>WHAP</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <?php include ('php-calls/head.php'); ?>
   </head>
   <body>
   <header>
-    <?php include ('header.php'); ?>
+    <?php include ('php-calls/header.php'); ?>
     <div class="relative ohidden">
       <div class="col-xs-12 col-sm-3 crear-cont">
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
@@ -31,10 +23,10 @@
   <div id="container-size" class="container">
     <section class="modules trips">
       <article class="trip">
-        <?php include ('trip_upcoming.php'); ?>
+        <?php include ('php-calls/trip_upcoming.php'); ?>
       </article>
       <article class="trip">
-        <?php include ('trip_upcoming.php'); ?>
+        <?php include ('php-calls/trip_upcoming.php'); ?>
       </article>
       <article class="trip">
         <div class="module-trips">
@@ -45,7 +37,7 @@
     <section class="aside">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
         <div class="chat">
-          <?php include ('chat.php'); ?>
+          <?php include ('php-calls/chat.php'); ?>
         </div>
     </section>
     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
@@ -93,11 +85,6 @@
 </div>
 
 <!-- Javascript -->
-
-<script src="assets/js/bootstrap.min.js"></script>
-<script> 
-  $( "#header" ).load( "assets/header.html" );
-</script>
-<script src="assets/js/functions.js"></script>
+ <?php include ('php-calls/scripts.php'); ?>
 </body>
 </html>
