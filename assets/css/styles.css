@@ -473,7 +473,21 @@ section.aside.add_steps_drag div.module-steps{
 	width: 100%
 }
 
+.explore .trips-summary,
+.create-from-offer {
+	margin: 18px auto;
+	width: 290px;
+}
 
+.trips-list {
+	text-align: center;
+	padding: 20px;
+}
+
+.create-from-offer {
+	height: 100px;
+	border: 2px dashed #2c2c2c;
+}
 
 /* == MEDIA QUERIES ==
    =================== */ 

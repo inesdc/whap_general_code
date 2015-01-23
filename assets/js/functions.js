@@ -151,9 +151,6 @@ $(document).ready(function(){
 
 //Offers datepicker
 $(document).ready(function () {
-    $(document).on('click', 'input[type=text]', function () {
-        this.select();
-    });
     $(document).on('click', 'input[type=date]', function () {
         this.select();
     });

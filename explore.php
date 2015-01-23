@@ -69,11 +69,23 @@
     <section class="aside">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">Trips</button>
         <div class="trips-list">
-          <div class="create-from-offer"></div>
-          <div class="trips-summary">
-          <div class="trips-summary">
-          <div class="trips-summary">
-          <div class="trips-summary">
+          <h3>Your trips</h3>
+          <p>Drag and drop an idea to create a trip or add it to the trips you’re planning.</p>
+          <div class="create-from-offer">
+            <span class="dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-expanded="false" href="#"><i class="icon icon-add-to-trip"></i>Create a trip from offer</span>
+          </div>
+          <ul class="dropdown dropdown-menu"  aria-labelledby="dropdownMenu1" role="menu">
+            <li>How much</li>
+            <li>Where</li>
+            <li>When</li>
+            <li>How</li>
+            <li>Who</li>
+            <li>What</li>
+          </ul>
+          <div class="trips-summary"></div>
+          <div class="trips-summary"></div>
+          <div class="trips-summary"></div>
+          <div class="trips-summary"></div>
         </div>
     </section>
   </div>

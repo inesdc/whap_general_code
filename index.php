@@ -18,13 +18,6 @@
     </div>
   </header>
 <!-- CONTENT -->
-<<<<<<< HEAD
-<div id="main" class="clearfix ongoing">
-  <div id="container-size" class="container">
-    <section class="modules col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <article class="col-sm-12 col-md-12">
-
-=======
   <div id="main" class="clearfix ongoing">
     <div id="container-size" class="container">
       <section class="modules col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -70,49 +63,6 @@
             </div>
         </article>
      </section>
->>>>>>> 15d23aaef693ee3db4d7a1d87345c59036c5cfb0
-
-     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                <div class="btn-group btn-group-justified" role="group" >
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-dismiss="modal" data-target="#basicModal2">Left</button>
-                  <button type="button" class="btn btn-default">Middle</button>
-                  <button type="button" class="btn btn-default">Right</button>
-                </div>
-              </div>
-              <div class="modal-body">
-                  <h3>Modal Body</h3>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-              </div>
-              <div class="modal-body">
-                  <h3>Modal Body</h3>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-          </div>
-      </div>
-    </div>
-
     </div>
   </div>
 

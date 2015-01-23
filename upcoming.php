@@ -30,7 +30,7 @@
       </article>
       <article class="trip">
         <div class="module-trips">
-          <?php include ('trip_upcoming.php'); ?>
+          <?php include ('php-calls/trip_upcoming.php'); ?>
         </div>
       </article>
    </section>
