@@ -149,41 +149,27 @@ $(document).ready(function(){
 
 });
 
-//Offers datepicker
-$(document).ready(function () {
-    $(document).on('click', 'input[type=date]', function () {
-        this.select();
-    });
-});
-
-
-
-$(document).ready(function() {
-    var now = new Date();
-    var today =  ('0' + now.getDate()).slice(-2) + '/' + ('0' + (now.getMonth() + 1)).slice(-2) + '/' + now.getFullYear();
-    $('#dates').val(today);
-});
-
-$(document).ready(function() {
-    $( "#dates" ).datepicker({
-        minDate: 0,
-        maxDate: "+1Y",
-        inline: true,
-        showOtherMonths: true,
-        selectOtherMonths: true,
-    });
-    $.datepicker.setDefaults($.datepicker.regional['en']);
-    
-});
-
 
     
 
 
 
+// Explore second nav 
 
+  var content_area_width = ($(window).width() - 340)/2;
 
+if ($(window).width() > 1340) {
+  $('li.ideas').css("width",content_area_width);
+  $('li.offers').css("width",content_area_width);
+}
 
+$(window).resize(function() {
+  if ($(window).width() > 1340) {
+  $('li.ideas').css("width",content_area_width);
+  $('li.offers').css("width",content_area_width);
+}
+
+});
 
 
 
