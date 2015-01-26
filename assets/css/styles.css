@@ -83,6 +83,38 @@ a {
 	color: #fff;
 }
 
+.pagination>.active>a, 
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	background-color: rgba(249, 247, 247, 0.1);
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+
+.pagination li a {
+	border-radius: 4px;
+}
+
+.pagination li a:hover {
+	background-color:rgba(249, 247, 247, 0.1);
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+border-radius: 4px;
+}
+
+.form-control {
+	background: transparent;
+}
+
+input {
+	background-color: rgba(255, 255, 255, 0.27); 
+}
+
 /* Buttons */
 
 .btn-default {
@@ -168,6 +200,14 @@ a {
 	width: 40px;
 	height: 35px;
 }
+
+.ico-location {
+	margin: 5px auto;
+	background: url('../ico/location.png') no-repeat center;
+	width: 40px;
+	height: 39px;
+}
+
 
 
 /* ===== GENERAL =====
@@ -524,6 +564,10 @@ section.aside.add_steps_drag div.module-steps{
 	position: absolute;
 	top: 14%;
 	right: 2%;
+	border: 0;
+	background: url('../ico/search.png') no-repeat right;
+	width: 20px;
+	height: 20px;
 }
 
 .search input[type="search"]{
@@ -590,6 +634,213 @@ display: inline-block;
 }
 
 
+/* ===== PROFILE =====
+   =================== */ 
+
+
+
+section.profile-data.pull-right {
+	background-color: #416772;
+	width: 340px;
+	height: 100%;
+	margin-top: 50px;
+	padding: 20px;
+	color: #fff;
+}
+
+.past-trips {
+	margin-top: 50px;
+}
+
+#trip1 {
+	position: absolute;
+	top: 58%;
+	right: 51%;
+}
+
+#trip2 {
+	position: absolute;
+	top: 60%;
+	right: 3%;
+}
+
+#trip3 {
+	position: absolute;
+	top: 34%;
+	right: 32%;
+}
+
+.past-trips .map-trips {
+	height: 100%;
+	position: relative;
+	z-index: -9999;
+}
+
+.past-trips .map {
+	width: 100%;
+	position: absolute;
+	top:100px;
+	left: 0;
+}
+
+.past-trips div.section_title {
+	height: 50px;
+	background-color: #2c525d;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.past-trips .section_title p {
+	position: relative;
+	padding: 15px 0;
+	color: #fff;
+	margin: 0;
+}
+
+.past-trips .section_title p:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 8px solid #2C525D;
+}
+
+.past-trips .trips-summary {
+	width: 290px;
+	height: 105px;
+	display: inline-block;
+}
+
+/*Profile*/
+
+
+.edit-btn {
+	background: url('../images/edit-profile.png') no-repeat center;
+	width: 20px;
+	height: 20px;
+}
+
+.profile_pic {
+	clear: both;
+	width: 197px;
+	height: 197px;
+	border-radius: 99px;
+	border: 4px solid #fff;
+	display: block;
+	margin: 20px auto;
+}
+
+.user-info {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.friend {
+	margin-bottom: 20px;
+	background-color: #F9F7F7;
+	padding: 10px;
+	color: #6C6C6C;
+}
+
+
+.user-friends h3 {
+	text-align: center;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+}
+
+.user-friends img {
+	float: left;
+	margin-right: 20px;
+}
+
+.user-friends p {
+	margin-bottom: 0;
+}
+
+.user-friends .form-control {
+	width: 100%;
+	position: relative;
+}
+
+.user-friends .pagination>li>a, .pagination>li>span {
+	color: #fff;
+}
+
+.friends[data-friends="1"] li.friend_2,
+.friends[data-friends="1"] li.friend_3,
+.friends[data-friends="1"] li.friend_4,
+.friends[data-friends="1"] li.friend_5,
+.friends[data-friends="1"] li.friend_6 {
+	display: none;
+}
+
+.friends[data-friends="2"] li.friend_3,
+.friends[data-friends="2"] li.friend_4,
+.friends[data-friends="2"] li.friend_5,
+.friends[data-friends="2"] li.friend_6 {
+	display: none;
+}
+
+.friends[data-friends="3"] li.friend_4,
+.friends[data-friends="3"] li.friend_5,
+.friends[data-friends="3"] li.friend_6 {
+	display: none;
+}
+
+.friends[data-friends="4"] li.friend_5,
+.friends[data-friends="4"] li.friend_6 {
+	display: none;
+}
+
+.friends[data-friends="5"] li.friend_6 {
+	display: none;
+}
+
+.profile .result-pages {
+	padding: 0;
+}
+
+.user-friends .search input[type="search"]{
+	color: #fff;
+}
+
+.profile input,
+.profile select {
+	background-color: #365c67;
+	border-radius: 4px;
+	height: 40px;
+}
+
+.edit_profile .form-control {
+	display: block;
+	width: 100%;
+	color: #fff;
+}
+
+.edit_profile fieldset {
+	margin-bottom: 20px;
+}
+
+.change_user_pic {
+	position: relative;
+}
+
+
+.edit_profile .edit-btn {
+	position: absolute;
+	top: 47%;
+	left:47%;
+}
+
+.end-editing {
+	height: 40px;
+}
 
 /* == MEDIA QUERIES ==
    =================== */ 
@@ -707,10 +958,6 @@ display: inline-block;
 
 	.width25-xs {
 		width: 25%;
-	}
-
-	.width33-xs {
-		width: 33.333333%
 	}
 
 

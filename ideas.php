@@ -10,8 +10,8 @@
       <div class="col-xs-12 col-sm-3 crear-cont">
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="width33-xs col-sm-6 ideas"><a href="#">Ideas</a></li>
-        <li class="width33-xs col-sm-6 active offers"><a href="#">Offers</a></li>
+        <li class="col-xs-6 col-sm-6 active ideas"><a href="#">Ideas</a></li>
+        <li class="col-xs-6 col-sm-6 offers"><a href="offers.php">Offers</a></li>
       </ul>
     </div>
   </header>
@@ -39,7 +39,7 @@
         <fieldset class="search form-control">
             <label style="display:none">Search</label>
             <input type="search"  placeholder="Search">
-            <input class="button pull-right" type="submit">
+            <input class="button pull-right" value="" type="submit">
         </fieldset>
       </div>
     </form>
@@ -85,7 +85,7 @@
           <h3>Your trips</h3>
           <p>Drag and drop an idea to create a trip or add it to the trips you’re planning.</p>
           <div class="create-from-offer">
-            <span class="dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-expanded="false" href="#"><i class="icon ico-add-to-trip"></i><span>Create a trip from offer</span></span>
+            <span class="dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-expanded="false" href="#"><i class="icon ico-add-to-trip"></i><span>Create a trip from idea</span></span>
           </div>
           <ul class="dropdown dropdown-menu"  aria-labelledby="dropdownMenu1" role="menu">
             <li>How much</li>

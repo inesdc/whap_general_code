@@ -11,9 +11,9 @@
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="width33-xs col-sm-3 ongoing"><a href="index.php">Ongoing</a></li>
-        <li class="width33-xs col-sm-3 active planning"><a href="#">Planning</a></li>
-        <li class="width33-xs col-sm-3 upcoming"><a href="upcoming.php">Upcoming</a></li>
+        <li class="col-xs-4 col-sm-4 ongoing"><a href="index.php">Ongoing</a></li>
+        <li class="col-xs-4 col-sm-4 active planning"><a href="#">Planning</a></li>
+        <li class="col-xs-4 col-sm-4 upcoming"><a href="upcoming.php">Upcoming</a></li>
       </ul>
     </div>
   </header>
