@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <?php include ('php-calls/head.php'); ?>
-  </head>
+<?php include ('php-calls/head.php'); ?>
   <body class="create">
   <header>
     <?php include ('php-calls/header.php'); ?>
@@ -100,8 +96,4 @@
   
 </div>
 
-<!-- Javascript -->
-
-<?php include ('php-calls/scripts.php'); ?>
-</body>
-</html>
+<?php include ('php-calls/footer.php'); ?>

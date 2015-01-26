@@ -221,6 +221,24 @@ $(document).ready(function(){
     $('.profile-content').removeClass('hidden');
     $('.edit_profile').addClass('hidden');
   })
+
+
+  //Responsive profile
+
+  if ($(window).width() < 1340) {
+    $('profile-data').removeClass('pull-right');
+  }else{
+    $('profile-data').addClass('pull-right');
+  };
+
+  $(window).resize(function() {
+    if ($(window).width() < 1340) {
+    $('.profile-data').removeClass('pull-right');
+  }else{
+    $('.profile-data').addClass('pull-right');
+  }
+  });
+
 });
 
 

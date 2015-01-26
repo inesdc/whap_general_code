@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <?php include ('php-calls/head.php'); ?>
-  </head>
-  <body>
+<?php include ('php-calls/head.php'); ?>
+ <body>
   <header>
     <?php include ('php-calls/header.php'); ?>
     <div class="relative ohidden">
@@ -11,9 +7,9 @@
         <button type="button" class="btn btn-default btn-block"><a href="crear.php">crear viaje</a></button>
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="col-xs-4 col-sm-4 active ongoing"><a>Ongoing</a></li>
-        <li class="col-xs-4 col-sm-4 planning"><a href="planning.php">Planning</a></li>
-        <li class="col-xs-4 col-sm-4 upcoming"><a href="upcoming.php">Upcoming</a></li>
+        <li class="col-xs-4 col-sm-3 active ongoing"><a>Ongoing</a></li>
+        <li class="col-xs-4 col-sm-3 planning"><a href="planning.php">Planning</a></li>
+        <li class="col-xs-4 col-sm-3 upcoming"><a href="upcoming.php">Upcoming</a></li>
       </ul>
     </div>
   </header>

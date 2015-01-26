@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <?php include ('php-calls/head.php'); ?>
-  </head>
-  <body>
+<?php include ('php-calls/head.php'); ?>
   <header>
     <?php include ('php-calls/header.php'); ?>
     <div class="relative ohidden">
@@ -83,8 +78,4 @@
 
   </div>
 </div>
-
-<!-- Javascript -->
- <?php include ('php-calls/scripts.php'); ?>
-</body>
-</html>
+<?php include ('php-calls/footer.php'); ?>
