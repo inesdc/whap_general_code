@@ -10,8 +10,9 @@
   <section class="profile-data pull-right">
     <?php include ('php-calls/user_profile.php'); ?>
   </section>
-    <section>
-      <div class="past-trips">
+  
+    <section class="past-trips-content col-xs-12 col-sm-6">
+      <div id="past-trips" class="past-trips">
         <div class="section_title">
           <p>Your past trips</p>
         </div>

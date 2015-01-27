@@ -63,7 +63,7 @@
   </div>
 
 <!-- Javascript -->
-<?php include ('php-calls/scripts.php'); ?>
+<?php include ('php-calls/footer.php'); ?>
 
 </body>
 </html>

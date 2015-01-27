@@ -3,7 +3,6 @@
 .card{
     height:100%;
     width: 100%;
-    border: 1px solid black;
     background-color: #f3f3f3;
     position:relative;
 }

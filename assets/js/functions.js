@@ -135,14 +135,14 @@ $(document).ready(function(){
   //Drag and drop
 
 
-  $("#droppable").droppable({
-    accept: '#draggable',
+  $(".droppable").droppable({
+    accept: '.draggable',
     tolerance: "fit",
     activeClass: "ui-state-highlight"
   });
 
-  $("#draggable").draggable({
-    snap: '#droppable',
+  $(".draggable").draggable({
+    snap: '.droppable',
     revert: 'false',
     zIndex: 9999,
     cursor: "move",
@@ -158,7 +158,7 @@ $(document).ready(function(){
 
 
   //Profile
-
+if ($(window).width() > 1200) {
   var window_height = $(window).height();
   var window_width = $(window).width();
   var container_past_trips = window_width - 325;
@@ -166,28 +166,10 @@ $(document).ready(function(){
   $('.profile-data').css("height",window_height-50);
   $('.past-trips').css("width",container_past_trips);
   $('.past-trips').css("height",container_past_trips / a_r_map);
-  
-
-
-  var friends_ul_height = $(window).height() - 600;
-  var friend_height = 100;
-  var num_friends = parseInt(friends_ul_height / friend_height);
-  $('.first_page,.second_page').attr('data-friends',num_friends);
-  //$('.first_page').addClass('friends_'+num_friends);
-  //$('.second_page').addClass('friends_'+num_friends);
-  
-  $(window).resize(function() {
-    var friends_ul_height = ($(window).height()- 600);
-    var new_num_friends = parseInt(friends_ul_height / friend_height);
-    $('.first_page,.second_page').attr('data-friends',new_num_friends);
-    //$('.first_page').removeClass('friends_*');
-    ///$('.first_page').removeClass('friends_'+num_friends);
-    //$('.second_page').removeClass('friends_'+num_friends);
-    //$('.first_page').addClass('friends_'+new_num_friends);
-    //$('.second_page').addClass('friends_'+new_num_friends);
-  });
+  };
 
   $(window).resize(function() {
+  if ($(window).width() > 1200) {
     var window_height = $(window).height();
     var window_width = $(window).width();
     var container_past_trips = window_width - 325;
@@ -195,15 +177,41 @@ $(document).ready(function(){
     $('.profile-data').css("height",window_height-50)
     $('.past-trips').css("width",container_past_trips);
     $('.past-trips').css("height",container_past_trips / a_r_map);
+  };
   });
 
+  //Friends
+  if ($(window).width() > 1200) {
+    var friends_ul_height = $(window).height() - 600;
+  }else{
+    var friends_ul_height = $('.past-trips').height();
+  };
+
+    var friend_height = 100;
+    var num_friends = parseInt(friends_ul_height / friend_height);
+    $('.first_page,.second_page').attr('data-friends',num_friends);
+
+  $(window).resize(function() {
+    if ($(window).width() > 1200) {
+      var friends_ul_height = ($(window).height()- 600);
+    }else{
+    var friends_ul_height = $('.past-trips').height();
+    };
+      var new_num_friends = parseInt(friends_ul_height / friend_height);
+      $('.first_page,.second_page').attr('data-friends',new_num_friends);
+  });
+
+  
+
   $('#page_22').click(function(){
+    event.preventDefault();
       $('.second_page').removeClass('hidden');
       $('.first_page').addClass('hidden');
       $('#page_1').removeClass('active');
       $('#page_22').addClass('active');
   });
   $('#page_1').click(function(){
+    event.preventDefault();
       $('.second_page').addClass('hidden');
       $('.first_page').removeClass('hidden');
       $('#page_22').removeClass('active');
@@ -213,30 +221,108 @@ $(document).ready(function(){
 
 
   $('#edit-profile-btn').click(function(){
-    $('.profile-content').addClass('hidden');
+    $('.user-info').addClass('hidden');
     $('.edit_profile').removeClass('hidden');
+
+    if ($(window).width() > 1200) {
+    $('.user-info').addClass('hidden');
+    $('#friends').addClass('hidden');
+    };
+  
   })
 
   $('.end-editing').click(function(){
-    $('.profile-content').removeClass('hidden');
+    if ($(window).width() > 1200) {
+    $('.user-info').removeClass('hidden');
+    $('.#friends').removeClass('hidden');
+    };
+    $('.user-info').removeClass('hidden');
     $('.edit_profile').addClass('hidden');
   })
 
 
   //Responsive profile
 
-  if ($(window).width() < 1340) {
-    $('profile-data').removeClass('pull-right');
+  if ($(window).width() < 1200) {
+    $('.profile-data').removeClass('pull-right');
   }else{
-    $('profile-data').addClass('pull-right');
+    $('.profile-data').addClass('pull-right');
   };
 
   $(window).resize(function() {
-    if ($(window).width() < 1340) {
+    if ($(window).width() < 1200) {
     $('.profile-data').removeClass('pull-right');
   }else{
     $('.profile-data').addClass('pull-right');
   }
+  });
+
+  //secondary-menu  
+
+  if ($(window).width() < 1200) {
+    $('.secondary-menu').removeClass('hidden');
+    $('.map').addClass('hidden');  
+  }else{
+    $('.past-trips-content').removeClass('col-sm-6');
+    $('.past-trips-content').removeClass('col-xs-12');
+    $('#friends').removeClass('col-sm-6');
+  };
+
+//tabs mobile
+
+  if ($(window).width() > 767) {
+    $('.tab-trips').removeClass('active');
+  };
+
+  $(window).resize(function() {
+    if ($(window).width() > 767) {
+    $('.tab-trips').removeClass('active');
+  }else{
+    $('.tab-trips').addClass('active');
+  };
+  });
+
+
+   if ($(window).width() < 769) {
+    $('#friends').addClass('hide');
+    $('.tab-trips').click(function(){
+      $('#friends').addClass('hide');
+      $('.past-trips-content').removeClass('hide');
+      $('.tab-trips').addClass('active');
+      $('.tab-friends').removeClass('active');
+    });
+    $('.tab-friends').click(function(){
+      $('.past-trips-content').addClass('hide');
+      $('#friends').removeClass('hide');
+      $('.tab-trips').removeClass('active');
+      $('.tab-friends').addClass('active');
+    });
+  };
+
+  $(window).resize(function() {
+    if ($(window).width() < 769) {
+    $('#friends').addClass('hide');
+  }else{
+    $('#friends').removeClass('hide');
+  };
+  });
+
+
+
+  $(window).resize(function() {
+    if ($(window).width() < 1200) {
+    $('.secondary-menu').removeClass('hidden');
+    $('.map').addClass('hidden');
+    $('.past-trips-content').addClass('col-sm-6');
+    $('.past-trips-content').addClass('col-xs-12');
+    $('#friends').addClass('col-sm-6');
+    }else{
+      $('.secondary-menu').addClass('hidden');
+      $('.map').removeClass('hidden');
+      $('.past-trips-content').removeClass('col-sm-6');
+      $('.past-trips-content').removeClass('col-xs-12');
+      $('#friends').removeClass('col-sm-6');
+    };
   });
 
 });

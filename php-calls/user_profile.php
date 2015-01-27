@@ -7,7 +7,44 @@
     <p class="user_email">marydc@gmail.com</p>
     <p class="user_country">UK</p>
   </div>
-  <div class="user-friends">
+  <form class="form-group edit_profile hidden">
+      <div class="change_user_pic">
+        <img class="profile_pic" src="assets/images/user_profilepic_edit.png">
+        <i class="edit-btn"></i>
+      </div>
+      <fieldset class="change_user_name">
+        <label>Username</label>
+        <input class="form-control" type="text" value="MaryDC">
+      </fieldset>
+      <fieldset class="change_user_type">
+        <label>What kind of traveller are you?</label>
+        <select class="form-control">
+            <option>Adventurer</option>
+            <option>Party animal</option>
+            <option>Explorer</option>
+            <option>Chill master</option>
+            <option>Sport rules</option>
+        </select>
+      </fieldset>
+      <fieldset class="change_user_email">
+        <label>Email</label>
+        <input class="form-control" type="text" value="marydc@gmail.com">
+      </fieldset>
+      <fieldset class="change_user_country">
+        <label>Country</label>
+        <input class="form-control" type="text" value="UK">
+      </fieldset>
+      <fieldset class="change_user_password">
+        <label>Password</label>
+        <input class="form-control" type="text" value="********">
+      </fieldset>
+      <button class="end-editing btn btn-default btn-block">Save changes</button>
+</form>
+  <div class="secondary-menu clearfix hidden">
+    <a href="#" class="tab tab-friends col-xs-6" data-target="#friends">Friends</a>
+    <a href="#" class="tab tab-trips active col-xs-6" data-target=".past-trips-content">Past trips</a>
+  </div>
+  <div id="friends" class="user-friends col-xs-12 col-sm-6">
     <h3>Friends</h3>
     <div class="form-group">
       <fieldset class="search form-control">
@@ -86,36 +123,3 @@
     </div>
   </div>
 </div> 
-<form class="form-group edit_profile hidden">
-      <div class="change_user_pic">
-        <img class="profile_pic" src="assets/images/user_profilepic_edit.png">
-        <i class="edit-btn"></i>
-      </div>
-      <fieldset class="change_user_name ">
-        <label>Username</label>
-        <input class="form-control" type="text" value="MaryDC">
-      </fieldset>
-      <fieldset class="change_user_type">
-        <label>What kind of traveller are you?</label>
-        <select class="form-control">
-            <option>Adventurer</option>
-            <option>Party animal</option>
-            <option>Explorer</option>
-            <option>Chill master</option>
-            <option>Sport rules</option>
-        </select>
-      </fieldset>
-      <fieldset class="change_user_email">
-        <label>Email</label>
-        <input class="form-control" type="text" value="marydc@gmail.com">
-      </fieldset>
-      <fieldset class="change_user_country">
-        <label>Country</label>
-        <input class="form-control" type="text" value="UK">
-      </fieldset>
-      <fieldset class="change_user_password">
-        <label>Password</label>
-        <input class="form-control" type="text" value="********">
-      </fieldset>
-      <button class="end-editing btn btn-default btn-block">Save changes</button>
-</form>

@@ -34,6 +34,10 @@
         </div>
       </div>
     </div>
+    <div class="options_admin clearfix">
+      <button type="button" class="btn btn-default btn-block pull-left"><a href="itinerary-page.php">crear viaje</a></button>
+      <button type="button" class="btn btn-default btn-block pull-right"><a href="itinerary-page.php">crear viaje</a></button>
+    </div>
     <div class="planning-contents">
       <div id="how-much" class="how-much-content hide">
         <div class="step-content"></div>
@@ -41,16 +45,16 @@
           <?php include('chat.php'); ?>
         </div>
       </div>
-      <div id="where" class="where-content">
+      <div id="where" class="where-content hide">
         <p>Hola</p>
       </div>
-      <div id="when" class="when-content">
+      <div id="when" class="when-content hide">
       </div>
-      <div id="how" class="how-content">
+      <div id="how" class="how-content hide">
       </div>
-      <div id="who" class="who-content">
+      <div id="who" class="who-content hide">
       </div>
-      <div id="what" class="what-content">
+      <div id="what" class="what-content hide">
       </div>
     </div>
   </div>

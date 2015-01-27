@@ -14,7 +14,7 @@
 <!-- CONTENT -->
 <div id="main" class="clearfix offers-page explore">
   <div id="container-size" class="container">
-    <form class="filters form-inline">
+    <form class="filters form-inline clearfix">
       <div class="form-group col-xs-12 col-sm-4">
         <select id="trip-type" class="form-control">
             <option>1</option>

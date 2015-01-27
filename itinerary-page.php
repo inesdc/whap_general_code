@@ -17,29 +17,23 @@
   <div id="container-size" class="container">
     <section class="modules trips">
       <article class="trip">
-        <?php include('php-calls/trip.php'); ?>
-      </article>
-      <article class="trip">
-        <?php include('php-calls/trip.php'); ?>
-      </article>
-      <article class="trip">
-        <div class="module-trips">
-          <?php include('php-calls/trip.php'); ?>
-        </div>
+        <?php include('php-calls/trip_itinerary.php'); ?>
       </article>
     </section>
-    <section class="aside">
-        <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
-        <div class="module_offers">
+    <section class="aside add_whats_drag">
+        <button id="aside-trigger" class="hidden-xs hidden-extralg">Whats</button>
+        <h3>This are your Whats</h3>
+        <p>Drag&drop your whats into the itinerary to add them.</p>
+        <div class="module_offers draggable">
           <p>1</p>
         </div>
-        <div class="module_offers">
+        <div class="module_offers draggable">
           <p>2</p>
         </div>
-        <div class="module_offers">
+        <div class="module_offers draggable">
           <p>3</p>
         </div>
-        <div class="module_offers">
+        <div class="module_offers draggable">
           <p>4</p>
         </div>
     </section>
