@@ -9,10 +9,9 @@
 
         
         <section class="hidden-xs">
-            <div class="content">
+            <div class="content clearfix">
 		        <div class="remaining">
 	                <h2>Remaining <strong>730€</strong> of <strong>1.300€</strong></h2>
-                    <span class="center"></span>
                 </div>
 
         

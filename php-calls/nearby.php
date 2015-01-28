@@ -1,5 +1,5 @@
 <div id="nearby" class="module nearby" data-toggle="modal" data-target="#basicModal">
- <nav id="nearby">
+ <nav>
     <div class="top">
         <span class="center"></span>
         <img id="map" src="images/map.png">

@@ -409,7 +409,7 @@ h3 {
 /*----ONGOING-------*/
 
 .module-ongoing {
-	background: #f3f3f3;
+	background-color: #fff;
 	position: relative;
 }
 
@@ -1213,6 +1213,7 @@ section.profile-data.pull-right {
 
 	/* modulos */
 
+
 	.modules {
 		padding: 0;
 	}
@@ -1223,6 +1224,22 @@ section.profile-data.pull-right {
 	section.modules.trips {
 		background-color: #fff;
 		padding: 10px;
+	}
+
+	.ongoing article .panel {
+		margin-bottom: 0;
+	}
+
+	.ongoing article .panel-footer{
+		display: none;
+	}
+
+	.ongoing article .panel-body {
+		background-color: transparent;
+	}
+
+	.ongoing article .panel {
+		background-color: transparent;
 	}
 
 	/*trips*/

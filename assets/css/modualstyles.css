@@ -3,8 +3,9 @@
 .card{
     height:100%;
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: #FAFAFA;
     position:relative;
+    overflow: hidden;
 }
 
 .top{
@@ -53,36 +54,85 @@
 
 /* --ITINERARY STYLE -- */ 
 
+.itinerary {
+    padding:0;
+}
 
 .itinerary div.heads{
+    padding-top: 10px;
     display: block;
     text-align: center;
 }
+
 .itinerary li.head{
     display: inline-block;
 }
 
+.profilePictures {
+    margin-bottom: 0px;
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+.head.participates {
+    margin-bottom: 0px;
+}
 
 .itinerary div.schedule{
+    margin-top: -17px;
+    padding: 0 10px 10px 10px;
     width:100%;
     text-align:center;
     height: 20%;
+    background-color: #e9f2f3;
 }
 
-.itinerary li.cita{
+.timeline {
+    position: relative;
+}
+
+.timeline .line{
+    display: block;
+    margin: 0 auto;
+    width: 3px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.timeline .ico-timeline-ball {
+    position: absolute;
+    top:20px;
+    left: 1px;
+    background: url('../../images/timeline-ball.png') no-repeat left;
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.itinerary .cita{
+    padding-top: 20px;
     font-family: "Montserrat";
     font-size: 16px;
     color: #2ab0b9;
 }
 
-.itinerary div.location{
-    width: 100%;
-    text-align: center;
+.itinerary .cita span,
+.itinerary .cita .action {
+    float: left;
 }
 
-.itinerary div.location div.box{
+.itinerary .cita .action {
+    text-align: left;
+}
+
+.itinerary div.location{
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    text-align: center;
     border: 1px solid #2ab0b9;
-    width: 50%;
     height: ;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -91,9 +141,8 @@
 }
 
 .itinerary img.locationIcon{
-    height: 1.8em;
-    width: 1.8em;
-    display:inline;
+    height: 18px;
+    width: 14px;
 }
 
 .itinerary h2.barcelona{
@@ -104,24 +153,19 @@
 }    
 
 .itinerary div.buttons{
-    position:absolute;
-    bottom: -2px;
-    right:5%;
-    width:100%;
+
 }
 
-.itinerary ul.optionButtons{
-    position:absolute;
-    bottom: 2px;
-    right:;
+.itinerary ul.optionButtons li {
+    font-size: 12px;
 }
 
 .itinerary li.what{
-    display:inline;
-    padding: 2px;
+    display:inline-block;
+    padding: 7px;
     background-color: #2ab0b9;
     color:white;
-    border-radius:6px;
+    border-radius:4px;
 
 }
 
@@ -130,7 +174,6 @@
 /* -- NEARBY CARD -- */
 
 .nearby .content{
-    min-height: 300px;
     background-color:#f3f3f3;
     background-image: url('../../images/bigMap.png');
     background-size: cover;
@@ -175,7 +218,6 @@
   display: inline-block;
   height: 95px;
   width: 30%;
-  background-color: black;
   text-align: center;
   margin: 0 2.5px;
 }
@@ -240,10 +282,11 @@
 
 .feed .content{
     text-align:center;
+    padding: 10px;
 }
 
 .feed .location{
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .feed .location img{
@@ -255,7 +298,7 @@
 }
 
 .feed .weather {
-    font-size: 2.5em;
+    font-size: 1.5em;
     color:white;
     text-transform:bold;
     width:auto;
@@ -284,12 +327,14 @@
     background-image: url('../../images/bkg1.png');
     background-repeat: no-repeat;
     background-size:cover;
+    width: 100%;
 }
 
 .feed #encinitas{
     background-image: url('../../images/bkg2.png');
     background-size:cover;
     background-repeat:no-repeat;
+    width: 100%;
 }
 
 /* -- END OF FEEDS CARD -- */
@@ -298,11 +343,8 @@
 
 .budget .remaining{
     text-align:center;
-    height: 40px;
     width:100%;
     background-color:#f3f3f3;
-    position:absolute;
-    top: -10px;
 }
 
 .budget .remaining h2{
@@ -310,6 +352,8 @@
     font-size: 1.1em;
     color: #2ab0b9;
     vertical-align:middle;
+    margin:0;
+    padding: 10px;
 }
 
 .budget .remaining strong{
@@ -318,12 +362,10 @@
     font-weight:bold;
 }
 
-.budget table{
-    position:absolute;
-    bottom: 10px;
-    margin: 0 5% 0 5%;
-    height:75%;
-    width: 90%;
+.budget table td,
+.budget table tr {
+
+    padding: 20px 20px 0px 20px;
     font-family: "Montserrat";
 
 }
@@ -340,17 +382,48 @@
 
 
 @media(max-width:767px) {
-    #bring .top img,
-    #album .top img,
-    #budget .top img {
+
+    .nearby .content{
+    height: 300px;
+    }
+
+    .modules-ongoing-link #bring,
+    .modules-ongoing-link #album,
+    .modules-ongoing-link #budget {
         display: block;
         margin: 0 auto;
         width: 28px;
         height: 26px;
     }
 
+    .modules-ongoing-link a {
+        padding: 40px;
+        border-left: 1px solid #2ab0b9; 
+    }
+
+    .itinerary div.schedule{
+    padding: 0 20px 20px 20px;
+}
+
     .itinerary {
         background-color: #fff;
     }
 
+    .feed .content{
+        padding: 0px;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .feed .feed-item {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}
+
+@media(min-width:767px) {
+    .top {
+        padding: 14px;
+    }
 }

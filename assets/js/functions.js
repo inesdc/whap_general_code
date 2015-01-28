@@ -49,8 +49,10 @@ $(document).ready(function(){
   //Mantain aspect ratio
   if ($(window).width()>768) {
 	var a_r = 1.1143;
+  var top_height = $('#nearby nav').height();
 	var onging_module_width = $('.module-ongoing').width(); 
 	$('.module-ongoing').css("height", onging_module_width / a_r);
+  $('#nearby .content').css("height", onging_module_width / a_r - top_height);
   };
 
 	$(window).resize(function(){
@@ -58,6 +60,9 @@ $(document).ready(function(){
 		var a_r = 1.1143;
 		var onging_module_width = $('.module-ongoing').width(); 
 		$('.module-ongoing').css("height", onging_module_width / a_r);
+    $('#nearby .content').css("height", onging_module_width / a_r - top_height);
+  } else {
+    $('.module-ongoing').css("height", "auto");
   };
 	});
 

@@ -1,6 +1,6 @@
 ﻿<div class="panel">
-    <div class="panel-heading">
-        <p>2 Comments</p>
+    <div class="panel-heading top">
+        <h2>2 Comments</h2>
     </div>
     <div class="panel-body">
         <ul class="media-list">
@@ -8,7 +8,7 @@
                 <div class="media-body">
                     <div class="media">
                         <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="assets/images/user.png"/>
+                            <img class="media-object img-circle" src="images/guy1.png"/>
                         </a>
                     </div>
                     <div class="media-body">
@@ -22,7 +22,7 @@
                 <div class="media-body">
                     <div class="media">
                         <a class="pull-left" href="#">
-                            <img class="media-object img-circle " src="assets/images/user.png"/>
+                            <img class="media-object img-circle " src="images/guy2.png"/>
                         </a>
                     </div>
                     <div class="media-body">

@@ -23,41 +23,61 @@
           </div>
         </article>
         <article class="col-sm-6 col-md-4">
-          <div class="module-ongoing">
+          <div class="module-ongoing card">
             <?php include ('php-calls/itinerary.php'); ?>
           </div>
         </article>
         <article class="col-sm-6 col-md-4">
-          <div class="module-ongoing" data-toggle="modal" data-target="#basicModal">
+          <div class="module-ongoing card" data-toggle="modal" data-target="#basicModal">
             <?php include ('php-calls/nearby.php'); ?>
           </div>
         </article>
         <article class="aside">
           <button id="aside-trigger" class="hidden-xs hidden-extralg">chat</button>
-          <div class="module-ongoing">
+          <div class="module-ongoing hidden-xs">
             <p>3</p>
           </div>
         </article>
+        <article class="visible-xs">
+          <div class="module-ongoing card">
+            <?php include ('php-calls/chat.php'); ?>
+          </div>
+        </article>
         <article class="col-sm-6 col-md-4">
-          <div class="module-ongoing">
+          <div class="module-ongoing card">
             <?php include ('php-calls/feeds.php'); ?>
           </div>
         </article>
-        <article class="col-xs-4 col-sm-6 col-md-4">
-          <div class="module-ongoing">
+        <article class="modules-ongoing-link clearfix visible-xs">
+          <a href="#" class="top col-xs-4">
+            <img id="album" src="images/camera.png">
+            <h2 class="modualHeader">Album</h2>
+          </a>
+          <a href="#" class="top col-xs-4">
+            <img id="bring" src="images/bring.png">
+            <h2 class="modualHeader">Bring</h2>
+          </a>
+          <a href="#" class="top col-xs-4">
+            <img id="budget" src="images/budget.png">
+            <h2 class="modualHeader">Budget</h2>
+          </a>
+        </article>
+        <article class="col-sm-6 col-md-4 hidden-xs">
+          <div class="module-ongoing card">
             <?php include ('php-calls/album.php'); ?>
           </div>
         </article>
-        <article class="col-xs-4 col-sm-6 col-md-4">
-          <div class="module-ongoing">
+        <article class="col-sm-6 col-md-4 hidden-xs">
+          <div class="module-ongoing card">
              <?php include ('php-calls/bring.php'); ?>
           </div>
         </article>
-      	<article class="col-xs-4 col-sm-6 col-md-4">
-            <div class="module-ongoing">
+      	<article class="col-sm-6 col-md-4 hidden-xs">
+            <div class="module-ongoing card">
               <?php include ('php-calls/budget.php'); ?>
             </div>
         </article>
+        
      </section>
     </div>
   </div>
