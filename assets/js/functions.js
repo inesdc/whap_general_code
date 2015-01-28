@@ -47,15 +47,18 @@ $(document).ready(function(){
   });
 
   //Mantain aspect ratio
-
+  if ($(window).width()>768) {
 	var a_r = 1.1143;
 	var onging_module_width = $('.module-ongoing').width(); 
 	$('.module-ongoing').css("height", onging_module_width / a_r);
+  };
 
 	$(window).resize(function(){
+  if ($(window).width()>768) {
 		var a_r = 1.1143;
 		var onging_module_width = $('.module-ongoing').width(); 
 		$('.module-ongoing').css("height", onging_module_width / a_r);
+  };
 	});
 
 
@@ -116,19 +119,26 @@ $(document).ready(function(){
 
 
   //Aside create draggable width/height
-
+  if ($(window).width() > 768) {
   var width = $('.droppable').width();
   var height = $('.droppable').height(); 
 
   $('.module-steps').css("width", width);
   $('.module-steps').css("height", height);
 
+  };
+
   $(window).resize(function() {
+  if ($(window).width() > 768) {
     var width = $('.droppable').width();
     var height = $('.droppable').height(); 
 
     $('.module-steps').css("width", width);
     $('.module-steps').css("height", height);
+   } else {
+    $('.module-steps').css("width", "auto");
+    $('.module-steps').css("height", "auto");
+   };
   });
 
 
@@ -166,7 +176,8 @@ if ($(window).width() > 1200) {
   $('.profile-data').css("height",window_height-50);
   $('.past-trips').css("width",container_past_trips);
   $('.past-trips').css("height",container_past_trips / a_r_map);
-  };
+  } else { 
+    $('.past-trips').css("width","auto");};
 
   $(window).resize(function() {
   if ($(window).width() > 1200) {
@@ -177,7 +188,9 @@ if ($(window).width() > 1200) {
     $('.profile-data').css("height",window_height-50)
     $('.past-trips').css("width",container_past_trips);
     $('.past-trips').css("height",container_past_trips / a_r_map);
-  };
+  } else { 
+    $('.past-trips').css("width","auto");
+    };
   });
 
   //Friends
@@ -263,8 +276,6 @@ if ($(window).width() > 1200) {
     $('.secondary-menu').removeClass('hidden');
     $('.map').addClass('hidden');  
   }else{
-    $('.past-trips-content').removeClass('col-sm-6');
-    $('.past-trips-content').removeClass('col-xs-12');
     $('#friends').removeClass('col-sm-6');
   };
 
@@ -302,6 +313,18 @@ if ($(window).width() > 1200) {
   $(window).resize(function() {
     if ($(window).width() < 769) {
     $('#friends').addClass('hide');
+    $('.tab-trips').click(function(){
+      $('#friends').addClass('hide');
+      $('.past-trips-content').removeClass('hide');
+      $('.tab-trips').addClass('active');
+      $('.tab-friends').removeClass('active');
+    });
+    $('.tab-friends').click(function(){
+      $('.past-trips-content').addClass('hide');
+      $('#friends').removeClass('hide');
+      $('.tab-trips').removeClass('active');
+      $('.tab-friends').addClass('active');
+    });
   }else{
     $('#friends').removeClass('hide');
   };
@@ -313,22 +336,39 @@ if ($(window).width() > 1200) {
     if ($(window).width() < 1200) {
     $('.secondary-menu').removeClass('hidden');
     $('.map').addClass('hidden');
-    $('.past-trips-content').addClass('col-sm-6');
-    $('.past-trips-content').addClass('col-xs-12');
     $('#friends').addClass('col-sm-6');
     }else{
       $('.secondary-menu').addClass('hidden');
       $('.map').removeClass('hidden');
-      $('.past-trips-content').removeClass('col-sm-6');
-      $('.past-trips-content').removeClass('col-xs-12');
       $('#friends').removeClass('col-sm-6');
     };
   });
 
 });
 
+//Explore menu xs
 
-    
+if($(window).width() < 768) {
+  $('.ideas').parent().addClass('secondary-menu');
+  $('.ideas').parent().addClass('clearfix');
+  $('.ideas').parent().removeClass('secondary-nav');
+  $('.module-steps').removeClass('draggable');
+};
+   
+$(window).resize(function() {
+  if($(window).width() < 768) {
+  $('.ideas').parent().addClass('secondary-menu');
+  $('.ideas').parent().addClass('clearfix');
+  $('.ideas').parent().removeClass('secondary-nav');
+  $('.module-steps').removeClass('draggable');
+} else {
+  $('.module-steps').addClass('draggable');
+  $('.ideas').parent().removeClass('secondary-menu');
+  $('.ideas').parent().removeClass('clearfix');
+  $('.ideas').parent().addClass('secondary-nav');
+};
+
+}); 
 
 // Explore second nav 
 /*

@@ -1,6 +1,6 @@
 <div id="itinerary" class="module itinerary">
-<nav id="itinerary">
-    <div class="top">
+<nav id="itinerary hidden-xs">
+    <div class="top hidden-xs">
         <span class="center"></span>
         <img id="paperAirplane" src="images/paperAirplane.png">
         <h2 class="modualHeader">Itinerary</h2>                
@@ -11,7 +11,7 @@
 <section id="itinerary">
     <div class="content">
         <div class='heads'>
-        <ul class="profilePictures">
+        <ul class="profilePictures list-unstyled">
                 <li class="head"><img class="avatar" src="images/guy1.png"></li>
                 <li class="head"><img class="avatar" src="images/guy2.png"></li>
                 <li id="front" class="head"><img class="avatar" src="images/guy3.png"></li>
@@ -45,8 +45,8 @@
 </div>
     </section>
 
-<footer id="itinerary">
-    <div class="expand">
+<footer id="itinerary hidden-xs">
+    <div class="expand hidden-xs">
          <span class="center"></span>
          <img id="arrow" src="images/arrow.png">
     </div>

@@ -8,33 +8,26 @@
 }
 
 .top{
-    height:15%;
-    width: 100%;
     background-color:white;
     border-bottom: 2px solid #e7e7e7;
     text-align:center;
-    position:absolute;
-    top: 0px;
+    padding: 22px;
 }
 
 .top h2{
     display:inline-block;
     vertical-align:middle;
-    width: 25%;
     font-family:"Montserrat";
     color: #2ab0b9;
     font-size: 1em;
     text-transform:uppercase;
     font-weight:bold;
+    margin: 0;
+    
 }
 
 .content{
-    position:absolute;
-    top:16%;
-    height:72%;
-    width: 100%;
-    background-color:#f3f3f3;
-    overflow:hidden;
+   
 }
 
 .expand{
@@ -62,13 +55,11 @@
 
 
 .itinerary div.heads{
-    position:relative;
-    width:100%;
-    top: 3%;
-    right:5%;
+    display: block;
+    text-align: center;
 }
 .itinerary li.head{
-    display: inline;
+    display: inline-block;
 }
 
 
@@ -139,30 +130,27 @@
 /* -- NEARBY CARD -- */
 
 .nearby .content{
-    position:absolute;
-    top:16%;
-    height:68%;
-    width: 100%;
+    min-height: 300px;
     background-color:#f3f3f3;
     background-image: url('../../images/bigMap.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nearby #moon{
-    position:relative;
+    position:absolute;
     top:68%;
     left: 72%;
 }
 
 .nearby #globe{
-    position:relative;
+    position:absolute;
     top: 30%;
     left: 18%;
 }
 
 .nearby #dot{
-    position:relative;
+    position:absolute;
     left: 10%;
     top: 73%;
 
@@ -173,13 +161,7 @@
 /* -- ALBUM CARD -- */
 
 .album .content{
-    position:absolute;
-    top:16%;
-    height:68%;
-    width: 100%;
-    background-color:#f3f3f3;
-    text-align:center;
-    padding: 1px 0;
+
 }
 
 .album .pictures{
@@ -261,14 +243,7 @@
 }
 
 .feed .location{
-    display:inline-block;
-    height: 90%;
-    width:40%;
-    background-color:purple;
-    vertical-align:middle;
-    margin: 0 5px 4% 5px;
-    text-align:center;
-    position:relative;
+    padding: 20px;
 }
 
 .feed .location img{
@@ -279,7 +254,7 @@
 
 }
 
-.feed .location h2{
+.feed .weather {
     font-size: 2.5em;
     color:white;
     text-transform:bold;
@@ -308,12 +283,12 @@
 .feed #annecy{
     background-image: url('../../images/bkg1.png');
     background-repeat: no-repeat;
-    background-size:120%;
+    background-size:cover;
 }
 
 .feed #encinitas{
     background-image: url('../../images/bkg2.png');
-    background-size:120%;
+    background-size:cover;
     background-repeat:no-repeat;
 }
 
@@ -363,3 +338,19 @@
     padding-left: 10%;
 }
 
+
+@media(max-width:767px) {
+    #bring .top img,
+    #album .top img,
+    #budget .top img {
+        display: block;
+        margin: 0 auto;
+        width: 28px;
+        height: 26px;
+    }
+
+    .itinerary {
+        background-color: #fff;
+    }
+
+}

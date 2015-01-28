@@ -2,8 +2,6 @@
   <header>
     <?php include ('php-calls/header.php'); ?>
     <div class="relative ohidden">
-      <div class="col-xs-12 col-sm-3 crear-cont">
-      </div>
       <ul class="secondary-nav list-unstyled">
         <li class="col-xs-6 col-sm-6 ideas"><a href="ideas.php">Ideas</a></li>
         <li class="col-xs-6 col-sm-6 active offers"><a href="#">Offers</a></li>
@@ -45,11 +43,11 @@
       <article class="offer col-xs-12 col-sm-6 col-md-4">
         <div class="module_offers"></div>
       </article>
-      <article class="offer col-xs-12 col-sm-6 col-md-4">
+      <article class="offer col-xs-12 col-sm-6 col-md-4 hidden-sm">
         <div class="module_offers"></div>
       </article>
       <div class="result-pages col-xs-12">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
           <ul class="pagination">
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
@@ -59,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <span class="results-display col-xs-12 col-sm-2">83 results | <strong>View all</strong></span>
+        <span class="results-display col-xs-12 col-sm-3">83 results | <strong>View all</strong></span>
       </div>
     </section>
     <section class="friends_liked">
@@ -70,7 +68,7 @@
       <article class="offer col-xs-12 col-sm-6 col-md-4">
         <div class="module_offers"></div>
       </article>
-      <article class="offer col-xs-12 col-sm-6 col-md-4">
+      <article class="offer col-xs-12 col-sm-6 col-md-4 hidden-sm">
         <div class="module_offers"></div>
       </article>
     </section>

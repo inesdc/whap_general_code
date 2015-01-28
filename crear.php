@@ -4,9 +4,9 @@
     <?php include ('php-calls/header.php'); ?>
     <div class="relative ohidden">
       <div class="col-xs-12 col-sm-3 crear-cont">
-        <button type="button" class="btn btn-default btn-block">cancelar</button>
+        <button type="button" class="btn btn-default btn-block hidden-xs">crear</button>
       </div>
-      <ul class="secondary-nav list-unstyled">
+      <ul class="secondary-nav list-unstyled hidden-xs">
         <li class="col-xs-4 col-sm-3 ongoing"><a href="index.php">Ongoing</a></li>
         <li class="col-xs-4 col-sm-3 planning"><a href="planning.php">Planning</a></li>
         <li class="col-xs-4 col-sm-3 upcoming"><a href="upcoming.php">Upcoming</a></li>
@@ -36,7 +36,7 @@
         <label for="trip-description">Add a description</label>
         <textarea class="form-control" id="trip-description" rows="3"></textarea>
       </div>
-      <div class="add_steps_drop">
+      <div class="add_steps_drop hidden-xs">
         <h3>Add steps</h3>
         <div class="col-sm-6 col-md-4">
           <div id="droppable" class="droppable">
@@ -76,7 +76,7 @@
         <button type="submit" class="btn btn-default">Crear</button>
       </div> 
     </form>
-    <section class="aside add_steps_drag">
+    <section class="aside add_steps_drag col-xs-12">
       <h3>Steps</h3>
       <p>Drag&drop the steps you want to fulfill and create the trip. You will always be able to edit what you’ve filled and completethe rest.</p>
       <div id="draggable" class="draggable module-steps">

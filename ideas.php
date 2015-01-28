@@ -2,8 +2,6 @@
   <header>
     <?php include ('php-calls/header.php'); ?>
     <div class="relative ohidden">
-      <div class="col-xs-12 col-sm-3 crear-cont">
-      </div>
       <ul class="secondary-nav list-unstyled">
         <li class="col-xs-6 col-sm-6 active ideas"><a href="#">Ideas</a></li>
         <li class="col-xs-6 col-sm-6 offers"><a href="offers.php">Offers</a></li>

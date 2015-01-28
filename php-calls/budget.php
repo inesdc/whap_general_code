@@ -2,14 +2,13 @@
         <div id="budget" class="module card budget">
           <nav>
             <div class="top">
-                <span class="center"></span>
                 <img id="budget" src="images/budget.png">
                 <h2 class="modualHeader">Budget</h2>                
             </div>
         </nav>
 
         
-        <section>
+        <section class="hidden-xs">
             <div class="content">
 		        <div class="remaining">
 	                <h2>Remaining <strong>730€</strong> of <strong>1.300€</strong></h2>
@@ -38,7 +37,7 @@
             </div>  
         </section>
 
-        <footer>
+        <footer class="hidden-xs">
             <div class="expand">
                  <span class="center"></span>
                  <img id="arrow" src="images/arrow.png">
@@ -46,5 +45,5 @@
         </footer>
         </div>
       </article>
-   </section>
+     </section>
 

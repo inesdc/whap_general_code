@@ -39,7 +39,7 @@
         <input class="form-control" type="text" value="********">
       </fieldset>
       <button class="end-editing btn btn-default btn-block">Save changes</button>
-</form>
+  </form>
   <div class="secondary-menu clearfix hidden">
     <a href="#" class="tab tab-friends col-xs-6" data-target="#friends">Friends</a>
     <a href="#" class="tab tab-trips active col-xs-6" data-target=".past-trips-content">Past trips</a>
@@ -122,4 +122,29 @@
       </ul>
     </div>
   </div>
+  <section class="past-trips-content col-xs-12 col-sm-6 hidden-lg">
+      <div class="past-trips">
+        <div class="section_title">
+          <p>Your past trips</p>
+        </div>
+        <div class="map-trips">
+          <img class="map" src="assets/images/map.png">
+          <article id="trip1" class="trip">
+            <i class="location icon ico-location pull-left"></i>
+            <div class="trips-summary">
+            </div>
+          </article>
+          <article id="trip2" class="trip">
+            <i class="location icon ico-location pull-left"></i>
+            <div class="trips-summary">
+            </div>
+          </article>
+          <article id="trip3" class="trip">
+            <i class="location icon ico-location pull-left"></i>
+            <div class="trips-summary">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 </div> 

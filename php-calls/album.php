@@ -1,12 +1,11 @@
 <div id="album" class="album module">
   <nav id="album">
       <div class="top">
-          <span class="center"></span>
           <img id="camera" src="images/camera.png">
           <h2 class="modualHeader">Album</h2>                
       </div>
   </nav>
-  <div id="album" class="content">
+  <div id="album" class="content clearfix hidden-xs">
 
     <div id="album" class="pictures">
         <div id="pic1" class="image">
@@ -29,8 +28,8 @@
 
     </div>
   </div>
-  <footer id="nearby">
-      <div class="expand">
+  <footer id="nearby hidden-xs">
+      <div class="expand hidden-xs">
            <span class="center"></span>
            <img id="arrow" src="images/arrow.png">
       </div>

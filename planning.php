@@ -6,9 +6,9 @@
       <button type="button" class="btn btn-default btn-block">crear viaje</button>
     </div>
     <ul class="secondary-nav list-unstyled">
-      <li class="col-xs-4 col-sm-3 ongoing"><a href="index.php">Ongoing</a></li>
-      <li class="col-xs-4 col-sm-3 active planning"><a href="#">Planning</a></li>
-      <li class="col-xs-4 col-sm-3 upcoming"><a href="upcoming.php">Upcoming</a></li>
+      <li class="col-xs-4 col-sm-3 ongoing"><a href="ongoing.php"><i class="icon ico-ongoing visible-xs"></i>Ongoing</a></li>
+      <li class="col-xs-4 col-sm-3 active planning"><a href="#"><i class="icon ico-planning visible-xs"></i>Planning</a></li>
+      <li class="col-xs-4 col-sm-3 upcoming"><a href="upcoming.php"><i class="icon ico-upcoming visible-xs"></i>Upcoming</a></li>
     </ul>
   </div>
 </header>
@@ -28,7 +28,7 @@
         </div>
       </article>
     </section>
-    <section class="aside">
+    <section class="aside hidden-xs">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
         <div class="module_offers">
           <p>1</p>

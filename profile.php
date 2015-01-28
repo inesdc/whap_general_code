@@ -11,7 +11,7 @@
     <?php include ('php-calls/user_profile.php'); ?>
   </section>
   
-    <section class="past-trips-content col-xs-12 col-sm-6">
+    <section class="past-trips-content hiden-xs-md">
       <div id="past-trips" class="past-trips">
         <div class="section_title">
           <p>Your past trips</p>

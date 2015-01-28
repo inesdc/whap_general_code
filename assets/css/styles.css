@@ -12,6 +12,8 @@
 .half-width  {
 	width: 50%;
 }
+
+
 /*
 * {
 	border: 1px solid red;
@@ -148,7 +150,10 @@ input {
 .secondary-menu a{
 	color: #2AB0B9;	
 	padding: 20px 0;
+	display: block;
 }
+
+
 
 
 .secondary-menu .active {
@@ -238,6 +243,31 @@ input {
 	height: 39px;
 }
 
+.ico-ongoing {
+	margin: 0 auto;
+	background: url('../ico/ongoing.png') no-repeat left;
+	width: 20px;
+	height: 28px;
+	vertical-align: bottom;
+}
+
+.ico-planning {
+	margin: 0 auto;
+	background: url('../ico/planning.png') no-repeat left;
+	width: 27px;
+	height: 26px;
+	vertical-align: bottom;
+	}
+
+.ico-upcoming {
+	margin: 0 auto;
+	background: url('../ico/upcoming.png') no-repeat left;
+	width: 22px;
+	height: 26px;
+	vertical-align: bottom;
+}
+
+
 
 
 /* ===== GENERAL =====
@@ -259,6 +289,7 @@ body {
 	max-width: 1024px;
 	margin-top: 114px;
 	margin-left: 0;
+	margin-bottom: 50px;
 }
 
 h3 {
@@ -427,6 +458,8 @@ h3 {
 .module-steps {
 	background-color: gray;
 	border-bottom: 1px solid #fff;
+	height: 50px;
+	width: 100%;
 }
 
 
@@ -874,6 +907,11 @@ section.profile-data.pull-right {
    =================== */ 
 
 @media(min-width: 1199px) {
+
+	.hidden-lg {
+	display: none;
+	}
+
 	#trip1 {
 	position: absolute;
 	top: 58%;
@@ -894,6 +932,10 @@ section.profile-data.pull-right {
 }
 
 @media(max-width: 1199px) {
+
+	.hiden-xs-md {
+		display: none;
+	}
 
 	.past-trips-content {
 		padding: 0;
@@ -981,7 +1023,11 @@ section.profile-data.pull-right {
 		position: fixed;
 		bottom: 0px;
 		width: 100%;
-		padding-left: 20px;
+		padding: 20px;
+		}
+
+	.add_steps_drag p {
+		margin-bottom: 20px;
 	}
 
 	.add_whats_drag {
@@ -1034,6 +1080,7 @@ section.profile-data.pull-right {
 		padding-bottom: 14px;
 	}
 
+
 	.crear-cont .btn {
 	float: right;
 	margin-top: 10px;
@@ -1076,9 +1123,44 @@ section.profile-data.pull-right {
 	
 	/* General */
 
+	.crear-cont {
+		padding: 20px;
+	}
+
+	.btn {
+		width: 100%;
+		height: 50px;
+	}
+
+	.explore .results {
+		background-color: #2c525d;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.explore .friends_liked {
+		padding-left: 20px;
+		padding-right: 20px;	
+	}
+
+	.explore article {
+		margin-bottom: 20px;
+	}
+
+	.explore .filters {
+		background-color: #f3f3f3;
+	}
+
+	.explore .filters fieldset,
+	.explore .filters select,
+	.explore .filters #dates {
+		height: 45px;
+	}
+
 	.container {
 		padding: 0px;
 		margin-top: -10px;
+
 	}
 
 	.width25-xs {
@@ -1145,6 +1227,11 @@ section.profile-data.pull-right {
 
 	/*trips*/
 
+	.details {
+		background-color: #fff;
+		padding: 20px;
+	}
+
 	.planning section.aside {
 		background-color: gray;
 		padding: 10px;
@@ -1163,6 +1250,16 @@ section.profile-data.pull-right {
 	.decided,
 	.deciding {
 		clear: both;
+	}
+
+	/*Create*/
+	.add_steps_drag {
+		position: static;
+	}
+
+	.add_steps_drag p,
+	.add_steps_drag h3 {
+		text-align: center;
 	}
 }
 

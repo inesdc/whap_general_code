@@ -5,7 +5,7 @@
         <h2 class="modualHeader">Bring</h2>                
     </div>
   </nav>
-  <div class="list">
+  <div class="list hidden-xs">
     <table class="items">
         <thead>
           <tr>
@@ -16,7 +16,7 @@
         </tbody>
     </table>
   </div>
-  <div class="modualContainer">
+  <div class="modualContainer hidden-xs">
       <div class="input">
           <input type="text" class="custinput" id="item-input" placeholder="Enter item here..." autofocus>
           <button type="submit" class="btn">add</button>

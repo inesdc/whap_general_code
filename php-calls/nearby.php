@@ -17,8 +17,8 @@
     </div>
 </section>
 
-<footer id="nearby">
-    <div class="expand">
+<footer id="nearby hidden-xs">
+    <div class="expand hidden-xs">
          <span class="center"></span>
          <img id="arrow" src="images/arrow.png">
     </div>

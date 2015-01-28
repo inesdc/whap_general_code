@@ -6,9 +6,9 @@
         <button type="button" class="btn btn-default btn-block">crear viaje</button>
       </div>
       <ul class="secondary-nav list-unstyled">
-        <li class="col-xs-4 col-sm-4 ongoing"><a href="index.php">Ongoing</a></li>
-        <li class="col-xs-4 col-sm-4 planning"><a href="planning.php">Planning</a></li>
-        <li class="col-xs-4 col-sm-4 active upcoming"><a href="#">Upcoming</a></li>
+        <li class="col-xs-4 col-sm-4 ongoing"><a href="ongoing.php"><i class="icon ico-ongoing visible-xs"></i>Ongoing</a></li>
+        <li class="col-xs-4 col-sm-4 planning"><a href="planning.php"><i class="icon ico-planning visible-xs"></i>Planning</a></li>
+        <li class="col-xs-4 col-sm-4 active upcoming"><a href="#"><i class="icon ico-upcoming visible-xs"></i>Upcoming</a></li>
       </ul>
     </div>
   </header>
@@ -29,7 +29,7 @@
         </div>
       </article>
    </section>
-    <section class="aside">
+    <section class="aside hidden-xs">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
         <div class="chat">
           <?php include ('php-calls/chat.php'); ?>
