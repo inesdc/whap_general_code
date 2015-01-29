@@ -81,6 +81,12 @@ body {
 	font-weight: normal;
 }
 
+h2 {
+	margin: 0;
+	font-size: 20px;
+	font-weight:700;
+}
+
 a {
 	color: #fff;
 }
@@ -204,12 +210,19 @@ input {
 	margin-right: 6px;
 }
 
+.ico-details {
+	background: url('../ico/details.png') no-repeat right;
+	width: 24px;
+	height: 27px;
+	vertical-align: middle;
+	margin-left: 11px;
+}
+
 .ico-profile {
 	background: url('../ico/trips_icon.png') no-repeat left;
 	width: 22px;
 	height: 22px;
 	vertical-align: bottom;
-	margin-right: 6px;
 }
 
 .ico-settings {
@@ -409,7 +422,6 @@ h3 {
 /*----ONGOING-------*/
 
 .module-ongoing {
-	background-color: #fff;
 	position: relative;
 }
 
@@ -481,6 +493,20 @@ h3 {
 
 .ongoing .modules article {
 	padding: 10px;
+}
+
+.details { 
+	color: #2c525d;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.details p {
+	font-size: 18px;
+	font-weight: normal;
+	padding-left: 5px;
+	display: inline-block;
+
 }
 
 
@@ -1243,10 +1269,17 @@ section.profile-data.pull-right {
 	}
 
 	/*trips*/
+	.ico-details {
+	background: url('../ico/details-blue.png') no-repeat right;
+}
 
 	.details {
 		background-color: #fff;
-		padding: 20px;
+		color: #2c525d;
+		padding: 35px 20px 35px 20px;
+		height: 90px;
+		color: rgb(42, 176, 185);
+}
 	}
 
 	.planning section.aside {
