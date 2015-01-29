@@ -2,7 +2,7 @@ div.offerCard {
   height: 100%;
   width: 100%;
   background-color: white;
-  position: absolute;
+  position: relative;
 }
 
 .offerCard div.destinationIMG {
@@ -10,7 +10,7 @@ div.offerCard {
   width: 100%;
   background-image: url("../../images/bk3.png");
   background-size: 100%;
-  position: absolute;
+  position: relative;
   top: 0px;
   margin: 0px;
 }
@@ -18,7 +18,7 @@ div.offerCard {
   height: 45%;
   width: 100%;
   background-color: white;
-  position: absolute;
+  position: relative;
   bottom: 0px;
 
 }
@@ -47,11 +47,10 @@ div.offerCard {
   text-align:center;
 }
 .offerCard ul{
-  position:absolute;
-  bottom:-15%;
+  position:relative;
   z-index:100;
   list-style-type:none;
-  padding-left: 30%;
+
 }
 
 .offerCard li{

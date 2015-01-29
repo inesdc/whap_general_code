@@ -6,7 +6,7 @@
       <p class="where">Lonely Planet</p>
       <img src="images/stars.png" class="rating">
     </div>
-  <div class="icons">
+    <div class="icons">
   <ul>
 	<li><img src="images/alien.png"></li>
 	<li><img src="images/chat.png"></li>
