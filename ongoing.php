@@ -19,7 +19,13 @@
       <section class="modules col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <article class="col-sm-12 col-md-12">
           <div class="details">
-            <p>Details</p>
+            <h2 class="trip-title pull-left">Into the wild</h2><p class="trip-day pull-left">/ Day 1</p>
+            <div class="show-details pull-right">
+              <p class="hidden-xs">Details</p>
+              <i class="icon ico-details"></i>
+          </div>
+          <div class="details-content">
+
           </div>
         </article>
         <article class="col-sm-6 col-md-4">
@@ -39,7 +45,7 @@
           </div>
         </article>
         <article class="visible-xs">
-          <div class="module-ongoing card">
+          <div class="module-ongoing">
             <?php include ('php-calls/chat.php'); ?>
           </div>
         </article>
