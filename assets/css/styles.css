@@ -225,6 +225,13 @@ input {
 	vertical-align: bottom;
 }
 
+.ico-on-time {
+	background: url('../ico/on-time.png') no-repeat left;
+	width: 20px;
+	height: 20px;
+	vertical-align: bottom;
+	}
+
 .ico-settings {
 	background: url('../ico/trips_icon.png') no-repeat left;
 	width: 22px;
@@ -446,13 +453,18 @@ h3 {
 	width: 183px;
 }
 
+.upcoming .deciding h3,
+.upcoming .decided h3 {
+	display: none;
+}
+
 /*----OFFERS--------*/
 
 .module_offers {
 	background: #BEBDBD;
 	width: 271px;
 	height: 263px;
-	margin: 0 auto;
+	margin: 0 auto 20px auto;
 }
 
 .aside .module_offers {
@@ -622,6 +634,8 @@ section.aside.add_steps_drag div.module-steps{
 	top: 50px;
 	z-index: 9999;
 }
+
+
 
 .friends_liked {
 	float: left;
@@ -1272,7 +1286,7 @@ section.profile-data.pull-right {
 	/*trips*/
 	.ico-details {
 	background: url('../ico/details-blue.png') no-repeat right;
-}
+	}
 
 	.details {
 		background-color: #fff;
@@ -1280,7 +1294,6 @@ section.profile-data.pull-right {
 		padding: 35px 20px 35px 20px;
 		height: 90px;
 		color: rgb(42, 176, 185);
-}
 	}
 
 	.planning section.aside {

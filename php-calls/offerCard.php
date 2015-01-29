@@ -1,4 +1,5 @@
 <div id="offerCard"class="offerCard"> 
+  <div class="offer-content">
     <div class="destinationIMG">
     </div>
     <div class="LPinfo">
@@ -6,11 +7,12 @@
       <p class="where">Lonely Planet</p>
       <img src="images/stars.png" class="rating">
     </div>
-    <div class="icons">
-  <ul>
-	<li><img src="images/alien.png"></li>
-	<li><img src="images/chat.png"></li>
-        <li><img src="images/plus.png"></li>
-  </ul>
-</div>
+   </div> 
+  <div class="icons">
+    <ul class="list-unstyled">
+    	<li><img src="images/alien.png"></li>
+    	<li><img src="images/chat.png"></li>
+      <li><img src="images/plus.png"></li>
+    </ul>
+  </div>
 </div>

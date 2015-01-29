@@ -27,8 +27,8 @@
                     <div class="line"></div>
                 </div>
                 <div class="itinerarys col-xs-11">
-                    <div class="cita">
-                        <span class="col-xs-3"><strong>10:30</strong></span>
+                    <div class="cita cita1">
+                        <span class="col-xs-3"><i class="icon ico-on-time hidden"></i><strong>10:30</strong></span>
                         <div class="action col-xs-9">
                             <p>Pick up Mario and Ana</p>
                             <div class="location">
@@ -36,19 +36,28 @@
                                 <h2 class="barcelona"><strong>Montenegro</strong></h2>
                             </div> 
                         </div>
-                    </div> 
+                    </div>
+                    <div class="cita cita2 hidden">
+                        <span class="col-xs-3"><i class="icon ico-on-time hidden"></i><strong>11:30</strong></span>
+                        <div class="action col-xs-9">
+                            <p>Groceries and cleaning</p>
+                            <div class="location">
+                                <img class="locationIcon" src="images/location-blue.png">
+                                <h2 class="barcelona"><strong>Mercadona</strong></h2>
+                            </div> 
+                        </div>
+                    </div>  
                 </div>
             </div>  
             <div class="buttons">
                 <ul class="optionButtons list-unstyled">
-                    <li class="what">ON TIME</li>
-                    <li class="what">DELAY</li>
-                    <li class="what">ADVANCE</li>
-                    <li class="what">DELETE</li>    
+                    <li id="on-time" class="what">ON TIME</li>
+                    <li id="delay" class="what" data-toggle="modal" data-target="#delay">DELAY</li>
+                    <li id="advance" class="what">ADVANCE</li>
+                    <li id="delete" class="what">DELETE</li>    
                 </ul>
             </div>
     </section>
-
 <footer id="itinerary hidden-xs">
     <div class="expand hidden-xs">
          <img id="arrow" src="images/arrow.png">

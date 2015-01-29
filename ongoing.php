@@ -40,15 +40,11 @@
         </article>
         <article class="aside">
           <button id="aside-trigger" class="hidden-xs hidden-extralg">chat</button>
-          <div class="module-ongoing hidden-xs">
-            <p>3</p>
-          </div>
-        </article>
-        <article class="visible-xs">
           <div class="module-ongoing">
             <?php include ('php-calls/chat.php'); ?>
           </div>
         </article>
+       
         <article class="col-sm-6 col-md-4">
           <div class="module-ongoing card">
             <?php include ('php-calls/feeds.php'); ?>
@@ -85,6 +81,7 @@
         </article>
         
      </section>
+
     </div>
   </div>
 

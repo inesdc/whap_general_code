@@ -22,7 +22,7 @@ $(document).ready(function(){
     };
 
   $(window).resize(function(){
-    var new_container_margin = ($(window).width()-1364)/2;
+    var new_container_margin_left = ($(window).width()-1364)/2;
     if($(window).width() > 1340){
       $('#main').addClass('aside-visible');
       $('.container').css("margin-left", new_container_margin_left);
@@ -67,7 +67,7 @@ $(document).ready(function(){
 	});
 
 
-  if ($(window).width() < 768) {
+  
   var offers_module_width = $('.module_offers').width(); 
   $('.module_offers').css("height", offers_module_width / a_r);
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
     $('.module_offers').css("height", offers_module_width / a_r);
   });
   
-  };
+
 
   //Body height
 /*

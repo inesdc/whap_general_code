@@ -14,7 +14,7 @@
   </header>
   
 <!-- CONTENT -->
-<div id="main" class="clearfix planning">
+<div id="main" class="clearfix upcoming">
   <div id="container-size" class="container">
     <section class="modules trips">
       <article class="trip">

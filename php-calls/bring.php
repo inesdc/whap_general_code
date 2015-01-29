@@ -6,15 +6,28 @@
     </div>
   </nav>
   <div class="list hidden-xs">
-    <table class="items">
-        <thead>
-          <tr>
-              <th class="edit" colspan="3"><span id="edit">edit</span></th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <form class="items">
+        <div class="checkbox">
+          <label>
+            <input class="checkbox" checked="checked" type="checkbox"> Potatos
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input class="checkbox" checked="checked" type="checkbox"> Tents
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input class="checkbox" checked="checked" type="checkbox"> Music
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Hairdryer
+          </label>
+        </div>
+    </form>
   </div>
   <div class="modualContainer hidden-xs">
       <div class="input">
