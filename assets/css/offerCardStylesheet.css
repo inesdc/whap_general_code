@@ -1,0 +1,65 @@
+div.offerCard {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+}
+
+.offerCard div.destinationIMG {
+  height: 55%;
+  width: 100%;
+  background-image: url("../../images/bk3.png");
+  background-size: 100%;
+  position: absolute;
+  top: 0px;
+  margin: 0px;
+}
+.offerCard div.LPinfo{
+  height: 45%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+
+}
+
+.offerCard div.LPinfo h2 {
+  font-family: "Montserrat";
+  font-size: 1.3em;
+  color: #2ab0b9;
+  margin: 5% 0 5% 3%;
+  position: relative;
+}
+
+.offerCard div.LPinfo p {
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: #939393;
+  margin-left:3%;
+  position:relative;
+  }
+
+.offerCard div.LPinfo img {
+  margin: 2% 0 0 3%;
+  position:relative;
+}
+.offerCard div.icons{
+  text-align:center;
+}
+.offerCard ul{
+  position:absolute;
+  bottom:-15%;
+  z-index:100;
+  list-style-type:none;
+  padding-left: 30%;
+}
+
+.offerCard li{
+  display:inline;
+}
+
+@media (min-width: 1200px) {
+  div.offercard{
+    width:81%;
+  }
+}
