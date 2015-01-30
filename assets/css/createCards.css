@@ -118,7 +118,7 @@ form.whenCreateCard{
 #datepicker .ui-datepicker-calendar a{
 	color:#939393;
 	font-weight: normal;
-	padding: 40%;
+
 }
 
 #datepicker span.ui-datepicker-month, #datepicker span.ui-datepicker-year{
@@ -136,6 +136,10 @@ form.whenCreateCard{
 	float:right;
 	color:#939393;
 
+}
+
+#datepicker th{
+	padding:0 5px 0 5px;
 }
 
 
