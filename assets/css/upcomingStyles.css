@@ -5,6 +5,7 @@ div.surfing div.pickBack{
 	-webkit-background-size:100% 100%;
 	background-size:100% 100%;
 	height:200px;
+
 	
 }
 
@@ -29,6 +30,7 @@ div.newYork div.pickBack{
 .surfing h2, .newYork h2, .grenada h2{
 	font-size: 1.5em;
 	padding-top:5%;
+	font-weight:400;
 }
 
 .surfing p, .newYork p, .grenada p{
@@ -46,6 +48,7 @@ div.newYork div.pickBack{
 	-webkit-box-shadow: 2px 1px 2px 2px rgba(0,0,0,.2);
 	box-shadow: 2px 1px 2px 2px rgba(0,0,0,.2);
 	background-color: white;
+	border-radius:3px;
 }
 
 .surfing .control-large{
@@ -67,7 +70,6 @@ div.newYork div.pickBack{
 	top:-30px;
 	border-radius:2px;
 	width:145px;
-	margin-left:5%;
 	-webkit-box-shadow: 2px 1px 2px 2px rgba(0,0,0,.2);
 	box-shadow: 2px 1px 2px 2px rgba(0,0,0,.2);
 

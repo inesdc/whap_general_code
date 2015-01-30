@@ -91,6 +91,11 @@ a {
 	color: #fff;
 }
 
+p{
+	font-size:16px;
+	font-weight:300;
+}
+
 .pagination>.active>a, 
 .pagination>.active>span,
 .pagination>.active>a:hover,
