@@ -213,3 +213,52 @@ form.howCreateCard{
 .howCreateCard span{
 	display:block;
 }
+
+/* ------ WHO ------ */
+
+form.whoCreateCard {
+	background-color:white;
+	height: 100%;
+	width:100%;
+	padding:10px 0 10px 0;
+}
+
+.whoCreateCard img{
+	height: 120%;
+	width:120%;
+	padding: 10px;
+}
+
+.whoCreateCard img.facebook{
+	height:90%;
+	width: 90%;
+	position:relative;
+	left: 0px;
+}
+ 
+.whoCreateCard #redesSociales{
+	position:relative;
+	right:23px;
+}
+.whoCreateCard #redesSociales li{
+	position:relative;
+	display:inline-block;
+	height: 15%;
+	width:15%;
+
+}
+
+.whoCreateCard button.btn{
+	background-color:#ef5350;
+	width:95%;
+	border:none;
+	position:relative;
+	left:2.5%;
+	border-radius:2px;
+	margin-top:5%;
+}
+
+
+/*------ WHAT ------- */
+
+

@@ -1,7 +1,7 @@
 
 
 <form class="howMuchCreateCard">
-	<h2 class="budgetCard">Add a Budget</h2>
+	<h2 class="budgetCardCreate">Add a Budget</h2>
 	<div class="input-group">
 		<span class="input-group-addon">$</span>
 		<input type="text" class="form-control" placeholder="Amount"/>
