@@ -10,26 +10,6 @@ $(document).ready(function(){
     $('#main').toggleClass('aside-visible');
   });
 
-  //Aside height 
-  var aside_height = $(window).height()-100;
-  var chat_aside_height = $(window).height()-222;
-  if($(window).width() > 768){
-    $('.aside').css("height",aside_height);
-    $('.chat .panel-body').css("height",chat_aside_height);
-  };
-
-  $(window).resize(function(){
-  var aside_height = $(window).height()-100;
-  if($(window).width() > 768){
-    $('.aside').css("height",aside_height);
-    $('.chat .panel-body').css("height",chat_aside_height);
-  } else {
-    $('.aside').css("height","auto");
-  };    
-  });
-
-
-
   var new_container_margin_right = ($(window).width()-1364)/2+340;
   var new_container_margin_left = ($(window).width()-1364)/2;
   var container_width = $('container').width();
@@ -43,7 +23,7 @@ $(document).ready(function(){
       $('.add_steps_drag > div').removeClass('container');
     } else {
       $('.add_steps_drag').removeClass("aside");
-      $('.container').css("margin-left", 20);
+      $('#container-size').css("margin-left", 20);
       $('.secondary-nav').css("padding-left", container_margin);
       $('.secondary-nav').css("padding-right", container_margin);
       $('.add_steps_drag > div').addClass('container');
@@ -53,16 +33,18 @@ $(document).ready(function(){
     var new_container_margin_left = ($(window).width()-1364)/2;
     if($(window).width() > 1340){
       $('#main').addClass('aside-visible');
-      $('.container').css("margin-left", new_container_margin_left);
+      $('#container-size').css("margin-left", new_container_margin_left);
       $('.secondary-nav').css("padding-left", new_container_margin_left);
       $('.secondary-nav').css("padding-right", new_container_margin_right);
       $('.add_steps_drag').addClass("aside");
+      $('.add_steps_drag > div').removeClass('container');
     } else {
     	$('#main').removeClass('aside-visible');
       $('.add_steps_drag').removeClass("aside");
-      $('.container').css("margin-left", 20);
+      $('#container-size').css("margin-left", 20);
       $('.secondary-nav').css("padding-left", container_margin);
       $('.secondary-nav').css("padding-right", container_margin);
+      $('.add_steps_drag > div').addClass('container');
     };
   });
 
@@ -81,7 +63,6 @@ $(document).ready(function(){
 	var onging_module_width = $('.module-ongoing').width(); 
 	$('.module-ongoing').css("height", onging_module_width / a_r);
   $('#nearby .content').css("height", onging_module_width / a_r - top_height);
-  $('.chat-module').css("height","100%");
   };
 
 	$(window).resize(function(){
@@ -90,10 +71,8 @@ $(document).ready(function(){
 		var onging_module_width = $('.module-ongoing').width(); 
 		$('.module-ongoing').css("height", onging_module_width / a_r);
     $('#nearby .content').css("height", onging_module_width / a_r - top_height);
-    $('.chat-module').css("height","100%");
   } else {
-    $('.module-ongoing').css(onging_module_width / a_r);
-    $('.chat-module').css('module-ongoing');
+    $('.module-ongoing').css("height", "auto");
   };
 	});
 
@@ -126,41 +105,10 @@ $(document).ready(function(){
 
   //Panning trips display content_trip
 
-  // $('.trips-summary').click(function(){
-  //   $(this).next('.trip-steps').toggleClass('hide');
+  $('.trips-summary').click(function(){
+    $(this).next('.trip-steps').toggleClass('hide');
   
-  // });
-  if ($(window).width() > 768) {
-  $('.trips-summary').click(function(){
-    if( $(this).closest('.trip').find('.trip-steps').hasClass('hide') ) {
-      $('.trip').find('.trip-steps').addClass('hide');
-      $(this).closest('.trip').find('.trip-steps').removeClass('hide');
-      $(this).css("height", 150);   
-    } else {
-      $(this).closest('.trip').find('.trip-steps').addClass('hide'); 
-      $(this).css("height", 100);       
-    }   
-  })
-  };
-
-  $(window).resize(function(){
-    if ($(window).width() > 768) {
-  $('.trips-summary').click(function(){
-    if( $(this).closest('.trip').find('.trip-steps').hasClass('hide') ) {
-      $('.trip').find('.trip-steps').addClass('hide');
-      $(this).closest('.trip').find('.trip-steps').removeClass('hide');
-      $(this).css("height", 150);   
-    } else {
-      $(this).closest('.trip').find('.trip-steps').addClass('hide'); 
-      $(this).css("height", 100);       
-    }   
-  })
-
-  };
-
   });
-
-
 
   //Display cards related content
   var showContent = function(){

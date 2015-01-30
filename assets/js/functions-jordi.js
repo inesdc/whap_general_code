@@ -5,6 +5,8 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		if ($(window).width() < 1340 ) {
 			$('#main.create #container-size').css('padding-bottom', $('#main.create .add_steps_drag').outerHeight()+20);
+		} else {
+			$('#main.create #container-size').css('padding-bottom', 0);
 		}
 	})
 	$('#container-size').css('margin-top', $('header').height());
