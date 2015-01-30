@@ -34,7 +34,7 @@
           </div>
         </article>
         <article class="col-sm-6 col-md-4">
-          <div class="module-ongoing card" data-toggle="modal" data-target="#basicModal">
+          <div class="module-ongoing card">
             <?php include ('php-calls/nearby.php'); ?>
           </div>
         </article>
@@ -80,13 +80,8 @@
             </div>
         </article>
         
-     </section>
-
+      </section>
+      <?php include ('php-calls/content-itinerary.php'); ?>
     </div>
   </div>
-
-<!-- Javascript -->
 <?php include ('php-calls/footer.php'); ?>
-
-</body>
-</html>

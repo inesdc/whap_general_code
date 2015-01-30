@@ -26,9 +26,4 @@
             </div>
         </div>
     </section>
-    <footer id="feed">
-        <div class="expand hidden-xs">
-             <img id="arrow" src="images/arrow.png">
-        </div>
-    </footer>
 </div>

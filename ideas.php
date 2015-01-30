@@ -15,11 +15,11 @@
     <form class="filters form-inline clearfix">
       <div class="form-group col-xs-12 col-sm-4">
         <select id="trip-type" class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Adventure</option>
+            <option>Explore</option>
+            <option>Chill</option>
+            <option>Party</option>
+            <option>Sport</option>
         </select>
       </div>
       <div class="form-group col-xs-12 col-sm-2">
@@ -38,13 +38,23 @@
     </form>
     <section class="results clearfix">
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/howCreateCard.php');?></div>
+<<<<<<< HEAD
+        <div class="module_offers"></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"></div>
+=======
+        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+      </article>
+      <article class="offer col-xs-12 col-sm-6 col-md-4">
+        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+      </article>
+      <article class="offer col-xs-12 col-sm-6 col-md-4">
+        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+>>>>>>> 5f7117470143edecb76f15d344d61dd36a44f7af
       </article>
       <div class="result-pages col-xs-12">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -63,13 +73,23 @@
     <section class="friends_liked">
       <h3>Your friends liked:</h3>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+<<<<<<< HEAD
+        <div class="module_offers"></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"></div>
+=======
+        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+      </article>
+      <article class="offer col-xs-12 col-sm-6 col-md-4">
+        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+      </article>
+      <article class="offer col-xs-12 col-sm-6 col-md-4">
+        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+>>>>>>> 5f7117470143edecb76f15d344d61dd36a44f7af
       </article>
     </section>
     <section class="aside">

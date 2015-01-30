@@ -8,7 +8,6 @@
 	<title>WHAP</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href="assets/css/datepicker.css" rel="stylesheet">
 	<link href="assets/css/modualstyles.css" rel="stylesheet">
 	<link href="assets/css/offerCardStylesheet.css" rel="stylesheet">

@@ -73,14 +73,17 @@ $(document).ready(function(){
 	});
 
 
-  
+  if ($(window).width()>768) {
   var offers_module_width = $('.module_offers').width(); 
   $('.module_offers').css("height", offers_module_width / a_r);
+  };
 
   $(window).resize(function(){
+    if ($(window).width()>768) {
     var a_r = 1.1143;
     var offers_module_width = $('.module_offers').width(); 
     $('.module_offers').css("height", offers_module_width / a_r);
+  };
   });
   
 
@@ -367,19 +370,32 @@ if($(window).width() < 768) {
 };
    
 $(window).resize(function() {
-  if($(window).width() < 768) {
-  $('.ideas').parent().addClass('secondary-menu');
-  $('.ideas').parent().addClass('clearfix');
-  $('.ideas').parent().removeClass('secondary-nav');
-  $('.module-steps').removeClass('draggable');
-} else {
-  $('.module-steps').addClass('draggable');
-  $('.ideas').parent().removeClass('secondary-menu');
-  $('.ideas').parent().removeClass('clearfix');
-  $('.ideas').parent().addClass('secondary-nav');
-};
+    if($(window).width() < 768) {
+    $('.ideas').parent().addClass('secondary-menu');
+    $('.ideas').parent().addClass('clearfix');
+    $('.ideas').parent().removeClass('secondary-nav');
+    $('.module-steps').removeClass('draggable');
+  } else {
+    $('.module-steps').addClass('draggable');
+    $('.ideas').parent().removeClass('secondary-menu');
+    $('.ideas').parent().removeClass('clearfix');
+    $('.ideas').parent().addClass('secondary-nav');
+  };
+});
 
-}); 
+$('#delay a').click(function(){
+  $(this).closest('#itinerary').find('.expand').css('bottom', '-43px');
+});
+
+$('#bring form').submit(function(e){
+  e.preventDefault();
+  if ($('#bring form input').val() === "pene") {
+    var value = $('#bring form input').val();
+    console.log(value);
+  }
+});
+
+
 
 // Explore second nav 
 /*

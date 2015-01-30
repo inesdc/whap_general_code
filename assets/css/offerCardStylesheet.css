@@ -18,24 +18,28 @@ div.offerCard {
   background-size: 100%;
 }
 
-.offerCard div.LPinfo{
-  width: 100%;
-  background-color: white;
+.offerCard div.LPinfo,
+.offerCard div.offer-price{
+  padding: 6% 4% 4% 4%;
+  display: block;
 }
 
-.offerCard div.LPinfo h2 {
+.offerCard div.offer-price {
+  text-align: right;
+  padding-left: 0;
+}
+
+.offerCard h2 {
   font-family: "Montserrat";
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #2ab0b9;
-  margin: 5% 0 5% 3%;
 }
 
 .offerCard div.LPinfo p {
   font-family: "Montserrat";
   font-size: 1em;
   color: #939393;
-  margin-left:3%;
-  position:relative;
+  margin-bottom: 0;
   }
 
 .offerCard div.LPinfo img {
