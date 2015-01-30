@@ -681,9 +681,8 @@ input[type="checkbox"]:checked + span {
 }
 
 .upcoming .trip-card {
-	margin-top: -50px;
+	margin-top: -30px;
 	height: 140px;
-	padding-top: 20%;
 	padding-top: 20%;
 }
 
@@ -695,6 +694,11 @@ input[type="checkbox"]:checked + span {
 	color: #2ab0b9;
 	padding-top: 10px;
 	padding-bottom: 5px;
+}
+
+.trips-summary h2,
+.trips-summary p {
+	padding-top: 10px;
 }
 
 /* == CREATE CONTENTS==

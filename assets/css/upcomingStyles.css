@@ -4,43 +4,43 @@ div.surfing {
 	-moz-background-size:100% 100%;
 	-webkit-background-size:100% 100%;
 	background-size:100% 100%;	
-	padding:15px 10px 10px 10px;
 }
 
-div.grenada div.pickBack{
+div.granada {
 	background-image: url('../../images/upcoming/granadaBKG.png');
 	background-repeat: no-repeat;
-	-moz-background-size:140% 140%;
-	-webkit-background-size:140% 140%;
-	background-size:140% 140%;
-	height:200px;
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	background-size:100% 100%;	
 }
 
-div.newYork div.pickBack{
+div.newYork {
 	background-image: url('../../images/upcoming/NYBKG.png');
 	background-repeat: no-repeat;
-	-moz-background-size:140% 140%;
-	-webkit-background-size:140% 140%;
-	background-size:140% 140%;
-	height:200px;
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	background-size:100% 100%;	
 }
 
-.surfing h2, .newYork h2, .grenada h2{
+.surfing h2, .newYork h2, .granada h2{
+	padding-top: 10px;
+	padding-left: 5px;
 	font-size: 18px;
 	font-weight:400;
 	color: #fff;
 }
 
-.surfing p, .newYork p, .grenada p{
+.surfing p, .newYork p, .granada p{
+	padding-top: 10px;
 	vertical-align: bottom;
 	color: #EAE9E9;
 }
 
-.surfing strong, .newYork strong, .grenada strong{
-color: #fff;
-}
+.surfing strong, .newYork strong, .granada strong{
+	color: #fff;
+	}
 
-.surfing .bottomRow, .newYork .bottomRow, .grenada .bottomRow{
+.surfing .bottomRow, .newYork .bottomRow, .granada .bottomRow{
 	position:relative;
 	top: 25%;
 	border-bottom: 1px solid #939393;
@@ -69,6 +69,15 @@ color: #fff;
 	-webkit-box-shadow: 2px 1px 2px 2px rgba(0,0,0,.1);
 	box-shadow: 2px 1px 1px 1px rgba(0,0,0.1);
 
+}
+
+.trip-countdown .unclicked {
+	height: 100%;
+	background-color: #fff;
+}
+.trip-countdown .unclicked p {
+	padding-top: 14%;
+	color: rgb(105, 104, 104)
 }
 
 .surfing div.col-md-2{

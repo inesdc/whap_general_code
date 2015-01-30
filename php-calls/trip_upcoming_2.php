@@ -1,13 +1,13 @@
 <div class="module-trips">
-  <div class="surfing trips-summary">
+  <div class="granada trips-summary">
       <div class="col-xs-12 col-sm-4">
-        <h2 class="trip-title"><img src="images/upcoming/timer.png"> Surfin' N' Rollin'</h2>
+        <h2 class="trip-title"><img src="images/upcoming/timer.png">Summer in Granada</h2>
       </div>
-      <div class="trip-description col-xs-12 col-sm-4">
-        <p><span>A magic trip full of beaches surfing and vans.</span></p>
+      <div class="trip-description col-xs-12 col-sm-5">
+        <p><span>Party, tapas and sun.</span></p>
       </div>
-      <div class="trip-countdown hidden-xs col-sm-4">
-        <p>Get your stuff ready.<br><span>5 days to go!</span></p>
+      <div class="trip-countdown hidden-xs col-sm-3 unclicked">
+        <p>Get your stuff ready.<br><span>1 month to go!</span></p>
       </div>
   </div>
   <div class="trip-steps hide">

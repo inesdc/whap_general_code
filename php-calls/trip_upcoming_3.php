@@ -1,13 +1,13 @@
 <div class="module-trips">
-  <div class="surfing trips-summary">
+  <div class="newYork trips-summary">
       <div class="col-xs-12 col-sm-4">
-        <h2 class="trip-title"><img src="images/upcoming/timer.png"> Surfin' N' Rollin'</h2>
+        <h2 class="trip-title"><img src="images/upcoming/timer.png">New York</h2>
       </div>
       <div class="trip-description col-xs-12 col-sm-5">
-        <p><span>A magic trip full of beaches surfing and vans.</span></p>
+        <p><span>Ready, steady, go!</span></p>
       </div>
-      <div class="trip-countdown unclicked hidden-xs col-sm-3">
-        <p>Get your stuff ready.<br><span>5 days to go!</span></p>
+      <div class="trip-countdown hidden-xs col-sm-3 unclicked">
+        <p>Relax buddy<br><span>3 months to go!</span></p>
       </div>
   </div>
   <div class="trip-steps hide">
