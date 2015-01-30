@@ -15,11 +15,11 @@
     <form class="filters form-inline clearfix">
       <div class="form-group col-xs-12 col-sm-4">
         <select id="trip-type" class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Adventure</option>
+            <option>Explore</option>
+            <option>Chill</option>
+            <option>Party</option>
+            <option>Sport</option>
         </select>
       </div>
       <div class="form-group col-xs-12 col-sm-2">

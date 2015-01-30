@@ -38,7 +38,6 @@
 
         <footer class="hidden-xs">
             <div class="expand">
-                 <span class="center"></span>
                  <img id="arrow" src="images/arrow.png">
             </div>
         </footer>

@@ -1,4 +1,4 @@
-﻿<div class="panel">
+<div class="panel">
     <div class="panel-heading top">
         <h2>2 Comments</h2>
     </div>

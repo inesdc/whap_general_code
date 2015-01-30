@@ -2,14 +2,10 @@
   <div class="offer-content">
     <div class="destinationIMG">
     </div>
-    <div class="LPinfo col-xs-8">
-      <h2 class="title">Skydive in Granada</h2>
+    <div class="LPinfo">
+      <h2 class="title">Best hiking routes in Spain</h2>
       <p class="where">Lonely Planet</p>
       <img src="images/stars.png" class="rating">
-    </div>
-    <div class="offer-price col-xs-4">
-      <h2>40€</h2>
-      <p><small>antes 40€</small></p>
     </div>
    </div> 
   <div class="icons">

@@ -29,19 +29,12 @@
       </article>
     </section>
     <section class="aside hidden-xs">
-        <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
-        <div class="module_offers">
-          <p>1</p>
-        </div>
-        <div class="module_offers">
-          <p>2</p>
-        </div>
-        <div class="module_offers">
-          <p>3</p>
-        </div>
-        <div class="module_offers">
-          <p>4</p>
-        </div>
+        <button id="aside-trigger" class="btn-aside hidden-xs hidden-extralg"></button>
+        <h3>Offers related to your trip</h3>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
     </section>
   </div>
 </div>
