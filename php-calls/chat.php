@@ -1,4 +1,4 @@
-<div class="panel">
+<div class="panel chat">
     <div class="panel-heading top">
         <h2>2 Comments</h2>
     </div>
@@ -30,16 +30,49 @@
                         Donec sit amet ligula enim. Duis vel condimentum massa.Donec sit amet ligula enim.</p>
                         <small class="text-muted">Alex Deo | 23rd June at 5:00pm</small>
                     </div>
+
+                </div>
+            </li>
+            <li class="media">
+                <div class="media-body">
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object img-circle " src="images/guy2.png"/>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <p>Donec sit amet ligula enim. Duis vel condimentum massa.
+                        Donec sit amet ligula enim. Duis vel condimentum massa.Donec sit amet ligula enim.</p>
+                        <small class="text-muted">Alex Deo | 23rd June at 5:00pm</small>
+                    </div>
+                    
+                </div>
+            </li>
+            <li class="media">
+                <div class="media-body">
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object img-circle " src="images/guy2.png"/>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <p>Donec sit amet ligula enim. Duis vel condimentum massa.
+                        Donec sit amet ligula enim. Duis vel condimentum massa.Donec sit amet ligula enim.</p>
+                        <small class="text-muted">Alex Deo | 23rd June at 5:00pm</small>
+                    </div>
+                    
                 </div>
             </li>
         </ul>
     </div>
     <div class="panel-footer">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Enter Message">
-            <span class="input-group-btn">
-                <button class="btn btn-info" type="button">SEND</button>
-            </span>
+        <div class="input-group col-xs-12">
+            <div class="input col-xs-8">
+                <input type="text" class="custinput" id="item-input" placeholder="Enter message..." autofocus>
+              </div>
+              <div class="col-xs-4">
+                <button type="submit" class="btn  btn-default btn-block">add</button>
+              </div>
         </div>
     </div>
 </div>

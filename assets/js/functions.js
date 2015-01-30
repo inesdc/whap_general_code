@@ -10,6 +10,26 @@ $(document).ready(function(){
     $('#main').toggleClass('aside-visible');
   });
 
+  //Aside height 
+  var aside_height = $(window).height()-100;
+  var chat_aside_height = $(window).height()-222;
+  if($(window).width() > 768){
+    $('.aside').css("height",aside_height);
+    $('.chat .panel-body').css("height",chat_aside_height);
+  };
+
+  $(window).resize(function(){
+  var aside_height = $(window).height()-100;
+  if($(window).width() > 768){
+    $('.aside').css("height",aside_height);
+    $('.chat .panel-body').css("height",chat_aside_height);
+  } else {
+    $('.aside').css("height","auto");
+  };    
+  });
+
+
+
   var new_container_margin_right = ($(window).width()-1364)/2+340;
   var new_container_margin_left = ($(window).width()-1364)/2;
   var container_width = $('container').width();
@@ -59,6 +79,7 @@ $(document).ready(function(){
 	var onging_module_width = $('.module-ongoing').width(); 
 	$('.module-ongoing').css("height", onging_module_width / a_r);
   $('#nearby .content').css("height", onging_module_width / a_r - top_height);
+  $('.chat-module').css("height","100%");
   };
 
 	$(window).resize(function(){
@@ -67,8 +88,10 @@ $(document).ready(function(){
 		var onging_module_width = $('.module-ongoing').width(); 
 		$('.module-ongoing').css("height", onging_module_width / a_r);
     $('#nearby .content').css("height", onging_module_width / a_r - top_height);
+    $('.chat-module').css("height","100%");
   } else {
-    $('.module-ongoing').css("height", "auto");
+    $('.module-ongoing').css(onging_module_width / a_r);
+    $('.chat-module').css('module-ongoing');
   };
 	});
 

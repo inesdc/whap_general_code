@@ -40,7 +40,7 @@
         </article>
         <article class="aside">
           <button id="aside-trigger" class="hidden-xs hidden-extralg">chat</button>
-          <div class="module-ongoing">
+          <div class="module-ongoing chat-module">
             <?php include ('php-calls/chat.php'); ?>
           </div>
         </article>
