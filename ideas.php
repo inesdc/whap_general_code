@@ -38,15 +38,6 @@
     </form>
     <section class="results clearfix">
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-<<<<<<< HEAD
-        <div class="module_offers"></div>
-      </article>
-      <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
-      </article>
-      <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
-=======
         <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
@@ -54,7 +45,6 @@
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
         <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
->>>>>>> 5f7117470143edecb76f15d344d61dd36a44f7af
       </article>
       <div class="result-pages col-xs-12">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -73,15 +63,6 @@
     <section class="friends_liked">
       <h3>Your friends liked:</h3>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-<<<<<<< HEAD
-        <div class="module_offers"></div>
-      </article>
-      <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
-      </article>
-      <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
-=======
         <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
@@ -89,7 +70,6 @@
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
         <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
->>>>>>> 5f7117470143edecb76f15d344d61dd36a44f7af
       </article>
     </section>
     <section class="aside">
