@@ -261,4 +261,57 @@ form.whoCreateCard {
 
 /*------ WHAT ------- */
 
+form.whatCreateCard{
+	background-color:white;
 
+	text-align: center;
+}
+
+.whatCreateCard div.bodystuff{
+	padding: 5%;
+}
+
+.whatCreateCard a{
+	color: #939393;
+
+}
+
+.whatCreateCard ul.nav{
+	position:relative;
+	margin: 0 auto 0 auto;
+	border-color: #939393;
+}
+.whatCreateCard li{
+	display:inline-block;
+	width:33.33%;
+}
+
+.whatCreateCard li.divider{
+	color: red;
+}
+
+.whatCreateCard label{
+	display:block;
+}
+
+.whatCreateCard table{
+	margin-left: 10%;
+}
+
+.whatCreateCard img{
+	width:75%;
+	height:auto;
+}
+
+.whatCreateCard td{
+	padding:5px;
+}
+
+.whatCreateCard button.btn{
+	background-color:#ef5350;
+	width:95%;
+	border:none;
+	position:relative;
+	border-radius:2px;
+	margin-top:5%;
+}

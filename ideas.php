@@ -38,7 +38,7 @@
     </form>
     <section class="results clearfix">
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/whoCreateCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/whatCreateCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
         <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
