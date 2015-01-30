@@ -18,7 +18,7 @@
   <div id="container-size" class="container">
     <section class="modules trips">
       <article class="trip">
-        <?php include ('php-calls/trip_upcoming.php'); ?>
+        <?php include ('php-calls/upcomingTrip[1].php'); ?>
       </article>
       <article class="trip">
         <?php include ('php-calls/trip_upcoming.php'); ?>

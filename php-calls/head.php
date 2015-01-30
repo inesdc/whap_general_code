@@ -12,6 +12,9 @@
 	<link href="assets/css/modualstyles.css" rel="stylesheet">
 	<link href="assets/css/offerCardStylesheet.css" rel="stylesheet">
 	<link href="assets/css/createCards.css" rel="stylesheet">
+	<link href="assets/css/upcomingStyles.css" rel="stylesheet">
+	<link href="bower_components/normalize.css/normalize.css" rel="stylesheet"/>
+
  </head>
 
  

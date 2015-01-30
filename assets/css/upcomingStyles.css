@@ -1,0 +1,61 @@
+div.surfing div.pickBack{
+	background-image: url('../../images/upcoming/surfinBKG.png');
+	background-repeat: no-repeat;
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	background-size:100% 100%;
+	height:200px;
+	
+}
+
+.surfing h2{
+	font-size: 1.5em;
+	padding-top:5%;
+}
+
+.surfing p{
+	vertical-align: bottom;
+	position: relative;
+	padding-top: 5%;
+}
+
+
+.surfing .bottomRow{
+	position:relative;
+	top: 25%;
+	border-bottom: 5px solid #939393;
+	border-right: 5px solid #939393;
+	background-color: white;
+}
+
+.surfing .control-large{
+	display: inline-block;
+}
+
+.surfing button{
+	background-color: #ef5350;
+	border:none;
+	border-radius: 2px;
+}
+
+.surfing .upcomingCard{
+	background-color:white;
+	text-align: center;
+	height:150px;
+	position:relative;
+	top:-40px;
+	border-radius:2px;
+	width:145px;
+	margin-left:5%;
+
+}
+
+.surfing div.col-md-2{
+	position:relative;
+	top:-40px;
+	height:80px;
+}
+
+.surfing div.middleRow{
+	background-color:#f3f3f3;
+}
