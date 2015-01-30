@@ -13,7 +13,7 @@ $(document).ready(function(){
 		$('#weather2').html(data.currently.windSpeed + ' knots');
             });
         }
-window.onload= b;
+window.onload = b;
 });
 
          $("#datepicker div").datepicker({

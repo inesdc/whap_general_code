@@ -36,15 +36,17 @@ $(document).ready(function(){
   var container_margin = container_width/2;
 
   if($(window).width() > 1340){
-      $('.container').css("margin-left", new_container_margin_left);
+      $('#container-size').css("margin-left", new_container_margin_left);
       $('#main').addClass('aside-visible');
       $('.secondary-nav').css("padding-left", new_container_margin_left);
       $('.secondary-nav').css("padding-right", new_container_margin_right);
+      $('.add_steps_drag > div').removeClass('container');
     } else {
       $('.add_steps_drag').removeClass("aside");
       $('.container').css("margin-left", 20);
       $('.secondary-nav').css("padding-left", container_margin);
       $('.secondary-nav').css("padding-right", container_margin);
+      $('.add_steps_drag > div').addClass('container');
     };
 
   $(window).resize(function(){
@@ -207,31 +209,6 @@ $(document).ready(function(){
     $('.module-steps').css("width", "auto");
     $('.module-steps').css("height", "auto");
    };
-  });
-
-
-  //Drag and drop
-
-
-  $(".droppable").droppable({
-    accept: '.draggable',
-    tolerance: "fit",
-    activeClass: "ui-state-highlight"
-  });
-
-  $(".draggable").draggable({
-    snap: '.droppable',
-    revert: 'false',
-    zIndex: 9999,
-    cursor: "move",
-    delay: 200,
-    opacity: .45,
-    refreshPositions: true,
-    revertDuration: 1000,
-    drop: function(ev, ui) {
-      $(this).addClass('dropped');
-    }
-    
   });
 
 

@@ -15,31 +15,33 @@
   </header>
 <!-- CONTENT -->
 <div id="main" class="clearfix create">
+  </script>
   <div id="container-size" class="container">
     <h3>New trip</h3>
-    <form>
-      <div class="form-group">
+    <form class="row">
+      <div class="form-group col-sm-8">
         <label for="Trip-name">Give it a name</label>
         <input type="text" class="form-control" id="trip-name">
       </div>
-      <div class="form-group">
+      <div class="form-group col-sm-8">
         <label for="trip-type">¿What kind of trip is it?</label>
         <select id="trip-type" class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option>Select a kind of trip</option>
+          <option>Adventure</option>
+          <option>Familiar</option>
+          <option>Relax</option>
+          <option>Surfing</option>
+          <option>Other</option>
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group col-sm-8">
         <label for="trip-description">Add a description</label>
         <textarea class="form-control" id="trip-description" rows="3"></textarea>
       </div>
       <div class="add_steps_drop hidden-xs">
-        <h3>Add steps</h3>
+        <h3 class="col-xs-12">Add steps</h3>
         <div class="col-sm-6 col-md-4">
-          <div id="droppable" class="droppable">
+          <div class="droppable">
             <span class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" href="#"><i class="icon ico-plus"></i>Add step</span>
             <ul class="dropdown-menu" role="menu">
               <li>How much</li>
@@ -50,50 +52,67 @@
               <li>What</li>
             </ul>
           </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
           <div class="droppable">
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="droppable">
           </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
           <div class="droppable">
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="droppable">
+        <div class="col-sm-12 col-md-4">
+          <div class="col-sm-6 col-md-12 pad0L-sm pad5L-md">
+            <div class="droppable">
+            </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="droppable">
+          <div class="col-sm-6 col-md-12 pad0R-sm pad5R-md">
+            <div class="droppable">
+            </div>
           </div>
         </div>
       </div>
-      <div class="botom-fixed-button">
+      <div class="col-xs-12">
         <button type="submit" class="btn btn-default">Crear</button>
       </div> 
     </form>
-    <section class="aside add_steps_drag col-xs-12">
-      <h3>Steps</h3>
-      <p>Drag&drop the steps you want to fulfill and create the trip. You will always be able to edit what you’ve filled and completethe rest.</p>
-      <div id="draggable" class="draggable module-steps">
-      </div>
-      <div class="draggable module-steps">
-      </div>
-      <div class="draggable module-steps">
-      </div>
-      <div class="draggable module-steps">
-      </div>
-      <div class="draggable module-steps">
-      </div>
-      <div class="draggable module-steps">
-      </div>
-    </section>
   </div>
-  
+  <section class="aside add_steps_drag col-xs-12">
+    <div class="container">
+      <h3>Steps</h3>
+      <p>Drag &amp; Drop the steps you want to fulfill and create the trip. You will always be able to edit what you’ve filled and completethe rest.</p>
+      <div class="draggable module-steps">
+        <div class="module-steps-inner">
+          <span>How much</span>
+        </div>
+      </div>
+      <div class="draggable module-steps">
+        <div class="module-steps-inner">
+          <span>Where</span>
+        </div>
+      </div>
+      <div class="draggable module-steps">
+        <div class="module-steps-inner">
+          <span>When</span>
+        </div>
+      </div>
+      <div class="draggable module-steps">
+        <div class="module-steps-inner">
+          <span>How</span>
+        </div>
+      </div>
+      <div class="draggable module-steps">
+        <div class="module-steps-inner">
+          <span>Who</span>
+        </div>
+      </div>
+      <div class="draggable module-steps">
+        <div class="module-steps-inner">
+          <span>What</span>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <?php include ('php-calls/footer.php'); ?>
