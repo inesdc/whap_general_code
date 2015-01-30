@@ -41,7 +41,7 @@
       <div class="add_steps_drop hidden-xs">
         <h3 class="col-xs-12">Add steps</h3>
         <div class="col-sm-6 col-md-4">
-          <div class="droppable">
+          <div class="droppable" data-col="1" data-row="1">
             <span class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" href="#"><i class="icon ico-plus"></i>Add step</span>
             <ul class="dropdown-menu" role="menu">
               <li>How much</li>
@@ -52,23 +52,25 @@
               <li>What</li>
             </ul>
           </div>
-          <div class="droppable">
+          <div class="droppable" data-col="1" data-row="2">
+          </div>
+          <div class="droppable visible-sm" data-col="1" data-row="3">
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
-          <div class="droppable">
+          <div class="droppable" data-col="2" data-row="1">
           </div>
-          <div class="droppable">
+          <div class="droppable" data-col="2" data-row="2">
+          </div>
+          <div class="droppable visible-sm" data-col="2" data-row="3">
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="col-sm-6 col-md-12 pad0L-sm pad5L-md">
-            <div class="droppable">
-            </div>
+        <div class="col-md-4 hidden-sm">
+          <div class="droppable" data-col="3" data-row="1">
           </div>
-          <div class="col-sm-6 col-md-12 pad0R-sm pad5R-md">
-            <div class="droppable">
-            </div>
+          <div class="droppable" data-col="3" data-row="2">
+          </div>
+          <div class="droppable visible-sm">
           </div>
         </div>
       </div>
