@@ -21,11 +21,11 @@
         <?php include ('php-calls/upcomingTrip[1].php'); ?>
       </article>
       <article class="trip">
-        <?php include ('php-calls/trip_upcoming.php'); ?>
+        <?php include ('php-calls/upcomingTripClosed[0].php'); ?>
       </article>
       <article class="trip">
         <div class="module-trips">
-          <?php include ('php-calls/trip_upcoming.php'); ?>
+          <?php include ('php-calls/upcomingTripClosed[1].php'); ?>
         </div>
       </article>
    </section>
