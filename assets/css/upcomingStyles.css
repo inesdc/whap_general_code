@@ -1,12 +1,10 @@
-div.surfing div.pickBack{
+div.surfing {
 	background-image: url('../../images/upcoming/surfinBKG.png');
 	background-repeat: no-repeat;
 	-moz-background-size:100% 100%;
 	-webkit-background-size:100% 100%;
-	background-size:100% 100%;
-	height:200px;
-
-	
+	background-size:100% 100%;	
+	padding:15px 10px 10px 10px;
 }
 
 div.grenada div.pickBack{
@@ -28,17 +26,19 @@ div.newYork div.pickBack{
 }
 
 .surfing h2, .newYork h2, .grenada h2{
-	font-size: 1.5em;
-	padding-top:5%;
+	font-size: 18px;
 	font-weight:400;
+	color: #fff;
 }
 
 .surfing p, .newYork p, .grenada p{
 	vertical-align: bottom;
-	position: relative;
-	padding-top: 5%;
+	color: #EAE9E9;
 }
 
+.surfing strong, .newYork strong, .grenada strong{
+color: #fff;
+}
 
 .surfing .bottomRow, .newYork .bottomRow, .grenada .bottomRow{
 	position:relative;
@@ -62,16 +62,12 @@ div.newYork div.pickBack{
 	margin: 25px 2px 25px 2px;
 }
 
-.surfing .upcomingCard{
-	background-color:white;
+ .upcomingCard{
+	background-color: white;
 	text-align: center;
-	height:150px;
-	position:relative;
-	top:-30px;
-	border-radius:2px;
-	width:145px;
-	-webkit-box-shadow: 2px 1px 2px 2px rgba(0,0,0,.2);
-	box-shadow: 2px 1px 2px 2px rgba(0,0,0,.2);
+	height: 150px;
+	-webkit-box-shadow: 2px 1px 2px 2px rgba(0,0,0,.1);
+	box-shadow: 2px 1px 1px 1px rgba(0,0,0.1);
 
 }
 

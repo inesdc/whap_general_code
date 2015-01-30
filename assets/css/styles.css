@@ -92,7 +92,7 @@ a {
 }
 
 p{
-	font-size:16px;
+	font-size:13px;
 	font-weight:300;
 }
 
@@ -533,6 +533,8 @@ input[type="checkbox"]:checked + span {
 	display: none;
 }
 
+
+
 /*----OFFERS--------*/
 
 .module_offers {
@@ -658,6 +660,34 @@ input[type="checkbox"]:checked + span {
 	height:50px;
 }
 
+.options_upcoming {
+	z-index: 99999;
+	padding: 10px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,.1);
+}
+
+.upcoming .trip-cards {
+	padding: 0 10px;
+	background-color: #f3f3f3;
+}
+
+.upcoming .trip-card {
+	margin-top: -50px;
+	height: 140px;
+	padding-top: 20%;
+	padding-top: 20%;
+}
+
+.upcoming .trip-countdown {
+	text-align: center;
+}
+
+.upcoming .trip-card h3 {
+	color: #2ab0b9;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
 
 /* == CREATE CONTENTS==
    =================== */ 

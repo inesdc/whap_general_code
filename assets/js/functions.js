@@ -124,10 +124,41 @@ $(document).ready(function(){
 
   //Panning trips display content_trip
 
-  $('.trips-summary').click(function(){
-    $(this).next('.trip-steps').toggleClass('hide');
+  // $('.trips-summary').click(function(){
+  //   $(this).next('.trip-steps').toggleClass('hide');
   
+  // });
+  if ($(window).width() > 768) {
+  $('.trips-summary').click(function(){
+    if( $(this).closest('.trip').find('.trip-steps').hasClass('hide') ) {
+      $('.trip').find('.trip-steps').addClass('hide');
+      $(this).closest('.trip').find('.trip-steps').removeClass('hide');
+      $(this).css("height", 150);   
+    } else {
+      $(this).closest('.trip').find('.trip-steps').addClass('hide'); 
+      $(this).css("height", 100);       
+    }   
+  })
+  };
+
+  $(window).resize(function(){
+    if ($(window).width() > 768) {
+  $('.trips-summary').click(function(){
+    if( $(this).closest('.trip').find('.trip-steps').hasClass('hide') ) {
+      $('.trip').find('.trip-steps').addClass('hide');
+      $(this).closest('.trip').find('.trip-steps').removeClass('hide');
+      $(this).css("height", 150);   
+    } else {
+      $(this).closest('.trip').find('.trip-steps').addClass('hide'); 
+      $(this).css("height", 100);       
+    }   
+  })
+
+  };
+
   });
+
+
 
   //Display cards related content
   var showContent = function(){

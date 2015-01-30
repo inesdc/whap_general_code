@@ -17,14 +17,14 @@
   <div id="container-size" class="container">
     <section class="modules trips">
       <article class="trip">
-        <?php include('php-calls/upcomingTrip[1].php'); ?>
+        <?php include('php-calls/trip.php'); ?>
       </article>
       <article class="trip">
-        <?php include('php-calls/upcomingTripClosed[0].php'); ?>
+        <?php include('php-calls/trip.php'); ?>
       </article>
       <article class="trip">
         <div class="module-trips">
-          <?php include('php-calls/upcomingTripClosed[1].php'); ?>
+          <?php include('php-calls/trip.php'); ?>
         </div>
       </article>
     </section>
