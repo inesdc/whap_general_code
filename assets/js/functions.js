@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+  $("#datepicker").datepicker({
+      format: "dd/mm/yyyy",
+      todayBtn: true,
+      clearBtn: true
+    });
   
   $('#aside-trigger').click(function(){
     $('#main').toggleClass('aside-visible');

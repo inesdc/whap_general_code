@@ -58,7 +58,7 @@ function addItem(message) {
  
     var delIcon = "<td><img src=\"assets/cross.png\" alt=\"cross\" class=\"cross\"></td>";
  
-    $("tbody").append("<tr>" + checkbox + content + delIcon + "</tr>");
+    $("#body").append("<tr>" + checkbox + content + delIcon + "</tr>");
  
     id++;
 }

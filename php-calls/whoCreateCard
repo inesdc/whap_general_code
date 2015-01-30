@@ -1,0 +1,7 @@
+<form>
+	<div class="input-group checkbox">
+		<label><input type="checkbox" class="form-control">Block Additional Options</label>
+	</div>
+	<div class="inputGroup">
+		<button type="submit" class="btn btn-primary">SET</button>
+	</div>

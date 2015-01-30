@@ -12,6 +12,7 @@
 	<link href="assets/css/datepicker.css" rel="stylesheet">
 	<link href="assets/css/modualstyles.css" rel="stylesheet">
 	<link href="assets/css/offerCardStylesheet.css" rel="stylesheet">
+	<link href="assets/css/createCards.css" rel="stylesheet">
  </head>
 
  

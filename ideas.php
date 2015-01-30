@@ -38,13 +38,13 @@
     </form>
     <section class="results clearfix">
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
+        <div class="module_offers"><?php include ('php-calls/howCreateCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
       </article>
       <div class="result-pages col-xs-12">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -63,13 +63,13 @@
     <section class="friends_liked">
       <h3>Your friends liked:</h3>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
       </article>
     </section>
     <section class="aside">

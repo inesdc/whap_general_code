@@ -31,16 +31,16 @@
     <section class="aside hidden-xs">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">Offers</button>
         <div class="module_offers">
-          <p>1</p>
+          <p><?php include ('php-calls/offerCard.php');?></p>
         </div>
         <div class="module_offers">
-          <p>2</p>
+          <p><?php include ('php-calls/offerCard.php');?></p>
         </div>
         <div class="module_offers">
-          <p>3</p>
+          <p><?php include ('php-calls/offerCard.php');?></p>
         </div>
         <div class="module_offers">
-          <p>4</p>
+          <p><?php include ('php-calls/offerCard.php');?></p>
         </div>
     </section>
   </div>
