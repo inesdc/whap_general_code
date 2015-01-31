@@ -19,17 +19,17 @@
         <div class="map-trips">
           <img class="map" src="assets/images/map.png">
           <article id="trip1" class="trip">
-            <i class="location icon ico-location pull-left"></i>
+            <i class="location icon ico-location-pink pull-left"></i>
             <div class="trips-summary">
             </div>
           </article>
           <article id="trip2" class="trip">
-            <i class="location icon ico-location pull-left"></i>
+            <i class="location icon ico-location-pink pull-left"></i>
             <div class="trips-summary">
             </div>
           </article>
           <article id="trip3" class="trip">
-            <i class="location icon ico-location pull-left"></i>
+            <i class="location icon ico-location-pink pull-left"></i>
             <div class="trips-summary">
             </div>
           </article>

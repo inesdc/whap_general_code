@@ -6,11 +6,11 @@
       <div class="trip-description col-xs-12 col-sm-5">
         <p><span>A magic trip full of beaches surfing and vans.</span></p>
       </div>
-      <div class="trip-countdown unclicked hidden-xs col-sm-3">
+      <div class="trip-countdown hidden-xs col-sm-3">
         <p>Get your stuff ready.<br><span>5 days to go!</span></p>
       </div>
   </div>
-  <div class="trip-steps hide">
+  <div class="trip-steps">
     <div class="trip-cards clearfix" data-children-new-height="50">
       <div class="how-much-cards col-xs-12 col-sm-2">
         <div data-target="#how-much" class="howMuch upcomingCard trip-card">

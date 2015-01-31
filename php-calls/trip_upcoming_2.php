@@ -6,7 +6,7 @@
       <div class="trip-description col-xs-12 col-sm-5">
         <p><span>Party, tapas and sun.</span></p>
       </div>
-      <div class="trip-countdown hidden-xs col-sm-3 unclicked">
+      <div class="trip-countdown hidden-xs col-sm-3">
         <p>Get your stuff ready.<br><span>1 month to go!</span></p>
       </div>
   </div>

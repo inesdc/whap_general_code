@@ -90,6 +90,11 @@ a {
 	color: #fff;
 }
 
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
 p{
 	font-size:13px;
 	font-weight:300;
@@ -275,9 +280,39 @@ input {
 	height: 35px;
 }
 
-.ico-location {
+.ico-location-pink {
 	margin: 5px auto;
-	background: url('../ico/location.png') no-repeat center;
+	background: url('../ico/location-pink.png') no-repeat center;
+	width: 40px;
+	height: 39px;
+}
+
+.ico-location-gray {
+	margin: 5px auto;
+	background: url('../ico/location-gray.png') no-repeat center;
+	width: 40px;
+	height: 39px;
+}
+
+.ico-location-blue {
+	background: url('../ico/location-blue.png') no-repeat center;
+	width: 40px;
+	height: 39px;
+}
+
+.ico-calendar-blue {
+	background: url('../ico/calendar-blue.png') no-repeat center;
+	width: 40px;
+	height: 39px;
+}
+.ico-what-blue {
+	background: url('../ico/what-blue.png') no-repeat center;
+	width: 40px;
+	height: 39px;
+}
+
+.ico-wallet-blue {
+	background: url('../../images/upcoming/wallet.png') no-repeat center;
 	width: 40px;
 	height: 39px;
 }
@@ -378,9 +413,12 @@ input[type="checkbox"]:checked + span {
 	background-color: #fff;
 	border-radius: 0;
 	border: 0;
+	padding: 20px;
+}
+
+.aside .chat .panel-footer {
 	position: absolute;
 	bottom: 0;
-	padding: 20px;
 }
 
 .panel-body {
@@ -571,6 +609,9 @@ input[type="checkbox"]:checked + span {
 	height: 100%;
 }
 
+.chat-module {
+	height: 100%;
+}
 
 /* =====ONGOING CONTENT =====
    ================== */
@@ -633,10 +674,14 @@ input[type="checkbox"]:checked + span {
 .trip-card {
 	height: 196px;
 	display: block;
-	background: #BEBDBD;
+	background: #fff;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	text-align: center;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0.1);
 }
+
 
 .trip-cards .deciding,
 .trip-cards .decided {
@@ -644,7 +689,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .trip-cards .decided div div {
-	background: gray;
+	background: #e6e6e6;
 }
 
 
@@ -663,16 +708,51 @@ input[type="checkbox"]:checked + span {
 	margin-right: -5px;
 }
 
-.step-content {
-	background-color: gray;
-	height:50px;
+.decided .trip-card h3 {
+	background: transparent;
 }
 
-.options_upcoming {
+
+.options_upcoming,
+.options_admin {
 	z-index: 99999;
 	padding: 10px;
 	background-color: #fff;
 	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,.1);
+}
+
+.planningCard {
+	padding-top: 15%;
+}
+
+.planningCard h3 {
+	margin-left: 0;
+	padding-bottom: 5px;
+}
+
+.planningCard .comments-votes {
+	margin: 0px 15px;
+	padding-top: 10px;
+	border-top: 1px solid rgb(232, 231, 231);
+}
+
+.planningCard .re-open {
+	margin: 0px 15px;
+	padding-top: 20px;
+	border-top: 1px solid rgb(192, 191, 191);
+}
+
+.re-open .btn-default:hover {
+	background-color: #888787;
+	color: #fff;
+}
+
+.planningCard .comments-votes p {
+	margin: 0;
+}
+
+.trip-to-vote {
+	text-align: center;
 }
 
 .upcoming .trip-cards {
@@ -700,6 +780,29 @@ input[type="checkbox"]:checked + span {
 .trips-summary p {
 	padding-top: 10px;
 }
+
+/* Step content */
+
+.step-content {
+	height: 390px;
+	background-color: #fff;
+}
+
+/*------Where------*/
+
+.where-content div{
+	padding: 20px;
+}
+
+.where-map img {
+	width: 100%
+}
+
+.option-display {
+	color: gray;
+}
+
+
 
 /* == CREATE CONTENTS==
    =================== */ 

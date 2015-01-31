@@ -6,7 +6,7 @@
       <div class="trip-description col-xs-12 col-sm-5">
         <p><span>Ready, steady, go!</span></p>
       </div>
-      <div class="trip-countdown hidden-xs col-sm-3 unclicked">
+      <div class="trip-countdown hidden-xs col-sm-3">
         <p>Relax buddy<br><span>3 months to go!</span></p>
       </div>
   </div>

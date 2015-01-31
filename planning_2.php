@@ -7,7 +7,7 @@
     </div>
     <ul class="secondary-nav list-unstyled">
       <li class="col-xs-4 col-sm-3 ongoing"><a href="ongoing.php"><i class="icon ico-ongoing visible-xs"></i>Ongoing</a></li>
-      <li class="col-xs-4 col-sm-3 active planning"><a href="#"><i class="icon ico-planning visible-xs"></i>Planning</a></li>
+      <li class="col-xs-4 col-sm-3 active planning"><a href="planning.php"><i class="icon ico-planning visible-xs"></i>Planning</a></li>
       <li class="col-xs-4 col-sm-3 upcoming"><a href="upcoming.php"><i class="icon ico-upcoming visible-xs"></i>Upcoming</a></li>
     </ul>
   </div>
@@ -17,7 +17,7 @@
   <div id="container-size" class="container">
     <section class="modules trips">
       <article class="trip">
-        <?php include('php-calls/trip.php'); ?>
+        <?php include('php-calls/trip_decided1.php'); ?>
       </article>
       <article class="trip">
         <?php include('php-calls/trip2.php'); ?>

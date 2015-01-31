@@ -23,17 +23,20 @@ div.newYork {
 }
 
 .surfing h2, .newYork h2, .granada h2{
-	padding-top: 10px;
-	padding-left: 5px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 18px;
 	font-weight:400;
 	color: #fff;
 }
 
 .surfing p, .newYork p, .granada p{
-	padding-top: 10px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 	vertical-align: bottom;
-	color: #EAE9E9;
+	color: #fff;
 }
 
 .surfing strong, .newYork strong, .granada strong{
@@ -71,13 +74,22 @@ div.newYork {
 
 }
 
-.trip-countdown .unclicked {
+.trip-to-vote.unclicked {
 	height: 100%;
 	background-color: #fff;
 }
-.trip-countdown .unclicked p {
+
+.trip-to-vote.unclicked p {
+	color: rgb(105, 104, 104);	
+}
+
+.trip-countdown.unclicked {
+	height: 100%;
+	background-color: #fff;
+}
+.trip-countdown.unclicked p {
 	padding-top: 14%;
-	color: rgb(105, 104, 104)
+	color: rgb(105, 104, 104);
 }
 
 .surfing div.col-md-2{
