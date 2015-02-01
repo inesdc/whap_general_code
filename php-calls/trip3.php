@@ -3,10 +3,10 @@
     <div class="col-xs-12 col-sm-4">
         <h2 class="trip-title"><img src="images/upcoming/timer.png"> New York<</h2>
       </div>
-      <div class="trip-description col-xs-12 col-sm-5">
+      <div class="trip-description col-xs-12 col-sm-4 col-md-5">
         <p><span>Ready, steady, go!</span></p>
       </div>
-      <div class="trip-to-vote hidden-xs col-sm-3">
+      <div class="trip-to-vote hidden-xs col-sm-4 col-md-3">
         <p>you have 3 items left to vote</p>
         <div class="items-to-vote">
           <i class="icon ico-location-blue"></i>
@@ -16,7 +16,7 @@
   </div>
   <div class="trip-steps hide">
     <div class="trip-cards clearfix" data-children-new-height="50">
-      <div class="deciding col-xs-12 col-sm-8 pad0R-md ">
+      <div class="deciding col-xs-12 col-sm-8 pad0R-sm ">
         <h3>Deciding</h3>
         <div class="how-much-cards col-xs-12 col-sm-3">
           <div data-target="#how-much" class="howMuch planningCard trip-card">
@@ -42,7 +42,7 @@
         </div>
         <div data-target="#when" class="when-cards col-xs-12 col-sm-3">
           <div class="when planningCard trip-card">
-            <img src="images/upcoming/wallet.png">
+            <img src="images/upcoming/calendar.png">
             <h3>WHEN?</h3>
             <p class="amount">15th to 18th July</p>
             <div class="comments-votes">
@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="decided coll-xs-12 col-sm-4 pad0L-md">
+      <div class="decided coll-xs-12 col-sm-4 pad0L-sm">
         <h3>Decided</h3>
         <div data-target="#who" class="who-cards col-xs-12 col-sm-6">
           <div class="who planningCard trip-card">
@@ -71,7 +71,7 @@
             <h3>WHO?</h3>
             <p class="amount">5 travelers</p>
             <div class="re-open">
-              <button class="btn btn-default btn-block"><a href="planning_2.php">Re-open</a></button>
+              <button class="btn btn-secondary btn-block"><a href="planning_2.php">Re-open</a></button>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
             <h3>WHAT?</h3>
             <p class="amount">3 items</p>
             <div class="re-open">
-              <button class="btn btn-default btn-block">Re-open</button>
+              <button class="btn btn-secondary btn-block">Re-open</button>
             </div>
           </div>
         </div>

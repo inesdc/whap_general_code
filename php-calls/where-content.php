@@ -1,12 +1,12 @@
 <div class="voting-content col-xs-12 col-sm-6">
-	<div class="option option-1">
+	<div class="option option-1 clearfix">
 		<p>Option 1</p>
 		<a href="#" class="option-display">
 			<i class="icon ico-location-gray"></i>
-			<p>Puerto de SantaMaría, Andalucia</p>
+			<p class="location-title">Puerto de SantaMaría, Andalucia</p>
 		</a>
 		<button class="btn btn-vote">
-			<a href="#"><i class="ico icon-star"></i>vote</a>
+			<a href="#"><i class="icon ico-star"></i>vote</a>
 		</button>
 		<div class="voters">
 			<img src="images/guy1.png">
@@ -14,14 +14,14 @@
 			<p>2 votes</p>
 		</div>
 	</div>
-	<div class="option option-2">
-		<p>Option 1<p>
+	<div class="option option-2 clearfix">
+		<p>Option 1</p>
 		<a href="#" class="option-display">
 			<i class="icon ico-location-gray"></i>
-			<p>Sitges, Catalonia</p>
+			<p class="location-title">Sitges, Catalonia</p>
 		</a>
-		<button class="btn btn-default">
-			<a href="#"><i class="ico icon-star"></i>vote</a>
+		<button class="btn btn-vote">
+			<a href="#"><i class="icon ico-star"></i>vote</a>
 		</button>
 		<div class="voters">
 			<img src="images/guy3.png">
@@ -32,9 +32,12 @@
 	</div>
 </div>
 <div class="where-map pull-right hidden-xs col-sm-6">
-	<img src="assets/images/map_voting.png">
+	<div class="map-zone sitges">
+	</div>
+	<div class="puertosm hidden">
+	</div>
+	<select class="admin-button form-control">
+		<option>Set <strong>Sitges</strong> as definitive</option>
+		<option>Set <strong>Puerto de Santa Maria</strong> as definitive</option>
+	</select>
 </div>
-<select class="admin-button form-control pull-right"></select>
-	<option>Set <strong>Sitges</strong> as definitive</option>
-	<option>Set <strong>Puerto de Santa Maria</strong> as definitive</option>
-</select>

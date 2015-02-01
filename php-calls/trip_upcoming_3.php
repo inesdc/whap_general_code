@@ -28,7 +28,7 @@
       </div>
       <div data-target="#when" class="when-cards col-xs-12 col-sm-2">
         <div class="when upcomingCard trip-card">
-          <img src="images/upcoming/wallet.png">
+          <img src="images/upcoming/calendar.png">
           <h3>WHEN?</h3>
           <p class="amount">15th to 18th July</p>
         </div>

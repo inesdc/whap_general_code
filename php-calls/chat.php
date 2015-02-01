@@ -67,12 +67,10 @@
     </div>
     <div class="panel-footer">
         <div class="input-group col-xs-12">
-            <div class="input col-xs-8">
+            <div class="enter-message">
                 <input type="text" class="custinput" id="item-input" placeholder="Enter message..." autofocus>
-              </div>
-              <div class="col-xs-4">
-                <button type="submit" class="btn  btn-default btn-block">add</button>
-              </div>
+            </div>
+             <button type="submit" class="btn  btn-default btn-block">add</button>
         </div>
     </div>
 </div>

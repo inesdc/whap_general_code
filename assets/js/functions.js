@@ -6,6 +6,23 @@ $(document).ready(function(){
     clearBtn: true
   });
 
+  //Button vote
+
+  $('.btn-vote').click(function(){
+    $('.btn-vote').removeClass('btn-vote-active');
+    $(this).toggleClass('btn-vote-active');
+  })
+
+  $('.option-2 .btn-vote').click(function(){
+    $('.map-zone').removeClass('puertosm');
+    $('.map-zone').addClass('sitges');
+  })
+
+  $('.option-1 .btn-vote').click(function(){
+    $('.map-zone').removeClass('sitges');
+    $('.map-zone').addClass('puertosm');
+  })
+
   //Aside
 
   ///Aside triger 
@@ -13,6 +30,30 @@ $(document).ready(function(){
   $('#aside-trigger').click(function(){
     $('#main').toggleClass('aside-visible');
   });
+
+  ///Chat 
+  if($(window).width() > 768){
+  var chat_height = $(window).height()-222;
+  $('.chat .panel-body').css("height",chat_height);
+  } else {
+      $('.chat .panel-body').css("height",400);
+      $('.chat .panel-body').css("overflow-y","hidden");
+      $('.chat').removeClass('.aside');
+      $('.aside').css("overflow", "hidden");
+  };
+
+  $(window).resize(function(){
+    if($(window).width() > 768){
+      var chat_height = $(window).height()-222;
+      $('.chat .panel-body').css("height",chat_height);
+      $('.aside').css("overflow", "scroll");
+    } else {
+      $('.chat .panel-body').css("height",400);
+       $('.chat .panel-body').css("overflow-y","hidden");
+       $('.aside').css("overflow", "hidden");
+    };
+  });
+
 
   ///Container and nav response and drag and drop fixing
 
@@ -128,6 +169,8 @@ $(document).ready(function(){
     var showContent = function(){
       var target = $(this).data('target');
       $(target).toggleClass('hide');
+      $('.trip-card').css("opacity", 0.75);
+      $(this).css("opacity", 1);
       $(this).closest('.module-trips').find('.trip-card .amount').toggleClass('hide');
       $(this).closest('.module-trips').find('.trip-card .comments-votes').toggleClass('hide');
       $(this).closest('.module-trips').find('.trip-card .re-open').toggleClass('hide');
@@ -400,6 +443,8 @@ $(document).ready(function(){
         $(this).closest('.trip').find('.trip-steps').addClass('hide'); 
       }   
     })
+  } else {
+    $('.trip-steps').addClass('hide');
   };
 
   $(window).resize(function(){
@@ -412,9 +457,71 @@ $(document).ready(function(){
           $(this).closest('.trip').find('.trip-steps').addClass('hide'); 
         }   
       })
+    } else {
+      $('.trip-steps').addClass('hide');
     };
   });
 
+  // Función para desplegar los trips mobile
+  if ($(window).width() < 769) {
+    $('.trips-summary').click(function(){
+        $(this).closest('.trip').find('.trip-steps').removeClass('hide');
+        $('.trips-summary').addClass('hide');
+        $(this).removeClass('hide');
+        $('.secondary-menu-trip').removeClass('hide');
+        $('.deciding').children('h3').addClass('hide');
+        $('.decided').children('h3').addClass('hide');
+    })
+  };
+
+  $(window).resize(function() {
+    if ($(window).width() < 769) {
+      $('.secondary-menu-trip').removeClass('hidden');
+    }else{
+      $('.secondary-menu-trip').addClass('hidden');
+      $('.deciding').children('h3').removeClass('hide');
+      $('.decided').children('h3').removeClass('hide');
+      $('.trips-summary').removeClass('hide');
+    };
+  });
+
+  ////Tabs
+
+    if ($(window).width() < 769) {
+    $('.decided').addClass('hide');
+    $('.tab-deciding').click(function(){
+      $('.decided').addClass('hide');
+      $('.deciding').removeClass('hide');
+      $('.tab-deciding').addClass('active');
+      $('.tab-decided').removeClass('active');
+    });
+    $('.tab-decided').click(function(){
+      $('.deciding').addClass('hide');
+      $('.decided').removeClass('hide');
+      $('.tab-deciding').removeClass('active');
+      $('.tab-decided').addClass('active');
+    });
+  };
+
+  $(window).resize(function() {
+    if ($(window).width() < 769) {
+    $('.decided').addClass('hide');
+    $('.tab-deciding').click(function(){
+      $('.decided').addClass('hide');
+      $('.deciding').removeClass('hide');
+      $('.tab-deciding').addClass('active');
+      $('.tab-decided').removeClass('active');
+    });
+    $('.tab-decided').click(function(){
+      $('.deciding').addClass('hide');
+      $('.decided').removeClass('hide');
+      $('.tab-deciding').removeClass('active');
+      $('.tab-decided').addClass('active');
+    });
+    }else{
+      $('.decided').removeClass('hide');
+    };
+  });
 
   // Función para estilos countdown 
   if( $( window ).width() > 768) {

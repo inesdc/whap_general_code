@@ -137,6 +137,10 @@ input {
 	background-color: rgba(255, 255, 255, 0.27); 
 }
 
+.chat input {
+	background-color: #fff;
+}
+
 /* Buttons */
 
 .btn-default {
@@ -159,6 +163,10 @@ input {
 	font-size: 11px;
 }
 
+.btn-secondary a {
+	color: #ef5350;
+}
+
 .btn-aside {
 	background-color: transparent;
 	border: 0;
@@ -173,19 +181,22 @@ input {
 
 /*secondary menu*/
 
-.secondary-menu {
+.secondary-menu,
+.secondary-menu-trip {
 	background-color: #fff;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.secondary-menu a{
+.secondary-menu a,
+.secondary-menu-trip a {
 	color: #2AB0B9;	
 	padding: 20px 0;
 	display: block;
 }
 
-.secondary-menu .active {
+.secondary-menu .active,
+.secondary-menu-trip .active {
 	color: #2AB0B9;
 	border-bottom: 2px solid #2AB0B9;
 	text-decoration: none;
@@ -290,14 +301,22 @@ input {
 .ico-location-gray {
 	margin: 5px auto;
 	background: url('../ico/location-gray.png') no-repeat center;
-	width: 40px;
-	height: 39px;
+	width: 22px;
+	height: 22px;
 }
 
 .ico-location-blue {
 	background: url('../ico/location-blue.png') no-repeat center;
 	width: 40px;
 	height: 39px;
+}
+
+.ico-star {
+	background: url('../ico/star-blue.png') no-repeat center;
+	width: 15px;
+	height: 15px;
+	vertical-align: text-top;
+	margin-right: 6px;
 }
 
 .ico-calendar-blue {
@@ -416,18 +435,32 @@ input[type="checkbox"]:checked + span {
 	padding: 20px;
 }
 
+.chat .panel-footer .enter-message {
+	width: 80%;
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.chat .panel-footer .enter-message input {
+	width: 100%
+}
+
+.chat .panel-footer button {
+	width: 20%;
+	display: inline-block;
+}
+
 .aside .chat .panel-footer {
 	position: absolute;
 	bottom: 0;
 }
 
 .panel-body {
-	overflow: scroll;
+	overflow-y: scroll;
+	height: 100%
 }
 
-.chat .panel-footer input {
-	width: 100%;
-}
+
 
 /* ===== HEADER =====
    ================== */
@@ -790,18 +823,104 @@ input[type="checkbox"]:checked + span {
 
 /*------Where------*/
 
-.where-content div{
-	padding: 20px;
+
+
+select.admin-button {
+	margin-top: 15px;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #ef5350;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700px;
+	border: 0;
+	font-size: 11px;
 }
 
-.where-map img {
-	width: 100%
+.where-map {
+	height: 100%;
+	padding: 25px;
+	text-align: center;
+}
+
+.voting-content {
+	padding: 25px;
+}
+
+.voting-content .option {
+	margin-bottom: 15px;
 }
 
 .option-display {
 	color: gray;
+	float: left;
+	width: 70%;
+	border: 1px solid #B0ABAB;
+	border-radius: 4px;
+	margin-bottom: 20px;
 }
 
+i.ico-location-gray,
+p.location-title {
+	float: left;
+}
+
+.voting-content .location-title {
+	padding: 6px;
+	margin: 0;
+}
+
+.voting-content .btn-default {
+	height: 34px;
+	width: 100px;
+	margin-left: 10px;
+}
+
+button.btn-vote {
+	margin-left: 10px;
+	width: 100px;
+	text-transform: uppercase;
+	font-size: 13px;
+	height: 34px;
+}
+
+.btn-vote-active {
+	background-color: #ef5350; 
+}
+
+.btn-vote-active.ico-star {
+	background: url('../ico/star.png');
+}
+
+.option .voters {
+	float: left;
+	clear: both;
+}
+
+.option .voters img {
+	float: left;
+}
+
+.option .voters p {
+	float: left;
+	padding: 15px;
+}
+
+.where-map .sitges {
+	background: url('../images/map_sitges.png') no-repeat center;
+	width: 90%;
+	height: 80%;
+	margin:10px auto;
+	background-size: cover;
+}
+
+.where-map .puertosm {
+	background: url('../images/map_puertosm.png') no-repeat center;
+	width: 90%;
+	height: 80%;
+	margin:10px auto;
+	background-size: cover;
+}
 
 
 /* == CREATE CONTENTS==
@@ -1198,6 +1317,15 @@ section.profile-data.pull-right {
 	
 	/* General */
 
+	.container {
+		margin-top: 0 !important;
+		margin-bottom: 50px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
 	.crear-cont {
 		padding: 20px;
 	}
@@ -1340,14 +1468,65 @@ section.profile-data.pull-right {
 	}
 
 	.trip-card {
-		height: 100px;
+		height: 150px;
 		margin-top: 10px;
 		margin-bottom: 0;
+	}
+
+	.decided .trip-card {
+		height: 110px;
+	}
+
+	.decided .trip-card .re-open {
+		display: none;
 	}
 
 	.decided,
 	.deciding {
 		clear: both;
+	}
+
+	.planningCard {
+		padding:34px 20px 10px 20px;
+	}
+
+	.planningCard img,
+	.planningCard .step-info {
+		display: inline-block;
+	}
+
+	.trip-card {
+		text-align: left;
+		height: 215
+	}
+
+	.trip-cards .deciding, .trip-cards .decided {
+		text-align: left;
+	}
+
+	.trip-card h3 {
+		padding-top: 0;
+	}
+
+	.trip-card img {
+		float: left;
+	margin-right: 20px;
+	}
+
+	.planningCard .comments-votes {
+		margin: 19px 0 0 0;
+	}
+
+	.comments-votes p:first-child {
+		float: left;
+	}
+
+	.comments-votes p:last-child {
+		float: right;
+	}	
+
+	.options_admin {
+		margin-top: 10px;
 	}
 
 	/*Create*/

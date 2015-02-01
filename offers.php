@@ -88,10 +88,15 @@
             <li>Who</li>
             <li>What</li>
           </ul>
-          <div class="trips-summary"></div>
-          <div class="trips-summary"></div>
-          <div class="trips-summary"></div>
-          <div class="trips-summary"></div>
+          <div class="surfing trips-summary">
+            <h2 class="trip-title"><img src="images/upcoming/timer.png"> Surfin' N' Rollin'</h2>
+          </div>
+          <div class="granada trips-summary">
+            <h2 class="trip-title"><img src="images/upcoming/timer.png"> Summer in Granada</h2>
+          </div>
+          <div class="newYork trips-summary">
+            <h2 class="trip-title"><img src="images/upcoming/timer.png"> New York<</h2>
+          </div>
         </div>
     </section>
   </div>

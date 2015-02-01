@@ -43,7 +43,7 @@
         </div>
         <div data-target="#when" class="when-cards"  style="float:left; width:20%;padding:5px;">
           <div class="when planningCard trip-card">
-            <img src="images/upcoming/wallet.png">
+            <img src="images/upcoming/calendar.png">
             <h3>WHEN?</h3>
             <p class="amount">15th to 18th July</p>
             <div class="comments-votes">
@@ -82,7 +82,7 @@
             <h3>WHAT?</h3>
             <p class="amount">3 items</p>
             <div class="re-open">
-              <button class="btn btn-default btn-block">Re-open</button>
+              <button class="btn btn-secondary btn-block">Re-open</button>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@
       <button type="button" class="btn btn-default btn-block pull-right"><a href="itinerary-page.php">Add budget control</a></button>
     </div>
     <div class="planning-contents">
-      <div id="how-much" class="how-much-content hide">
+      <div id="where" class="where-content hide">
         <div class="step-content"></div>
         <div class="chat">
           <?php include('chat.php'); ?>

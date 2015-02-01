@@ -20,17 +20,20 @@
           <img class="map" src="assets/images/map.png">
           <article id="trip1" class="trip">
             <i class="location icon ico-location-pink pull-left"></i>
-            <div class="trips-summary">
+            <div class="surfing trips-summary">
+              <h2 class="trip-title"><img src="images/upcoming/timer.png"> Surfin' N' Rollin'</h2>
             </div>
           </article>
           <article id="trip2" class="trip">
             <i class="location icon ico-location-pink pull-left"></i>
-            <div class="trips-summary">
+            <div class="granada trips-summary">
+              <h2 class="trip-title"><img src="images/upcoming/timer.png"> Summer in Granada</h2>
             </div>
           </article>
           <article id="trip3" class="trip">
             <i class="location icon ico-location-pink pull-left"></i>
-            <div class="trips-summary">
+            <div class="newYork trips-summary">
+              <h2 class="trip-title"><img src="images/upcoming/timer.png"> New York<</h2>
             </div>
           </article>
         </div>
