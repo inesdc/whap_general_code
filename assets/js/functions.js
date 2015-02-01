@@ -134,7 +134,7 @@ $(document).ready(function(){
     var top_height = $('#nearby nav').height();
     var onging_module_width = $('.module-ongoing').width(); 
     $('.module-ongoing').css("height", onging_module_width / a_r);
-    $('#nearby .content').css("height", onging_module_width / a_r - top_height);
+    $('#nearby .content, #feed .content').css("height", onging_module_width / a_r - top_height);
   };
 
   $(window).resize(function(){
@@ -142,7 +142,7 @@ $(document).ready(function(){
       var a_r = 1.1143;
       var onging_module_width = $('.module-ongoing').width(); 
       $('.module-ongoing').css("height", onging_module_width / a_r);
-      $('#nearby .content').css("height", onging_module_width / a_r - top_height);
+      $('#nearby .content, #feed .content').css("height", onging_module_width / a_r - top_height);
     } else {
       $('.module-ongoing').css("height", "auto");
     };
@@ -165,23 +165,23 @@ $(document).ready(function(){
 
   //Display cards related content
 
+  var showContent = function(){
+    var target = $(this).data('target');
+    $(target).toggleClass('hide');
+    $('.trip-card').css("opacity", 0.75);
+    $(this).css("opacity", 1);
+    $(this).closest('.module-trips').find('.amount, .re-open, .comments-votes').toggleClass('hide');
+    $(this).closest('.module-trips').find('.trip-card').css("padding-top",7);
+    $(this).closest('.module-trips').find('.trip-card').css("margin-bottom",0);
+    $(this).closest('.module-trips').find('.trip-card').css("margin-top",-50);
+    $(this).closest('.module-trips').find('.trips-summary').css("height",150);
+    $(this).closest('.module-trips').find('.options_admin').toggleClass('hide');
+    $('.deciding h3').toggleClass('hide');
+    $('.decided h3').toggleClass('hide');
+  };
+
   if ($(window).width() > 768) { 
-    var showContent = function(){
-      var target = $(this).data('target');
-      $(target).toggleClass('hide');
-      $('.trip-card').css("opacity", 0.75);
-      $(this).css("opacity", 1);
-      $(this).closest('.module-trips').find('.trip-card .amount').toggleClass('hide');
-      $(this).closest('.module-trips').find('.trip-card .comments-votes').toggleClass('hide');
-      $(this).closest('.module-trips').find('.trip-card .re-open').toggleClass('hide');
-      $(this).closest('.module-trips').find('.trip-card').css("padding-top",7);
-      $(this).closest('.module-trips').find('.trip-card').css("margin-bottom",0);
-      $(this).closest('.module-trips').find('.trip-card').css("margin-top",-50);
-      $(this).closest('.module-trips').find('.trips-summary').css("height",150);
-      $(this).closest('.module-trips').find('.options_admin').toggleClass('hide');
-      $('.deciding h3').toggleClass('hide');
-      $('.decided h3').toggleClass('hide');
-    }; 
+     $('.trip-card').click(showContent);
 
     var toggleHeight = function(){
       var newHeight = $(this).parent().parent().parent().data('children-new-height');
@@ -192,7 +192,7 @@ $(document).ready(function(){
       }
     };
 
-    $('.trip-card').click(showContent);
+    
 
     var tripCardHeight = $('.trip-card').height();
     $('.trip-card').click(toggleHeight);
@@ -201,20 +201,7 @@ $(document).ready(function(){
 
   $(window).resize(function() {
     if ($(window).width() > 768) { 
-    var showContent = function(){
-      var target = $(this).data('target');
-      $(target).toggleClass('hide');
-      $(this).closest('.module-trips').find('.trip-card .amount').toggleClass('hide');
-      $(this).closest('.module-trips').find('.trip-card .comments-votes').toggleClass('hide');
-      $(this).closest('.module-trips').find('.trip-card .re-open').toggleClass('hide');
-      $(this).closest('.module-trips').find('.trip-card').css("padding-top",7);
-      $(this).closest('.module-trips').find('.trip-card').css("margin-bottom",0);
-      $(this).closest('.module-trips').find('.trip-card').css("margin-top",-50);
-      $(this).closest('.module-trips').find('.trips-summary').css("height",150);
-      $(this).closest('.module-trips').find('.options_admin').toggleClass('hide');
-      $('.deciding h3').toggleClass('hide');
-      $('.decided h3').toggleClass('hide');
-    }; 
+
 
     var toggleHeight = function(){
       var newHeight = $(this).parent().parent().parent().data('children-new-height');
@@ -480,7 +467,7 @@ $(document).ready(function(){
     }else{
       $('.secondary-menu-trip').addClass('hidden');
       $('.deciding').children('h3').removeClass('hide');
-      $('.decided').children('h3').removeClass('hide');
+      $('.decided').children('h3').removeClas
       $('.trips-summary').removeClass('hide');
     };
   });

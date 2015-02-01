@@ -23,8 +23,8 @@
       </div>
       <div class="deciding col-xs-12 col-sm-8 pad0R-sm ">
         <h3>Deciding</h3>
-        <div class="how-much-cards col-xs-12 col-sm-3">
-          <div data-target="#how-much" class="howMuch planningCard trip-card">
+        <div class="how-much-cards col-xs-12 col-sm-3" data-target="#how-much" >
+          <div class="howMuch planningCard trip-card">
             <img src="images/upcoming/wallet.png">
             <div class="step-info">
               <h3>HOW MUCH?</h3>
@@ -36,8 +36,8 @@
             </div>
         </div>
         </div>
-        <div  class="where-cards col-xs-12 col-sm-3">
-           <div data-target="#where" class="where planningCard trip-card">
+        <div class="where-cards col-xs-12 col-sm-3" data-target="#where" >
+           <div class="where planningCard trip-card">
             <img src="images/upcoming/location.png">
             <div class="step-info">
               <h3>WHERE</h3>
@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div data-target="#when" class="when-cards col-xs-12 col-sm-3">
+        <div class="when-cards col-xs-12 col-sm-3" data-target="#when">
           <div class="when planningCard trip-card">
             <img src="images/upcoming/calendar.png">
             <div class="step-info">
@@ -62,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div data-target="#how" class="how-cards col-xs-12 col-sm-3">
+        <div class="how-cards col-xs-12 col-sm-3" data-target="#how">
           <div class="how planningCard trip-card">
             <img src="images/upcoming/airplane.png">
             <div class="step-info">
