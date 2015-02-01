@@ -165,38 +165,46 @@ $(document).ready(function(){
 
   //Display cards related content
 
-  var showContent = function(){
+  var showContent = function() {
     var target = $(this).data('target');
     $(target).toggleClass('hide');
     $('.trip-card').css("opacity", 0.75);
     $(this).css("opacity", 1);
     $(this).closest('.module-trips').find('.amount, .re-open, .comments-votes').toggleClass('hide');
-    $(this).closest('.module-trips').find('.trip-card').css("padding-top",7);
-    $(this).closest('.module-trips').find('.trip-card').css("margin-bottom",0);
-    $(this).closest('.module-trips').find('.trip-card').css("margin-top",-50);
+    if (!$(target).hasClass('hide')) {
+      $(this).closest('.module-trips').find('.trip-card').css({
+        "padding-top": 7,
+        "margin-bottom": 0,
+        "margin-top": -50
+      });  
+    } else {
+      $(this).closest('.module-trips').find('.trip-card').css({
+        "padding-top": '15%',
+        "margin-bottom": 20,
+        "margin-top": 20
+      });  
+    }
     $(this).closest('.module-trips').find('.trips-summary').css("height",150);
     $(this).closest('.module-trips').find('.options_admin').toggleClass('hide');
     $('.deciding h3').toggleClass('hide');
     $('.decided h3').toggleClass('hide');
   };
 
+  var toggleHeight = function() {
+    var newHeight = $(this).parent().parent().parent().data('children-new-height');
+    if ( $('.trip-card').outerHeight() != newHeight ) {
+      console.log('not equal');
+      $('.trip-card').css('height', newHeight + 'px');  
+    } else {
+      console.log('equal');
+      $('.trip-card').css('height', '196px');
+    }
+  };
+
   if ($(window).width() > 768) { 
-     $('.trip-card').click(showContent);
-
-    var toggleHeight = function(){
-      var newHeight = $(this).parent().parent().parent().data('children-new-height');
-      if ( $('.trip-card').height() != newHeight ) {
-        $('.trip-card').css('height', newHeight+'px');  
-      } else {
-        $('.trip-card').css('height', "tripCardHeight");
-      }
-    };
-
-    
-
+    $('.trip-card').click(showContent);
     var tripCardHeight = $('.trip-card').height();
     $('.trip-card').click(toggleHeight);
-
   };
 
   $(window).resize(function() {

@@ -23,8 +23,8 @@
       </div>
       <div class="deciding col-xs-12 col-sm-8 pad0R-sm ">
         <h3>Deciding</h3>
-        <div class="how-much-cards col-xs-12 col-sm-3" data-target="#how-much" >
-          <div class="howMuch planningCard trip-card">
+        <div class="how-much-cards col-xs-12 col-sm-3">
+          <div class="howMuch planningCard trip-card" data-target="#how-much" >
             <img src="images/upcoming/wallet.png">
             <div class="step-info">
               <h3>HOW MUCH?</h3>
@@ -36,8 +36,8 @@
             </div>
         </div>
         </div>
-        <div class="where-cards col-xs-12 col-sm-3" data-target="#where" >
-           <div class="where planningCard trip-card">
+        <div class="where-cards col-xs-12 col-sm-3">
+           <div class="where planningCard trip-card" data-target="#where">
             <img src="images/upcoming/location.png">
             <div class="step-info">
               <h3>WHERE</h3>
@@ -49,8 +49,8 @@
             </div>
           </div>
         </div>
-        <div class="when-cards col-xs-12 col-sm-3" data-target="#when">
-          <div class="when planningCard trip-card">
+        <div class="when-cards col-xs-12 col-sm-3">
+          <div class="when planningCard trip-card" data-target="#when">
             <img src="images/upcoming/calendar.png">
             <div class="step-info">
               <h3>WHEN?</h3>
@@ -62,8 +62,8 @@
             </div>
           </div>
         </div>
-        <div class="how-cards col-xs-12 col-sm-3" data-target="#how">
-          <div class="how planningCard trip-card">
+        <div class="how-cards col-xs-12 col-sm-3">
+          <div class="how planningCard trip-card" data-target="#how">
             <img src="images/upcoming/airplane.png">
             <div class="step-info">
               <h3>HOW?</h3>
@@ -78,7 +78,7 @@
       </div>
       <div class="decided coll-xs-12 col-sm-4 pad0L-sm">
         <h3>Decided</h3>
-        <div data-target="#who" class="who-cards col-xs-12 col-sm-6">
+        <div class="who-cards col-xs-12 col-sm-6" data-target="#who">
           <div class="who planningCard trip-card">
             <img src="images/upcoming/head.png">
             <div class="step-info">
