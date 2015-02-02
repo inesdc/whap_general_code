@@ -9,7 +9,7 @@ $( document ).ready( function() {
 			$( '#main.create #container-size' ).css( 'padding-bottom', 0);
 		}
 	})
-	$( '#container-size').css( 'margin-top', $( 'header' ).height() );
+	$( '#container-size' ).css( 'margin-top', $( 'header' ).height() );
 	$( '.draggable').draggable( { revert: "invalid" } );
 	$( '.droppable').droppable( {
 		accept: ".draggable",

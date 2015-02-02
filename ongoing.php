@@ -2,7 +2,7 @@
  <body>
   <header>
     <?php include ('php-calls/header.php'); ?>
-    <div class="relative ohidden">
+    <div class="relative">
       <div class="col-xs-12 col-sm-3 crear-cont">
         <button type="button" class="btn btn-default btn-block"><a href="crear.php">crear viaje</a></button>
       </div>
