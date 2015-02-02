@@ -1163,6 +1163,11 @@ section.aside.add_steps_drag div.module-steps{
 	text-align: left;
 }
 
+.droppable .step-title p.hidden {
+	display: inline-block !important;
+	visibility: visible !important;
+}
+
 .module-steps-inner h3 {
 	display: inline-block;
 	margin: 0;
@@ -1933,6 +1938,13 @@ section.profile-data.pull-right {
 	.pad5R-md {
 		padding-right: 5px;
 	}
+
+	.add_steps_drag {
+		right: 0 !important;
+		transition: all 0s;
+		overflow: hidden !important;
+		overflow-Y: auto;
+	}
 }
 
 @media(max-width: 1199px) {
@@ -2039,9 +2051,8 @@ section.profile-data.pull-right {
 	.add_steps_drag {
 		position: fixed;
 		bottom: 0px;
-		width: 100%;
 		padding: 20px;
-		}
+	}
 
 	.add_steps_drag p {
 		margin-bottom: 20px;

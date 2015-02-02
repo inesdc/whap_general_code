@@ -60,7 +60,7 @@
           </div>
           <div class="droppable" data-col="1" data-row="2">
           </div>
-          <div class="droppable visible-sm" data-col="1" data-row="3">
+          <div class="droppable visible-sm visible-md" data-col="1" data-row="3">
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
@@ -68,10 +68,10 @@
           </div>
           <div class="droppable" data-col="2" data-row="2">
           </div>
-          <div class="droppable visible-sm" data-col="2" data-row="3">
+          <div class="droppable visible-sm visible-md" data-col="2" data-row="3">
           </div>
         </div>
-        <div class="col-md-4 hidden-sm">
+        <div class="col-md-4 hidden-sm hidden-md">
           <div class="droppable" data-col="3" data-row="1">
           </div>
           <div class="droppable" data-col="3" data-row="2">
@@ -98,7 +98,7 @@
               <p class="budgetCardCreate">Add a Budget</p>
               <fieldset class="form-group">
                 <select class="form-control">
-                  <option>Poor&Proud<small>(100-300€)</small></option>
+                  <option>Poor &amp; Proud<small>(100-300€)</small></option>
                   <option>Cheap but fun<small>(300-600€)</small></option>
                   <option>Dont mind spending a bit<small>(600-900€)</small></option>
                   <option>Money ain't a thing<small>(900-...€)</small></option>
@@ -156,7 +156,6 @@
           <div class="create-step-content hidden-xs">
             <form class="whenCreateCard">
               <div id="datepicker">
-                  <!--<input id="datepicker" type="text" class="form-control" placeholder="18/02/2014-24/02/2015">-->
               </div>
               <div class="datepicker">
                   <input id="datepicker" type="text" class="form-control" placeholder="18/01/2014-24/01/2015">
