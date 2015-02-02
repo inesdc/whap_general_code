@@ -615,8 +615,19 @@ $(document).ready(function(){
     });
   }
 
-
-
+  $(window).resize(function() {
+    if ($(window).width() > 767) {
+      $('#delay a').click(function(event){
+        event.preventDefault();
+        $(this).closest('#itinerary').find('.expand').css('bottom', '-43px');
+      });
+    } else {
+      $('#itinerary').css("margin-bottom", -45);
+      $('#delay a').click(function(){
+        $('#itinerary').css("margin-bottom", 0);
+      });
+    }
+  });
 
   $('#bring form').submit(function(e){
     e.preventDefault();
@@ -625,6 +636,9 @@ $(document).ready(function(){
       console.log(value);
     }
   });
+
+  //Itinerary module mobile 
+
 
 
   // Modal Itinerary Mobile
