@@ -1810,6 +1810,8 @@ section.profile-data.pull-right {
 
 	.add_steps_drag .module-steps {
 		height: auto;
+		width: 100% !important;
+		cursor: inherit;
 	}
 
 	.add_steps_drag p,
@@ -1920,6 +1922,14 @@ section.profile-data.pull-right {
 		right: 0;
 	}
 
+}
+
+@media(min-width:768px) and (max-width: 991px) {
+	.add_steps_drag {
+		height: auto !important;
+		right: 0 !important;
+		overflow: auto !important;
+	}
 }
 
 @media(min-width: 992px) {
@@ -2051,7 +2061,6 @@ section.profile-data.pull-right {
 	.add_steps_drag {
 		position: fixed;
 		bottom: 0px;
-		padding: 20px;
 	}
 
 	.add_steps_drag p {

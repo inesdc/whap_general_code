@@ -1,9 +1,9 @@
 $( document ).ready( function() {
-	if ( $(window).width() < 1340 && $(window).width() > 767 ) {
+	if ( $(window).width() < 992 && $(window).width() > 767 ) {
 		$( '#main.create #container-size' ).css( 'padding-bottom', $( '.add_steps_drag' ).outerHeight() + 20 );
 	}
 	$( window).resize(function(){
-		if ( $(window).width() < 1340 && $(window).width() > 767 ) {
+		if ( $(window).width() < 992 && $(window).width() > 767 ) {
 			$( '#main.create #container-size' ).css( 'padding-bottom', $( '.add_steps_drag' ).outerHeight() + 20 );
 		} else {
 			$( '#main.create #container-size' ).css( 'padding-bottom', 0);
