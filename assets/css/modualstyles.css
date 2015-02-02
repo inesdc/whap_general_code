@@ -313,7 +313,7 @@
 }
 
 .feed .location{
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
 .feed .location img{
@@ -325,7 +325,7 @@
 }
 
 .feed .weather {
-    font-size: 1.5em;
+    font-size: 1.1em;
     color:white;
     text-transform:bold;
     width:auto;
