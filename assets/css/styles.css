@@ -18,6 +18,14 @@
 	border: 0 !important;
 }
 
+.crear-cont .btn {
+	padding: 0
+}
+
+.crear-cont .btn a {
+	padding: 9px 50px;
+}
+
 /*
 * {
 	border: 1px solid red;
@@ -1696,7 +1704,7 @@ section.profile-data.pull-right {
 
 	#content-itinerary  .ico-timeline-ball {
 		top: 84px;
-		left: 7px;
+		crealeft: 7px;
 	}
 
 	/*trips*/
@@ -2073,6 +2081,26 @@ section.profile-data.pull-right {
 
 	#main.aside-visible {
 		margin-left: 0 !important;
+	}
+
+	.aside .chat,
+	.aside .module_offers {
+		opacity: 1;
+	}
+
+}
+
+@media(max-width:1340px) {
+
+	.aside .chat,
+	.aside .module_offers {
+		opacity: 0;
+		transition: opacity 0s;
+	}
+
+	.aside-visible .aside .chat,
+	.aside-visible .aside .module_offers {
+		opacity: 1;
 	}
 
 }

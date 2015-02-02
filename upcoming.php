@@ -3,7 +3,7 @@
     <?php include ('php-calls/header.php'); ?>
     <div class="relative">
       <div class="col-xs-12 col-sm-3 crear-cont">
-        <button type="button" class="btn btn-default btn-block">crear viaje</button>
+        <button type="button" class="btn btn-default btn-block"><a href="crear.php">crear viaje</a></button>
       </div>
       <ul class="secondary-nav list-unstyled">
         <li class="col-xs-4 col-sm-3  col-lg 4 ongoing"><a href="ongoing.php"><i class="icon ico-ongoing visible-xs"></i>Ongoing</a></li>
