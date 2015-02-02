@@ -2080,12 +2080,11 @@ section.profile-data.pull-right {
 
 	.module-steps:nth-child(3) {
 	border-bottom: 1px solid rgba(42, 176, 185, 0.70);
+	}
 }
 
 @media(min-width:1341px) {
 
-
-	
 	#aside-trigger {
 		display: none;
 	}
@@ -2097,6 +2096,16 @@ section.profile-data.pull-right {
 	.aside .chat,
 	.aside .module_offers {
 		opacity: 1;
+	}
+
+	.hidden-xlg {
+		visibility: hidden !important;
+		display: none !important;
+	}
+
+	.visible-xlg {
+		visibility: visible !important;
+	 	display: inherit !important;	
 	}
 
 }
@@ -2113,8 +2122,9 @@ section.profile-data.pull-right {
 	.aside-visible .aside .module_offers {
 		opacity: 1;
 	}
-
 }
+
+
 
 /** CAMBIOS BOOTSTRAP
 
