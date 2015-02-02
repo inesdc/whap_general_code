@@ -60,7 +60,7 @@
           </div>
           <div class="droppable" data-col="1" data-row="2">
           </div>
-          <div class="droppable visible-sm visible-md" data-col="1" data-row="3">
+          <div class="droppable hidden-xlg" data-col="1" data-row="3">
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
@@ -68,15 +68,13 @@
           </div>
           <div class="droppable" data-col="2" data-row="2">
           </div>
-          <div class="droppable visible-sm visible-md" data-col="2" data-row="3">
+          <div class="droppable hidden-xlg" data-col="2" data-row="3">
           </div>
         </div>
-        <div class="col-md-4 hidden-sm hidden-md">
+        <div class="col-md-4 hidden-sm hidden-md hidden-lg visible-xlg">
           <div class="droppable" data-col="3" data-row="1">
           </div>
           <div class="droppable" data-col="3" data-row="2">
-          </div>
-          <div class="droppable visible-sm">
           </div>
         </div>
       </div>
