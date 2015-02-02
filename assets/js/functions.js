@@ -23,6 +23,15 @@ $(document).ready(function(){
     $('.map-zone').addClass('puertosm');
   })
 
+
+  //Button create 
+
+  $('.create-step-content .btn-default').click(function(e){
+    e.preventDefault();
+    $(this).addClass('btn-clicked');
+    $(this).closest('.create-step-content').addClass('hidden-xs');
+  })
+
   //Aside
 
   ///Aside triger 
@@ -34,10 +43,10 @@ $(document).ready(function(){
   ///Chat 
   if($(window).width() > 768){
   var chat_height = $(window).height()-222;
-  $('.chat .panel-body').css("height",chat_height);
+  $('.aside .chat .panel-body').css("height",chat_height);
   } else {
-      $('.chat .panel-body').css("height",400);
-      $('.chat .panel-body').css("overflow-y","hidden");
+      $('.aside .chat .panel-body').css("height",312);
+      $('.aside .chat .panel-body').css("overflow-y","hidden");
       $('.chat').removeClass('.aside');
       $('.aside').css("overflow", "hidden");
   };
@@ -45,11 +54,11 @@ $(document).ready(function(){
   $(window).resize(function(){
     if($(window).width() > 768){
       var chat_height = $(window).height()-222;
-      $('.chat .panel-body').css("height",chat_height);
+      $('.aside .chat .panel-body').css("height",chat_height);
       $('.aside').css("overflow", "scroll");
     } else {
-      $('.chat .panel-body').css("height",400);
-       $('.chat .panel-body').css("overflow-y","hidden");
+      $('.aside .chat .panel-body').css("height",312);
+       $('.aside .chat .panel-body').css("overflow-y","hidden");
        $('.aside').css("overflow", "hidden");
     };
   });
@@ -64,7 +73,9 @@ $(document).ready(function(){
 
   if($(window).width() > 1340){
     $('#container-size').css("margin-left", new_container_margin_left);
-    $('#main').addClass('aside-visible');
+    $('.aside').css("right", 0);
+    $('.aside-2').css("right", 0);
+    $('.aside-2 #aside-trigger').addClass('hide');
     $('.secondary-nav').css("padding-left", new_container_margin_left);
     $('.secondary-nav').css("padding-right", new_container_margin_right);
     $('.add_steps_drag > div').removeClass('container');
@@ -79,14 +90,18 @@ $(document).ready(function(){
   $(window).resize(function(){
     var new_container_margin_left = ($(window).width()-1364)/2;
     if($(window).width() > 1340){
-      $('#main').addClass('aside-visible');
+      $('.aside').css("right", 0);
+      $('.aside-2').css("right", 0);
+      $('.aside-2 #aside-trigger').addClass('hide');
       $('#container-size').css("margin-left", new_container_margin_left);
       $('.secondary-nav').css("padding-left", new_container_margin_left);
       $('.secondary-nav').css("padding-right", new_container_margin_right);
       $('.add_steps_drag').addClass("aside");
       $('.add_steps_drag > div').removeClass('container');
     } else {
-      $('#main').removeClass('aside-visible');
+      $('.aside').css("right",-300);
+      $('.aside-2').css("right",-300);
+      $('.aside-2 #aside-trigger').removeClass('hide');
       $('.add_steps_drag').removeClass("aside");
       $('#container-size').css("margin-left", 20);
       $('.secondary-nav').css("padding-left", container_margin);
@@ -176,15 +191,16 @@ $(document).ready(function(){
         "padding-top": 7,
         "margin-bottom": 0,
         "margin-top": -50
-      });  
+      });
+      $(this).closest('.module-trips').find('.trips-summary').css("height",150);  
     } else {
       $(this).closest('.module-trips').find('.trip-card').css({
         "padding-top": '15%',
         "margin-bottom": 20,
         "margin-top": 20
       });  
+      $(this).closest('.module-trips').find('.trips-summary').css("height",100);
     }
-    $(this).closest('.module-trips').find('.trips-summary').css("height",150);
     $(this).closest('.module-trips').find('.options_admin').toggleClass('hide');
     $('.deciding h3').toggleClass('hide');
     $('.decided h3').toggleClass('hide');
@@ -551,39 +567,68 @@ $(document).ready(function(){
 
 //Explore menu xs
 
-if($(window).width() < 768) {
-  $('.ideas').parent().addClass('secondary-menu');
-  $('.ideas').parent().addClass('clearfix');
-  $('.ideas').parent().removeClass('secondary-nav');
-  $('.module-steps').removeClass('draggable');
-};
+$(document).ready(function(){
 
-$(window).resize(function() {
   if($(window).width() < 768) {
     $('.ideas').parent().addClass('secondary-menu');
     $('.ideas').parent().addClass('clearfix');
     $('.ideas').parent().removeClass('secondary-nav');
     $('.module-steps').removeClass('draggable');
-  } else {
-    $('.module-steps').addClass('draggable');
-    $('.ideas').parent().removeClass('secondary-menu');
-    $('.ideas').parent().removeClass('clearfix');
-    $('.ideas').parent().addClass('secondary-nav');
   };
-});
 
-$('#delay a').click(function(){
-  $(this).closest('#itinerary').find('.expand').css('bottom', '-43px');
-});
+  $(window).resize(function() {
+    if($(window).width() < 768) {
+      $('.ideas').parent().addClass('secondary-menu');
+      $('.ideas').parent().addClass('clearfix');
+      $('.ideas').parent().removeClass('secondary-nav');
+      $('.module-steps').removeClass('draggable');
+    } else {
+      $('.module-steps').addClass('draggable');
+      $('.ideas').parent().removeClass('secondary-menu');
+      $('.ideas').parent().removeClass('clearfix');
+      $('.ideas').parent().addClass('secondary-nav');
+    };
+  });
 
-
-
-
-$('#bring form').submit(function(e){
-  e.preventDefault();
-  if ($('#bring form input').val() === "pene") {
-    var value = $('#bring form input').val();
-    console.log(value);
+  if ($(window).width() > 767) {
+    $('#delay a').click(function(event){
+      event.preventDefault();
+      $(this).closest('#itinerary').find('.expand').css('bottom', '-43px');
+    });
+  } else {
+    $('#itinerary').css("margin-bottom", -45);
+    $('#delay a').click(function(){
+      $('#itinerary').css("margin-bottom", 0);
+    });
   }
-});
 
+
+
+
+  $('#bring form').submit(function(e){
+    e.preventDefault();
+    if ($('#bring form input').val() === "pene") {
+      var value = $('#bring form input').val();
+      console.log(value);
+    }
+  });
+
+
+  // Modal Itinerary Mobile
+
+  if($(window).width() < 769) {
+
+    var itinerary_height = $(window).height() - 174;
+    $('#content-itinerary .modal-body .content').css("height", itinerary_height);
+  };
+
+    $(window).resize(function() {
+      if($(window).width() < 769) {
+
+        var itinerary_height = $(window).height() - 174;
+        $('#content-itinerary .modal-body .content').css("height", itinerary_height);
+      } else {
+        $('#content-itinerary .modal-body .content').css("height", "auto");
+      };
+    });
+});

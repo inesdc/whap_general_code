@@ -72,7 +72,7 @@
         <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
       </article>
     </section>
-    <section class="aside">
+    <section class="aside-2">
         <button id="aside-trigger" class="hidden-xs hidden-extralg">Trips</button>
         <div class="trips-list">
           <h3>Your trips</h3>

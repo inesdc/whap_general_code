@@ -1,5 +1,9 @@
 <div id="offerCard"class="offerCard"> 
   <div class="offer-content">
+    <div class="discount">
+      <p>20%</p>
+      <p>discount<p>
+    </div>
     <div class="destinationIMG">
     </div>
     <div class="LPinfo col-xs-8">
@@ -14,7 +18,7 @@
    </div> 
   <div class="icons">
     <ul class="list-unstyled">
-    	<li><img src="images/alien.png"></li>
+    	<li><img src="images/share.png"></li>
     	<li><img src="images/chat.png"></li>
       <li><img src="images/plus.png"></li>
     </ul>
