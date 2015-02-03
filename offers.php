@@ -41,10 +41,10 @@
         <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_1.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4 hidden-sm">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_2.php');?></div>
       </article>
       <div class="result-pages col-xs-12">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
@@ -63,13 +63,13 @@
     <section class="friends_liked">
       <h3>Your friends liked:</h3>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_3.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_4.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4 hidden-sm">
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_5.php');?></div>
       </article>
     </section>
     <section class="aside-2">

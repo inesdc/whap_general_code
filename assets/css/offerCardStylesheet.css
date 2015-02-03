@@ -14,8 +14,104 @@ div.offerCard {
 .offerCard div.destinationIMG {
   height: 50%;
   width: 100%;
-  background-image: url("../../images/bk3.png");
-  background-size: 100%;
+  background: url("../images/offer-2.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.destinationIMG-1 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/offer_1.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.destinationIMG-2 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/offer-3.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.destinationIMG-3 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/offer-4.png") no-repeat center;
+  background-size: cover;
+}
+
+
+.offerCard div.destinationIMG-4 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/offer-5.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.destinationIMG-5 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/offer-6.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.ideaIMG {
+  height: 50%;
+  width: 100%;
+  background: url("../../images/bk3.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.ideaIMG-1 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/idea-1.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.ideaIMG-2 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/idea-2.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.ideaIMG-3 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/offer-6.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.ideaIMG-4 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/idea-4.png") no-repeat center;
+  background-size: cover;
+}
+
+.offerCard div.ideaIMG-5 {
+  height: 50%;
+  width: 100%;
+  background: url("../images/idea-5.png") no-repeat center;
+  background-size: cover;
+}
+
+.recommended {
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.5);
+  display: block;
+  margin-top: -50px;
+  height: 50px;
+}
+
+.recommended p {
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+
+.recommended img {
+  margin-top: -30px;
 }
 
 .offerCard div.LPinfo,

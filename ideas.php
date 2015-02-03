@@ -13,7 +13,7 @@
 <div id="main" class="clearfix offers-page explore">
   <div id="container-size" class="container">
     <form class="filters form-inline clearfix">
-      <div class="form-group col-xs-12 col-sm-4">
+      <div class="form-group col-xs-12 col-sm-5">
         <select id="trip-type" class="form-control">
             <option>Adventure</option>
             <option>Explore</option>
@@ -22,13 +22,7 @@
             <option>Sport</option>
         </select>
       </div>
-      <div class="form-group col-xs-12 col-sm-2">
-        <fieldset class="dates">
-            <label for="dates" style="display:none;">Dates</label>
-            <input id="dates" class="form-control" type="date" name="dates">
-        </fieldset>
-      </div>
-      <div class="form-group col-xs-12 col-sm-6">
+      <div class="form-group col-xs-12 col-sm-7">
         <fieldset class="search form-control">
             <label style="display:none">Search</label>
             <input type="search"  placeholder="Search">
@@ -41,10 +35,10 @@
         <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/ideaCard_1.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/ideaCard_2.php');?></div>
       </article>
       <div class="result-pages col-xs-12">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -63,13 +57,13 @@
     <section class="friends_liked">
       <h3>Your friends liked:</h3>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/ideaCard_3.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/ideaCard_4.php');?></div>
       </article>
       <article class="offer col-xs-12 col-sm-6 col-md-4">
-        <div class="module_offers"><?php include ('php-calls/ideaCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/ideaCard_5.php');?></div>
       </article>
     </section>
     <section class="aside-2">

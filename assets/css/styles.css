@@ -632,7 +632,7 @@ input[type="checkbox"]:checked + span {
 	width: 0;
 	height: 0;
 	bottom: -8px;
-	z-index: 9999;
+	z-index: 998;
 	left: 50%;
 	transform: translateX(-50%);
 	border-left: 10px solid transparent;
@@ -669,10 +669,15 @@ input[type="checkbox"]:checked + span {
 
 .module-ongoing {
 	position: relative;
+	cursor: pointer;
 }
 
 .optionButtons {
 	font-size: 13px;
+}
+
+.offer-content {
+	cursor: pointer;
 }
 
 

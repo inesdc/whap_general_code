@@ -31,10 +31,10 @@
     <section class="aside hidden-xs">
         <button id="aside-trigger" class="btn-aside hidden-xs hidden-extralg"></button>
         <h3>Offers related to your trip</h3>
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
-        <div class="module_offers"><?php include ('php-calls/offerCard.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_1.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_2.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_3.php');?></div>
+        <div class="module_offers"><?php include ('php-calls/offerCard_4.php');?></div>
     </section>
   </div>
 </div>

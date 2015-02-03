@@ -1,9 +1,9 @@
 <div id="offerCard"class="offerCard"> 
   <div class="offer-content">
-    <div class="ideaIMG">
+    <div class="ideaIMG-5">
     </div>
     <div class="LPinfo">
-      <h2 class="title">Best hiking routes in Spain</h2>
+      <h2 class="title">Discover Nepal</h2>
       <p class="where">Lonely Planet</p>
       <img src="images/stars.png" class="rating">
     </div>

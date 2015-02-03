@@ -504,11 +504,13 @@ $(document).ready(function(){
 
   $(window).resize(function() {
     if ($(window).width() < 769) {
-      $('.secondary-menu-trip').removeClass('hidden');
+      $('.secondary-menu-trip').removeClass('hide');
+      $('.deciding').children('h3').addClass('hide');
+      $('.decided').children('h3').addClass('hide');
     }else{
-      $('.secondary-menu-trip').addClass('hidden');
+      $('.secondary-menu-trip').addClass('hide');
       $('.deciding').children('h3').removeClass('hide');
-      $('.decided').children('h3').removeClas
+      $('.decided').children('h3').removeClas('hide');
       $('.trips-summary').removeClass('hide');
     };
   });
@@ -662,4 +664,25 @@ $(document).ready(function(){
         $('#content-itinerary .modal-body .content').css("height", "auto");
       };
     });
+});
+
+
+// Height trip module mobile 
+
+if ( $(window).width() < 769 ) {
+
+  $('.trips').css("height" , $(window).height()-215);
+
+}
+
+$(window).resize(function() {
+
+  if ( $(window).width() < 769 ) {
+
+    $('.trips').css("height" , $(window).height()-215);
+
+  } else {
+    $('.trips').css("height" , "auto");
+  }
+
 });

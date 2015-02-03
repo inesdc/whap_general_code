@@ -1,19 +1,19 @@
 <div id="offerCard"class="offerCard"> 
   <div class="offer-content">
     <div class="discount">
-      <p>20%</p>
+      <p>15%</p>
       <p>discount<p>
     </div>
-    <div class="destinationIMG">
+    <div class="destinationIMG-5">
     </div>
     <div class="LPinfo col-xs-8">
-      <h2 class="title">Horse Riding</h2>
-      <p class="where">Caballos al sol</p>
+      <h2 class="title">Scuba diving</h2>
+      <p class="where">Dolphin</p>
       <img src="images/stars.png" class="rating">
     </div>
     <div class="offer-price col-xs-4">
-      <h2>30€</h2>
-      <p><small>antes 50€</small></p>
+      <h2>70€</h2>
+      <p><small>antes 45€</small></p>
     </div>
    </div> 
   <div class="icons">
