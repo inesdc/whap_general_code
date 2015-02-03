@@ -1349,7 +1349,7 @@ display: inline-block;
 section.profile-data.pull-right {
 	position: fixed;
 	right: 0;
-	overflow: scroll;
+	overflow-y: auto;
 	background-color: #416772;
 	width: 340px;
 	height: 100%;
@@ -1364,15 +1364,13 @@ section.profile-data.pull-right {
 
 
 .past-trips .map-trips {
-	height: 100%;
 	position: relative;
 	z-index: -9999;
 }
 
 .past-trips .map {
-	width: 100%;
 	position: absolute;
-	top:40px;
+	top:0;
 	left: 0;
 }
 
@@ -2068,25 +2066,25 @@ section.profile-data.pull-right {
 @media(min-width: 1199px) {
 
 	.hidden-lg {
-	display: none;
+		display: none;
 	}
 
 	#trip1 {
-	position: absolute;
-	top: 58%;
-	right: 51%;
+		position: absolute;
+		top: 360px;
+		left: 276px;
 	}
 
 	#trip2 {
 		position: absolute;
-		top: 60%;
-		right: 3%;
+		top: 206px;
+		left: 522px;
 	}
 
 	#trip3 {
 		position: absolute;
-		top: 34%;
-		right: 32%;
+		top: 217px;
+		left: 143px;
 	}
 }
 

@@ -6,6 +6,7 @@ $(document).ready(function(){
     clearBtn: true
   });
 
+
   //Button vote
 
   $('.btn-vote').click(function(){
@@ -32,7 +33,6 @@ $(document).ready(function(){
     $(this).closest('.create-step-content').addClass('hidden-xs');
   })
 
-  //Aside
 
   ///Aside triger 
 
@@ -40,7 +40,9 @@ $(document).ready(function(){
     $('#main').toggleClass('aside-visible');
   });
 
+
   ///Chat 
+
   if($(window).width() > 768){
   var chat_height = $(window).height()-222;
   $('.aside .chat .panel-body').css("height",chat_height);
@@ -128,6 +130,7 @@ $(document).ready(function(){
     };
   });
 
+
   /// Aside heigth
 
   if ($(window).width() > 768) {
@@ -152,6 +155,7 @@ $(document).ready(function(){
 
 
   //Mantain aspect ratio
+
   if ($(window).width()>768) {
     var a_r = 1.1143;
     var top_height = $('#nearby nav').height();
@@ -171,7 +175,6 @@ $(document).ready(function(){
       $('.module-ongoing').css("height", "auto");
     };
   });
-
 
   if ($(window).width()>768) {
     var offers_module_width = $('.module_offers').width(); 
@@ -218,10 +221,8 @@ $(document).ready(function(){
   var toggleHeight = function() {
     var newHeight = $(this).parent().parent().parent().data('children-new-height');
     if ( $('.trip-card').outerHeight() != newHeight ) {
-      console.log('not equal');
       $('.trip-card').css('height', newHeight + 'px');  
     } else {
-      console.log('equal');
       $('.trip-card').css('height', '196px');
     }
   };
@@ -234,8 +235,6 @@ $(document).ready(function(){
 
   $(window).resize(function() {
     if ($(window).width() > 768) { 
-
-
     var toggleHeight = function(){
       var newHeight = $(this).parent().parent().parent().data('children-new-height');
       if ( $('.trip-card').height() != newHeight ) {
@@ -244,17 +243,15 @@ $(document).ready(function(){
         $('.trip-card').css('height', "tripCardHeight");
       }
     };
-
     $('.trip-card').click(showContent);
-
     var tripCardHeight = $('.trip-card').height();
     $('.trip-card').click(toggleHeight);
-
     };
   });
 
 
   //Aside create draggable width/height
+
   if ($(window).width() > 768) {
     var width = $('.droppable').width();
     var height = $('.droppable').height(); 
@@ -273,35 +270,6 @@ $(document).ready(function(){
     } else {
       $('.module-steps').css("width", "auto");
       $('.module-steps').css("height", "auto");
-    };
-  });
-
-
-  //Profile
-  if ($(window).width() > 1200) {
-    var window_height = $(window).height();
-    var window_width = $(window).width();
-    var container_past_trips = window_width - 325;
-    var a_r_map = 2.05;
-    $('.profile-data').css("height",window_height-50);
-    $('.past-trips').css("width",container_past_trips);
-    $('.past-trips').css("height",container_past_trips / a_r_map);
-  } else { 
-    $('.past-trips').css("width","auto");
-  };
-
-  $(window).resize(function() {
-    if ($(window).width() > 1200) {
-      var window_height = $(window).height();
-      var window_width = $(window).width();
-      var container_past_trips = window_width - 325;
-      var a_r_map = 2.05;
-      $('.profile-data').css("height",window_height-50)
-      $('.past-trips').css("width",container_past_trips);
-      $('.past-trips').css("height",container_past_trips / a_r_map);
-    } else { 
-      $('.past-trips').css("width","auto");
-      $('.past-trips').css("height","auto");
     };
   });
 
@@ -327,10 +295,7 @@ $(document).ready(function(){
       $('#friends').css('height', 453);
        $('.first_page,.second_page').attr('data-friends',3);
     };
-    
   });
-
-
 
   $('#page_22').click(function(){
     event.preventDefault();
@@ -383,6 +348,7 @@ $(document).ready(function(){
     }
   });
 
+
   //secondary-menu  
 
   if ($(window).width() < 1200) {
@@ -392,6 +358,7 @@ $(document).ready(function(){
   }else{
     $('#friends').removeClass('col-sm-6');
   };
+
 
   //tabs mobile
 
@@ -406,7 +373,6 @@ $(document).ready(function(){
       $('.tab-trips').addClass('active');
     };
   });
-
 
   if ($(window).width() < 769) {
     $('#friends').addClass('hide');
@@ -444,8 +410,6 @@ $(document).ready(function(){
     };
   });
 
-
-
   $(window).resize(function() {
     if ($(window).width() < 1200) {
       $('.secondary-menu').removeClass('hidden');
@@ -460,10 +424,12 @@ $(document).ready(function(){
     };
   });
 
+
   // Función para desplegar los trips
 
   if ($(window).width() > 768) {
     $('.trips-summary').click(function(){
+      $('.trips-summary').css("height",100);
       if( $(this).closest('.module-trips').find('.trip-steps').hasClass('hide') ) {
         $('.trip').find('.trip-steps').addClass('hide');
         $(this).closest('.trip').find('.trip-steps').removeClass('hide'); 
@@ -515,6 +481,7 @@ $(document).ready(function(){
     };
   });
 
+
   ////Tabs
 
     if ($(window).width() < 769) {
@@ -553,40 +520,24 @@ $(document).ready(function(){
     };
   });
 
+
   // Función para estilos countdown 
+
   if( $( window ).width() > 768) {
     $('.trip-steps.hide').closest('.module-trips').find('.trip-countdown').addClass('unclicked');
     $('.trip-steps.hide').closest('.module-trips').find('.trip-to-vote').addClass('unclicked');
     $('.trips-summary').click(function(){
-
       $('.trip-countdown').addClass('unclicked');
       $('.trip-to-vote').addClass('unclicked');
-
       if ($(this).closest('.module-trips').find('.trip-steps').hasClass('hide')){
         $(this).children('.trip-to-vote').addClass('unclicked');
         $(this).children('.trip-countdown').addClass('unclicked');
-
       } else {
         $(this).children('.trip-to-vote').removeClass('unclicked');
         $(this).children('.trip-countdown').removeClass('unclicked');
       };
-
-
-      // $('.trip-to-vote').addClass('unclicked');
-      // if ($(this).children('.trip-to-vote').hasClass('unclicked')) {
-      //   $(this).children('.trip-to-vote').removeClass('unclicked');
-      // } else {
-      //   $(this).children('.trip-to-vote').addClass('unclicked');
-      // }
     })
   }
-
-
-});
-
-//Explore menu xs
-
-$(document).ready(function(){
 
   if($(window).width() < 768) {
     $('.ideas').parent().addClass('secondary-menu');
@@ -643,9 +594,6 @@ $(document).ready(function(){
     }
   });
 
-  //Itinerary module mobile 
-
-
 
   // Modal Itinerary Mobile
 
@@ -654,7 +602,6 @@ $(document).ready(function(){
     var itinerary_height = $(window).height() - 174;
     $('#content-itinerary .modal-body .content').css("height", itinerary_height);
   };
-
     $(window).resize(function() {
       if($(window).width() < 769) {
 
@@ -670,17 +617,12 @@ $(document).ready(function(){
 // Height trip module mobile 
 
 if ( $(window).width() < 769 ) {
-
   $('.trips').css("height" , $(window).height()-215);
-
 }
 
 $(window).resize(function() {
-
   if ( $(window).width() < 769 ) {
-
     $('.trips').css("height" , $(window).height()-215);
-
   } else {
     $('.trips').css("height" , "auto");
   }

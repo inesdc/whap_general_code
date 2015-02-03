@@ -1,7 +1,7 @@
 <?php include ('php-calls/head.php'); ?>
   <header>
     <?php include ('php-calls/header.php'); ?>
-    <div class="relative ohidden">
+    <div class="relative">
       <ul class="secondary-nav list-unstyled">
         <li class="col-xs-6 col-sm-6 ideas"><a href="ideas.php">Ideas</a></li>
         <li class="col-xs-6 col-sm-6 active offers"><a href="#">Offers</a></li>
