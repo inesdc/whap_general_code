@@ -1,4 +1,4 @@
-@@ -1,1776 +0,0 @@
+
 /* ===== RESETS =====
    ================== */
 
@@ -18,9 +18,6 @@
 	border: 0 !important;
 }
 
-.crear-cont .btn {
-	padding: 0
-}
 
 .crear-cont .btn a {
 	padding: 9px 50px;
@@ -108,6 +105,15 @@ a {
 a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
+
+}
+
+a:visited {
+	color: #fff;
+}
+
+a:hover {
+	color: gray;
 }
 
 p{
@@ -615,6 +621,11 @@ input[type="checkbox"]:checked + span {
 	float: left;
 	text-align: center;
 	position: relative;
+	border-right: 1px solid #106B71;
+}
+
+.secondary-nav li:last-child {
+	border: 0;
 }
 
 .secondary-nav li a {
@@ -658,8 +669,9 @@ input[type="checkbox"]:checked + span {
 
 .crear-cont {
 	position: absolute;
-	right: 0;
+	right: 5px;
 }
+
 
 
 /*===== MODULES ======
@@ -1974,7 +1986,6 @@ section.profile-data.pull-right {
 	.add_steps_drag {
 		right: 0 !important;
 		transition: all 0s;
-		overflow: hidden !important;
 		overflow-Y: auto;
 	}
 }

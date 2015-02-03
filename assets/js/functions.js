@@ -510,7 +510,7 @@ $(document).ready(function(){
     }else{
       $('.secondary-menu-trip').addClass('hide');
       $('.deciding').children('h3').removeClass('hide');
-      $('.decided').children('h3').removeClas('hide');
+      $('.decided').children('h3').removeClass('hide');
       $('.trips-summary').removeClass('hide');
     };
   });

@@ -38,6 +38,16 @@ $( document ).ready( function() {
 			$(this).next('.create-step-content').removeClass('hidden-xs');
 			$('.step-title p').addClass('hidden');
 		})
-
 	}
+
+	$(window).resize(function(){
+		if ( $( window ).width() < 769) {
+		$('.step-title').click(function(){
+			$('.create-step-content').addClass('hidden-xs');
+			$('.step-title').children('p').removeClass('hidden');
+			$(this).next('.create-step-content').removeClass('hidden-xs');
+			$('.step-title p').addClass('hidden');
+		})
+	}
+	})
 });
