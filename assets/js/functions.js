@@ -320,12 +320,14 @@ $(document).ready(function(){
   $(window).resize(function() {
     if ($(window).width() > 1200) {
       var friends_ul_height = ($(window).height()- 600);
+      var new_num_friends = parseInt(friends_ul_height / friend_height);
+      $('.first_page,.second_page').attr('data-friends',new_num_friends);
     }else{
       var friends_ul_height = $('.past-trips').height()-134;
       $('#friends').css('height', 453);
+       $('.first_page,.second_page').attr('data-friends',3);
     };
-    var new_num_friends = parseInt(friends_ul_height / friend_height);
-    $('.first_page,.second_page').attr('data-friends',new_num_friends);
+    
   });
 
 
