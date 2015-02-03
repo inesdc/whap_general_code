@@ -156,7 +156,7 @@
               <div id="datepicker">
               </div>
               <div class="datepicker">
-                  <input id="datepicker" type="text" class="form-control" placeholder="18/01/2014-24/01/2015">
+                  <input type="text" class="form-control" placeholder="18/01/2014-24/01/2015">
               </div>
               <div class="input-group">
                 <div class="input-group-btn">

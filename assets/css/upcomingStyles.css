@@ -1,25 +1,19 @@
 div.surfing {
 	background-image: url('../../images/upcoming/surfinBKG.png');
 	background-repeat: no-repeat;
-	-moz-background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	background-size:100% 100%;	
+	background-size:cover;	
 }
 
 div.granada {
 	background-image: url('../../images/upcoming/granadaBKG.png');
 	background-repeat: no-repeat;
-	-moz-background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	background-size:100% 100%;	
+	background-size:cover;	
 }
 
 div.newYork {
 	background-image: url('../../images/upcoming/NYBKG.png');
 	background-repeat: no-repeat;
-	-moz-background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	background-size:100% 100%;	
+	background-size:cover;	
 }
 
 .surfing h2, .newYork h2, .granada h2{

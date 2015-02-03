@@ -15,11 +15,7 @@ $(document).ready(function(){
     };
     window.onload = b;
 
-    $("#datepicker div").datepicker({
-        format: "dd/mm/yyyy",
-        todayBtn: true,
-        clearBtn: true
-    }); 
+    
 });
 
 

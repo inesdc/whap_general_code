@@ -68,7 +68,7 @@
     <div class="panel-footer">
         <div class="input-group col-xs-12">
             <div class="enter-message">
-                <input type="text" class="custinput" id="item-input" placeholder="Enter message..." autofocus>
+                <input type="text" class="custinput" id="item-input" placeholder="Enter message...">
             </div>
              <button type="submit" class="btn  btn-default btn-block">add</button>
         </div>

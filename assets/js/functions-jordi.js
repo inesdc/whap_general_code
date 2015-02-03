@@ -10,7 +10,9 @@ $( document ).ready( function() {
 		}
 	})
 	$( '#container-size' ).css( 'margin-top', $( 'header' ).height() );
-	$( '.draggable').draggable( { revert: "invalid" } );
+	$( '.draggable').draggable( { 
+		revert: "invalid" 
+	} );
 	$( '.droppable').droppable( {
 		accept: ".draggable",
 		activeClass: "dragging",

@@ -157,15 +157,16 @@ $(document).ready(function(){
     var top_height = $('#nearby nav').height();
     var onging_module_width = $('.module-ongoing').width(); 
     $('.module-ongoing').css("height", onging_module_width / a_r);
-    $('#nearby .content, #feed .content').css("height", onging_module_width / a_r - top_height);
+    $('.nearby .content, #feed .content').css("height", onging_module_width / a_r - top_height);
   };
 
   $(window).resize(function(){
     if ($(window).width()>768) {
       var a_r = 1.1143;
       var onging_module_width = $('.module-ongoing').width(); 
+      var top_height = $('#nearby nav').height();
       $('.module-ongoing').css("height", onging_module_width / a_r);
-      $('#nearby .content, #feed .content').css("height", onging_module_width / a_r - top_height);
+      $('.nearby .content, #feed .content').css("height", onging_module_width / a_r - top_height);
     } else {
       $('.module-ongoing').css("height", "auto");
     };
@@ -300,6 +301,7 @@ $(document).ready(function(){
       $('.past-trips').css("height",container_past_trips / a_r_map);
     } else { 
       $('.past-trips').css("width","auto");
+      $('.past-trips').css("height","auto");
     };
   });
 
@@ -307,7 +309,8 @@ $(document).ready(function(){
   if ($(window).width() > 1200) {
     var friends_ul_height = $(window).height() - 600;
   }else{
-    var friends_ul_height = $('.past-trips').height();
+    var friends_ul_height = $('.past-trips').height()-134;
+    $('#friends').css('height', 453);
   };
 
   var friend_height = 100;
@@ -318,7 +321,8 @@ $(document).ready(function(){
     if ($(window).width() > 1200) {
       var friends_ul_height = ($(window).height()- 600);
     }else{
-      var friends_ul_height = $('.past-trips').height();
+      var friends_ul_height = $('.past-trips').height()-134;
+      $('#friends').css('height', 453);
     };
     var new_num_friends = parseInt(friends_ul_height / friend_height);
     $('.first_page,.second_page').attr('data-friends',new_num_friends);
@@ -381,7 +385,8 @@ $(document).ready(function(){
 
   if ($(window).width() < 1200) {
     $('.secondary-menu').removeClass('hidden');
-    $('.map').addClass('hidden');  
+    $('.map').addClass('hidden'); 
+    $('.ico-location-pink').addClass('hidden'); 
   }else{
     $('#friends').removeClass('col-sm-6');
   };
@@ -443,10 +448,12 @@ $(document).ready(function(){
     if ($(window).width() < 1200) {
       $('.secondary-menu').removeClass('hidden');
       $('.map').addClass('hidden');
+      $('.ico-location-pink').addClass('hidden');
       $('#friends').addClass('col-sm-6');
     }else{
       $('.secondary-menu').addClass('hidden');
       $('.map').removeClass('hidden');
+      $('.ico-location-pink').removeClass('hidden');
       $('#friends').removeClass('col-sm-6');
     };
   });
