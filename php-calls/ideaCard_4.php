@@ -3,7 +3,7 @@
     <div class="ideaIMG-4">
     </div>
     <div class="LPinfo">
-      <h2 class="title">Road trips: Best places/h2>
+      <h2 class="title">Road trips: Best places</h2>
       <p class="where">Playground</p>
       <img src="images/stars.png" class="rating">
     </div>

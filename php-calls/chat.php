@@ -37,7 +37,7 @@
                 <div class="media-body">
                     <div class="media">
                         <a class="pull-left" href="#">
-                            <img class="media-object img-circle " src="images/guy2.png"/>
+                            <img class="media-object img-circle " src="images/guy3.png"/>
                         </a>
                     </div>
                     <div class="media-body">
