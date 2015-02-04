@@ -150,7 +150,7 @@
           <article id="trip3" class="trip">
             <i class="location icon ico-location-pink pull-left"></i>
             <div class="newYork trips-summary">
-              <h2 class="trip-title"><img src="images/upcoming/timer.png"> New York<</h2>
+              <h2 class="trip-title"><img src="images/upcoming/timer.png"> L.A.</h2>
               <div class="trip-description col-xs-12">
                 <p><span>Ready, steady, go!</span></p>
               </div>
