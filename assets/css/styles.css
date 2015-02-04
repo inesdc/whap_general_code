@@ -1226,6 +1226,9 @@ section.aside.add_steps_drag div.module-steps{
 	text-align: left;
 }
 
+.option-display .location-title {
+	color: #c0c0c0;
+}
 
 /* == IDEAS N OFFERS CONTENT==
    ======================== */ 
