@@ -23,9 +23,9 @@
         </select>
       </div>
       <div class="form-group col-xs-12 col-sm-2">
-        <fieldset class="dates">
-            <label for="dates" style="display:none;">Dates</label>
-            <input id="dates" class="form-control" type="date" name="dates">
+        <fieldset class="date">
+            <label for="datepicker2" style="display:none;">Dates</label>
+            <input id="datepicker2" placeholder="18/01/2015" class="form-control" name="dates">
         </fieldset>
       </div>
       <div class="form-group col-xs-12 col-sm-6">
@@ -78,16 +78,8 @@
           <h3>Your trips</h3>
           <p>Drag and drop an offer to create a trip or add it to the trips you’re planning.</p>
           <div class="create-from-offer">
-            <span class="dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-expanded="false" href="#"><i class="icon ico-add-to-trip"></i><span>Create a trip from offer</span></span>
+            <span><i class="icon ico-add-to-trip"></i><span>Create a trip from offer</span></span>
           </div>
-          <ul class="dropdown dropdown-menu"  aria-labelledby="dropdownMenu1" role="menu">
-            <li>How much</li>
-            <li>Where</li>
-            <li>When</li>
-            <li>How</li>
-            <li>Who</li>
-            <li>What</li>
-          </ul>
           <div class="surfing trips-summary">
             <h2 class="trip-title"><img src="images/upcoming/timer.png"> Surfin' N' Rollin'</h2>
           </div>
@@ -99,6 +91,7 @@
           </div>
         </div>
     </section>
+    <?php include ('php-calls/content-offer-card.php'); ?>
   </div>
 </div>
 <?php include ('php-calls/footer.php'); ?>

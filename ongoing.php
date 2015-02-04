@@ -82,6 +82,7 @@
         
       </section>
       <?php include ('php-calls/content-itinerary.php'); ?>
+      <?php include ('php-calls/content-nearby.php'); ?>
     </div>
   </div>
 <?php include ('php-calls/footer.php'); ?>

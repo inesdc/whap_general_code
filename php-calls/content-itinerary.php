@@ -11,7 +11,7 @@
             <nav class="visible-xs modal-header">
                 <ul class="ongoing-tabs list-unstyled secondary-menu clearfix">
                    <li class="itinerary-tab"><a class="active">Itinerary</a></li>
-                   <li class="nearby-tab"><a>Nearby</a></li> 
+                   <li class="nearby-tab"><a data-toggle="modal" data-target="#content-nearby">Nearby</a></li> 
                    <li class="chat-tab"><a>Chat</a></li> 
                    <li class="feeds-tab"><a>Feeds</a></li>
                    <li class="album-tab"><a>Album</a></li>  

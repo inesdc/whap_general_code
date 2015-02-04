@@ -1,10 +1,16 @@
 $(document).ready(function(){
 
-  $("#datepicker").datepicker({
+  $("#datepicker, #datepicker2").datepicker({
     format: "dd/mm/yyyy",
     todayBtn: true,
     clearBtn: true
   });
+
+  $('#ui-datepicker-div').addClass('hide');
+
+  $('#datepicker2').click(function(){
+    $('#ui-datepicker-div').toggleClass('hide');
+  })
 
 
   //Button vote
@@ -599,16 +605,19 @@ $(document).ready(function(){
 
   if($(window).width() < 769) {
 
-    var itinerary_height = $(window).height() - 174;
-    $('#content-itinerary .modal-body .content').css("height", itinerary_height);
+    var modal_mobile_height = $(window).height() - 174;
+    $('#content-itinerary .modal-body .content').css("height", modal_mobile_height);
+    $('#content-nearby .modal-body .content-nearby').css("height", modal_mobile_height);
   };
     $(window).resize(function() {
       if($(window).width() < 769) {
 
-        var itinerary_height = $(window).height() - 174;
-        $('#content-itinerary .modal-body .content').css("height", itinerary_height);
+        var modal_mobile_height = $(window).height() - 174;
+        $('#content-itinerary .modal-body .content').css("height", modal_mobile_height);
+        $('#content-nearby .modal-body .content-nearby').css("height", modal_mobile_height);
       } else {
         $('#content-itinerary .modal-body .content').css("height", "auto");
+        $('#content-nearby .modal-body .content-nearby').css("height", "auto");
       };
     });
 });

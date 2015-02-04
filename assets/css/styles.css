@@ -808,7 +808,8 @@ input[type="checkbox"]:checked + span {
 }
 
 /*module content*/
-#content-itinerary .modal-header {
+#content-itinerary .modal-header,
+#content-nearby .modal-header {
 	padding: 0;
 }
 
@@ -868,6 +869,36 @@ input[type="checkbox"]:checked + span {
 #content-itinerary .ico-timeline-ball {
 	top: 100px;
 	left: 9px;
+}
+
+.content-nearby {
+	position: relative;
+	background: url('../images/nearby-map.png') no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 460px;
+}
+
+#content-nearby .modal-body {
+	padding: 0;
+}
+
+#content-nearby .offer-nearby{
+	position: absolute;
+	top: 34px;
+	right: 34px;
+	display: inline-block;
+}
+
+#globe-red {
+	position: absolute;
+	top: 85%;
+	left: 44%;
+}
+
+#content-nearby .offerCard {
+	width: 276px;
+	height: 247px;
 }
 
 /* ===PLANNING CONTENT ===
@@ -1198,6 +1229,84 @@ section.aside.add_steps_drag div.module-steps{
 
 /* == IDEAS N OFFERS CONTENT==
    ======================== */ 
+
+#content-offer-card .modal-header,
+#content-offer-card .modal-body {
+	padding: 0;
+}
+
+.offer-content {
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+#content-offer-card .create-from-offer span span {
+	display: block;
+	text-align: center;
+}
+
+#content-offer-card .modal-dialog.modal-lg {
+	width: 400px;
+}
+
+#ui-datepicker-div {
+	padding-top: 10px;
+	padding-left: 10px;
+	text-align: center;
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid #CCCCCC;
+	width: 347px;
+	height: 270px;
+	-webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+#ui-datepicker-div .ui-datepicker-calendar a{
+	color:#939393;
+	font-weight: normal;
+	padding: 10px 10px;
+}
+
+#ui-datepicker-div table {
+	width: 100%;
+	height: 80%;
+}
+
+.ui-datepicker-calendar a:hover {
+	background-color: #2ab0b9;
+	color: #fff !important;
+}
+
+#ui-datepicker-div span.ui-datepicker-month, #datepicker span.ui-datepicker-year{
+	color:#939393;
+	font-weight: normal;
+}
+#ui-datepicker-div .ui-datepicker-header {
+	padding: 10px;
+}
+
+#ui-datepicker-div span.ui-icon-circle-triangle-w{
+	float:left;
+	color:#939393;
+
+}
+
+#ui-datepicker-div .ui-icon-circle-triangle-e{
+	float:right;
+	color:#939393;
+
+}
+
+#ui-datepicker-div th{
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	color: #2AB0B9;
+}
+
+#ui-datepicker-div td {
+	padding: 0;
+}
 
 .discount {
 	text-align: center;
@@ -1722,7 +1831,8 @@ section.profile-data.pull-right {
 		padding: 0;
 	}
 
-	#content-itinerary .modal-dialog {
+	#content-itinerary .modal-dialog, 
+	#content-nearby div.modal-dialog.modal-lg {
 		margin: 0;
 	}
 

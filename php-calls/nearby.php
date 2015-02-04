@@ -11,7 +11,7 @@
 <section>
     <div class="content">
         <img id="moon" src="images/moon.png">
-        <img id="globe" src="images/globe.png">
+        <img id="globe" src="images/globe.png" data-toggle="modal" data-target="#content-nearby">
         <img id="dot" src="images/dot.png">
 
     </div>

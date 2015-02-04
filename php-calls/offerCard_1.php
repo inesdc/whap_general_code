@@ -20,7 +20,7 @@
     <ul class="list-unstyled">
     	<li><img src="images/share.png"></li>
     	<li><img src="images/chat.png"></li>
-      <li><img src="images/plus.png"></li>
+      <li data-toggle="modal" data-target="#content-offer-card"><img src="images/plus.png"></li>
     </ul>
   </div>
 </div>
